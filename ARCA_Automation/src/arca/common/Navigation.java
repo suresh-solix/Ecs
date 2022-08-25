@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -290,6 +291,44 @@ public static void external_guest_user()
 	
 }
 
+public static void select_two_files()
+{
+	
+
+	try {
+		
+		List<WebElement> Beforemovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
+		int nooffiles = Beforemovedfiles.size();
+ 		System.out.println("No of files Before Moved" + nooffiles);
+		click("select_all_files");
+		for(int i=2; i<=nooffiles-1; i++)
+		{
+			driver.findElement(By.xpath("(//div[@class='files']//*[@type='checkbox'])["+i+"]")).click();
+		}
+		
+		int j=nooffiles-1;
+		log.info("Two Files selected successfully");
+		
+	
+		
+		ATUReports.add("Two Files selected successfully Succesful","Two Files selected successfully ",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+		Thread.sleep(2000);
+		
+	} catch (Exception e) {
+
+
+		System.out.println("errror at: ");
+		e.printStackTrace();
+		log.error("Error in Two Files selected successfully",e);	
+		//log.fatal(e.getMessage(),e);
+		captureScreenShot(ScreenShotsFilePath + "Two_Files_selected_failed.png");
+		ATUReports.add("Two Files selected  failed","Two Files selected  failed",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+	
+	}
+
+	
+	
+}
 
 public static WebElement getRightClickMenuObject(String xpathVal_rightclick)
 {

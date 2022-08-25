@@ -1015,7 +1015,7 @@ public class BrowserHandlings{
 //				DragDropMove.DragDropMove_multiple_files();
 //			}
 //		}
-//
+
 //		
 //		@Test(priority =67)
 //		public void DragDropMove_multiple_folders() throws Exception {
@@ -1120,7 +1120,7 @@ public class BrowserHandlings{
 //		 
 //		   }
 		
-//		 @Test(priority =72)
+//		 @Test(priority =73)
 //		  public void DragandDropMoveKeepSeparateVersions_multiple_Files_Folders() throws Exception   {
 //			  {
 //				  mb33 = new DragandDropMoveKeepSeparateVersions(driver);
@@ -1134,7 +1134,7 @@ public class BrowserHandlings{
 	//--------------------------------- DragandDropMoveVersions_Skip --------------------------------------
 		 
 		 
-//		 @Test(priority =73)
+//		 @Test(priority =74)
 //		  public void DragandDropMoveVersions_Skip_Files() throws Exception   {
 //			  {
 //				  mb34 = new DragandDropMoveVersions_Skip(driver);
@@ -1145,7 +1145,7 @@ public class BrowserHandlings{
 		 
 		 
 		 
-//		 @Test(priority =74)
+//		 @Test(priority =75)
 //		  public void DragandDropMoveVersions_Skip_Folders() throws Exception   {
 //			  {
 //				  mb34 = new DragandDropMoveVersions_Skip(driver);
@@ -1166,10 +1166,17 @@ public class BrowserHandlings{
 //				  mb35 = new MyFiles_Collection(driver);
 //				  MyFiles_Collection.MyFiles_Collection();
 //		     }		  
-//		 
-//		   }
+//		 }
+		
 		 
+		@Test(priority =77)
+		  public void MyFiles_Collections_Restriction() throws Exception   {
+			  {
+				  mb35 = new MyFiles_Collection(driver);
+				  MyFiles_Collection.MyFiles_Collections_Restriction();
+		     }		  
 		 
+		   }
 		 
 		 
 		 

@@ -239,7 +239,7 @@ public class DragDropMove extends Navigation {
 			List<WebElement> Aftermovedfolders = driver.findElements(By.xpath("//*[@class='folder-article']"));
 			int Aftermovedfolderstofolder = Aftermovedfolders.size();
 			System.out.println("No of Folder Moved" + Aftermovedfolderstofolder);
-			if(nooffolder!=Aftermovedfolderstofolder)
+			if(Aftermovedfolderstofolder==1)
 			{
 				
 				
@@ -276,7 +276,7 @@ public static void DragDropMove_multiple_files()
 
 		actions = new Actions(driver);
 
-//		Navigation.login();
+	//	Navigation.login();
 
 		driver.get(Home_Page);
 		WebDriverWait wait5 = new WebDriverWait(driver, 120);
@@ -336,7 +336,7 @@ public static void DragDropMove_multiple_files()
 		List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 		int Aftermovedfilestofolder = Aftermovedfiles.size();
 		System.out.println("No of files Moved" + Aftermovedfilestofolder);
-		if(nooffiles!=Aftermovedfilestofolder)
+		if(Aftermovedfilestofolder==nooffiles)
 		{
 			
 			

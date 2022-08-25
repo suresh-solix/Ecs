@@ -11,9 +11,9 @@
     <classes>
       <class name="arca.tests.BrowserHandlings">
         <methods>
+          <include name="MyFiles_Collections_Restriction"/>
           <include name="after"/>
           <include name="beforetest"/>
-          <include name="MyFiles_Collection"/>
         </methods>
       </class> <!-- arca.tests.BrowserHandlings -->
     </classes>

@@ -4,13 +4,16 @@
     <line>
       <![CDATA[STEP1]]>
     </line>
+    <line>
+      <![CDATA[STEP2]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-08-25T12:53:51 IST" name="Suite" finished-at="2022-08-25T12:54:30 IST" duration-ms="38975">
+  <suite started-at="2022-08-26T00:06:51 IST" name="Suite" finished-at="2022-08-26T00:07:39 IST" duration-ms="48945">
     <groups>
     </groups>
-    <test started-at="2022-08-25T12:53:51 IST" name="Test" finished-at="2022-08-25T12:54:30 IST" duration-ms="38975">
+    <test started-at="2022-08-26T00:06:51 IST" name="Test" finished-at="2022-08-26T00:07:39 IST" duration-ms="48945">
       <class name="arca.tests.BrowserHandlings">
-        <test-method is-config="true" signature="beforetest(java.lang.String)[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-25T12:53:51 IST" name="beforetest" finished-at="2022-08-25T12:53:57 IST" duration-ms="5341" status="PASS">
+        <test-method is-config="true" signature="beforetest(java.lang.String)[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-26T00:06:51 IST" name="beforetest" finished-at="2022-08-26T00:06:55 IST" duration-ms="4497" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,14 +24,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="MyFiles_Collection()[pri:76, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-25T12:53:57 IST" name="MyFiles_Collection" finished-at="2022-08-25T12:54:30 IST" duration-ms="33125" status="PASS">
+        <test-method signature="MyFiles_Collections_Restriction()[pri:77, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-26T00:06:55 IST" name="MyFiles_Collections_Restriction" finished-at="2022-08-26T00:07:39 IST" duration-ms="43913" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
             </line>
+            <line>
+              <![CDATA[STEP2]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- MyFiles_Collection -->
-        <test-method is-config="true" signature="after()[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-25T12:54:30 IST" name="after" finished-at="2022-08-25T12:54:30 IST" duration-ms="438" status="PASS">
+        </test-method> <!-- MyFiles_Collections_Restriction -->
+        <test-method is-config="true" signature="after()[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-26T00:07:39 IST" name="after" finished-at="2022-08-26T00:07:39 IST" duration-ms="457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
