@@ -1,0 +1,7 @@
+Drag and Drop Move-Update Existing = 3 TC
+Drag and Drop Copy-Update Existing = 3 TC
+Drag and Drop Keep-separate = 3 TC
+Drag and Drog Skip  = 2 TC
+Drag and Drop Move  = 5 TC
+MyFile_Share_User_Admin = 11 TC
+MyFiles_share_Admin_to_Group =

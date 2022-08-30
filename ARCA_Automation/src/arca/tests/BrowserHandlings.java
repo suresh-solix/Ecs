@@ -71,7 +71,9 @@ import arca.pages.ShareDataWithExternalUser;
 import arca.pages.SourceManager;
 import arca.pages.MyFilesTags;
 import arca.pages.MyFiles_Collection;
+import arca.pages.MyFiles_share_Admin_to_Group;
 import arca.pages.LegalHold;
+import arca.pages.MyFile_Share_User_Admin;
 import arca.pages.MyFilesCollections;
 import arca.pages.Users;
 import arca.pages.Groups;
@@ -134,6 +136,9 @@ public class BrowserHandlings{
 	DragandDropMoveKeepSeparateVersions mb33;
 	DragandDropMoveVersions_Skip mb34;
 	MyFiles_Collection mb35;
+	MyFile_Share_User_Admin mb36;
+	MyFiles_share_Admin_to_Group mb37;
+	
 	
 	ATUTestRecorder recorder;
 	
@@ -1169,18 +1174,109 @@ public class BrowserHandlings{
 //		 }
 		
 		 
-		@Test(priority =77)
-		  public void MyFiles_Collections_Restriction() throws Exception   {
+//		@Test(priority =77)
+//		  public void MyFiles_Collections_Restriction() throws Exception   {
+//			  {
+//				  mb35 = new MyFiles_Collection(driver);
+//				  MyFiles_Collection.MyFiles_Collections_Restriction();
+//		     }		  
+//		 
+//		   }
+		 
+		 
+		
+	//--------------------------MyFile_Share_User_Admin-------------------------------
+		 
+		
+//		@Test(priority =78)
+//		  public void MyFile_Share_User_Admin_Muti_data_Edit_Permission() throws Exception   {
+//			  {
+//				  mb36 = new MyFile_Share_User_Admin(driver);
+//				  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_data_Edit_Permission();
+//				  MyFile_Share_User_Admin. MyFile_Share_User_Admin_Muti_data_Edit_Permission_confirmation();
+//		     }		  
+//		  }
+		
+		
+//		@Test(priority =79)
+//		  public void MyFile_Share_User_Admin_Muti__commenter_permission() throws Exception   {
+//			  {
+//				  mb36 = new MyFile_Share_User_Admin(driver);
+//				  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__commenter_permission();
+//		          MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__commenter_permission_Confirmation();
+//		     }		  
+//		  }
+		
+		
+		
+//		@Test(priority =80)
+//		  public void MyFile_Share_User_Admin_Muti__View_permission() throws Exception   {
+//			  {
+//				  mb36 = new MyFile_Share_User_Admin(driver);
+//				  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__View_permission();
+//		     	  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__View_permission_Confirmation();
+//		 	  }
+//		   }
+		
+//		@Test(priority =81)
+//		  public void MyFile_Share_User_Admin_Muti_Preview_Permission() throws Exception   {
+//			  {
+//				  mb36 = new MyFile_Share_User_Admin(driver);
+//				  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Preview_Permission();
+//		     	  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Preview_Permission_Confirmation();	  
+//		      }
+//		   }
+		
+		
+//		@Test(priority =82)
+//		  public void MyFile_Share_User_Admin_Muti_Upload_Permission() throws Exception   {
+//			  {
+//				  mb36 = new MyFile_Share_User_Admin(driver);
+//				  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Upload_Permission();
+//		     	  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Upload_Permission_Confirmation();
+//		 }
+//		   }
+		
+		
+//		@Test(priority =83)
+//		  public void MyFile_Share_User_Admin_Remove_Files_Folders() throws Exception   {
+//			  {
+//				  mb36 = new MyFile_Share_User_Admin(driver);
+//				  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Remove_Files_Folders();
+//		     }	 
+//		 
+//		}
+			
+//		@Test(priority =84)
+//		  public void MyFile_Share_User_Admin_Remove_Files_Folders() throws Exception   {
+//			  {
+//				  mb36 = new MyFile_Share_User_Admin(driver);
+//				  MyFile_Share_User_Admin.MyFile_Share_User_Admin_Remove_Files_Folders();
+//		     }	 
+//		 
+//		}
+		
+		
+		//----------------------------MyFiles_share_Admin_to_Group-------------------------------
+		
+		@Test(priority =85)
+		  public void MyFiles_share_Admin_to_Group_Edit_Permission() throws Exception   {
 			  {
-				  mb35 = new MyFiles_Collection(driver);
-				  MyFiles_Collection.MyFiles_Collections_Restriction();
-		     }		  
+				  mb37 = new MyFiles_share_Admin_to_Group(driver);
+				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Edit_Permission();
+		     }	 
 		 
-		   }
-		 
-		 
-		 
-		 
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		//----------------------Recent----------------		
 //		@Test(priority = 32)

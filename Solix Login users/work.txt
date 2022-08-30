@@ -1,0 +1,41 @@
+https://help.accusoft.com/PrizmDoc/v13.2/HTML/supported-file-formats.html
+
+https://temp-mail.org/en/
+
+Dev URL : https://app.solixecsdev.com/login
+
+https://solixcloudecs.atlassian.net/jira/your-work
+
+
+card Details : 4242 4242 4242 4242   [Any future date and year]
+
+Production URL : https://app.solixecs.com/login
+		mahesh.naloju@solix.com
+		snehaja.rapaka@solix.com
+
+
+Required doc
+
+1: ['png', 'jpeg', 'jpg', 'gif', 'bmp', 'tiff', 'tif', 'psd', 'eps', 'indd', 'cr2', 'crw', 'nef', 'pef', 'ai', 'ico', 'svg'],
+2: ['pdf'],
+3: ['doc', 'docx', 'odt', 'rtf', 'tex', 'txt', 'wpd'],
+4: ['ods', 'xls', 'xlsm', 'xlsx',’csv’],
+5: ['key', 'odp', 'pps', 'ppt', 'pptx'],
+7: ['aif', 'cda', 'mid', 'midi', 'mp3', 'mpa', 'ogg', 'wav', 'wma', 'wpl'],
+8: ['avi', '3g2', '3gp', 'flv', 'h264', 'm4v', 'mkv', 'mov', 'mp4', 'mpg', 'mpeg', 'rm', 'swf', 'vob', 'wmv'],
+
+
+10: ['7z', 'arj', 'deb', 'pkg', 'rar', 'rpm', 'tar.gz', 'z', 'zip', 'tar'],
+11: ['htm', 'html']
+
+
+Data Migration : FTP Details - Working Deatils - June 1
+	         Username : ecsftpuser
+	         Password : H(jasdmnadThg5B
+	         FTP port:21
+	         SFTP port:22
+                 Host name: 45.79.56.5
+
+newftpuser / Un_Files / All_files / 100GB_Small_files / small_files
+
+

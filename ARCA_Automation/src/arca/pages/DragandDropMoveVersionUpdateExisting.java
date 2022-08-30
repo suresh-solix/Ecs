@@ -114,6 +114,7 @@ public static void DragandDropMoveVersionUpdateExisting_Multiple_files()
 
 		Thread.sleep(4000);
 		act.doubleClick(drop).perform();
+		
 		List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 		int Aftermovedfilestofolder = Aftermovedfiles.size();
 		System.out.println("No of files Moved" + Aftermovedfilestofolder);

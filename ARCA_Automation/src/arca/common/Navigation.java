@@ -136,7 +136,7 @@ public static void login()
 		
 		driver.get(Home_Page);
 		
-		sendKeys("login_username", "doxop12832@yubua.com");
+		sendKeys("login_username", "voyesi9637@vpsrec.com");
 		
 		click("login_next");
 
@@ -176,7 +176,7 @@ public static void other_user_in_same_tenant()
 		
 		driver.get(Home_Page);
 		
-		sendKeys("login_username", "tafil31357@onzmail.com");
+		sendKeys("login_username", "lidole9988@vpsrec.com");
 		
 		click("login_next");
 

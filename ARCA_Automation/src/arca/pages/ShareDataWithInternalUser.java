@@ -208,9 +208,7 @@ public class ShareDataWithInternalUser extends Navigation {
 			
 			WebDriverWait wait31 = new WebDriverWait(driver, 60);
 			wait31.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
-			
-			
-			
+				
 			getPageObject("search_result_first_element").click(); 
 			Thread.sleep(2000);
 			click("share_button");
