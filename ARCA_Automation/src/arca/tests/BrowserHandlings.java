@@ -1259,17 +1259,61 @@ public class BrowserHandlings{
 		
 		//----------------------------MyFiles_share_Admin_to_Group-------------------------------
 		
-		@Test(priority =85)
-		  public void MyFiles_share_Admin_to_Group_Edit_Permission() throws Exception   {
+//		@Test(priority =85)
+//		  public void MyFiles_share_Admin_to_Group_Edit_Permission() throws Exception   {
+//			  {
+//				  mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Edit_Permission();
+//		     }	 
+//		 }
+		
+//		@Test(priority =86)
+//		  public void MyFiles_share_Admin_to_Group_Commenter_Permission() throws Exception   {
+//			  {
+//				  mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Commenter_Permission();
+//		     }	 
+//		 }
+		
+		
+//		@Test(priority =86)
+//		  public void MyFiles_share_Admin_to_Group_View_Permission() throws Exception   {
+//			  {
+//				  mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_View_Permission();
+//		     }	 
+//		 }
+		
+		
+//		@Test(priority =87)
+//		  public void MyFiles_share_Admin_to_Group_Preview_Permission() throws Exception   {
+//			  {
+//				  mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Preview_Permission();
+//		     }	 
+//		 }
+		
+		
+//		@Test(priority =88)
+//		  public void MyFiles_share_Admin_to_Group_Upload_Permission() throws Exception   {
+//			  {
+//				  mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Upload_Permission();
+//		     }	 
+//		 }
+		
+		
+		@Test(priority =89)
+		  public void MyFiles_share_Admin_to_Group_Remove_Files_And_Folders() throws Exception   {
 			  {
 				  mb37 = new MyFiles_share_Admin_to_Group(driver);
-				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Edit_Permission();
+				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Remove_Files_And_Folders();
 		     }	 
-		 
-		}
+		 }
 		
 		
 		
+	
 		
 		
 		

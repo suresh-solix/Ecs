@@ -16,22 +16,13 @@
     <line>
       <![CDATA[STEP5]]>
     </line>
-    <line>
-      <![CDATA[STEP6]]>
-    </line>
-    <line>
-      <![CDATA[STEP7]]>
-    </line>
-    <line>
-      <![CDATA[STEP8]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-08-31T02:20:29 IST" name="Suite" finished-at="2022-08-31T02:22:46 IST" duration-ms="137314">
+  <suite started-at="2022-09-01T00:14:40 IST" name="Suite" finished-at="2022-09-01T00:19:44 IST" duration-ms="303889">
     <groups>
     </groups>
-    <test started-at="2022-08-31T02:20:29 IST" name="Test" finished-at="2022-08-31T02:22:46 IST" duration-ms="137314">
+    <test started-at="2022-09-01T00:14:40 IST" name="Test" finished-at="2022-09-01T00:19:44 IST" duration-ms="303889">
       <class name="arca.tests.BrowserHandlings">
-        <test-method is-config="true" signature="beforetest(java.lang.String)[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-31T02:20:29 IST" name="beforetest" finished-at="2022-08-31T02:20:33 IST" duration-ms="4192" status="PASS">
+        <test-method is-config="true" signature="beforetest(java.lang.String)[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-09-01T00:14:40 IST" name="beforetest" finished-at="2022-09-01T00:14:45 IST" duration-ms="5048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="MyFiles_share_Admin_to_Group_Edit_Permission()[pri:85, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-31T02:20:33 IST" name="MyFiles_share_Admin_to_Group_Edit_Permission" finished-at="2022-08-31T02:22:46 IST" duration-ms="132705" status="PASS">
+        <test-method signature="MyFiles_share_Admin_to_Group_Remove_Files_And_Folders()[pri:89, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-09-01T00:14:45 IST" name="MyFiles_share_Admin_to_Group_Remove_Files_And_Folders" finished-at="2022-09-01T00:19:43 IST" duration-ms="297975" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -59,18 +50,9 @@
             <line>
               <![CDATA[STEP5]]>
             </line>
-            <line>
-              <![CDATA[STEP6]]>
-            </line>
-            <line>
-              <![CDATA[STEP7]]>
-            </line>
-            <line>
-              <![CDATA[STEP8]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- MyFiles_share_Admin_to_Group_Edit_Permission -->
-        <test-method is-config="true" signature="after()[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-08-31T02:22:46 IST" name="after" finished-at="2022-08-31T02:22:46 IST" duration-ms="348" status="PASS">
+        </test-method> <!-- MyFiles_share_Admin_to_Group_Remove_Files_And_Folders -->
+        <test-method is-config="true" signature="after()[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-09-01T00:19:43 IST" name="after" finished-at="2022-09-01T00:19:44 IST" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
