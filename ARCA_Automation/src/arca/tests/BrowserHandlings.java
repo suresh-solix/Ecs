@@ -71,6 +71,7 @@ import arca.pages.ShareDataWithExternalUser;
 import arca.pages.SourceManager;
 import arca.pages.MyFilesTags;
 import arca.pages.MyFiles_Collection;
+import arca.pages.MyFiles_Share_User_to_Group;
 import arca.pages.MyFiles_share_Admin_to_Group;
 import arca.pages.LegalHold;
 import arca.pages.MyFile_Share_User_Admin;
@@ -138,6 +139,7 @@ public class BrowserHandlings{
 	MyFiles_Collection mb35;
 	MyFile_Share_User_Admin mb36;
 	MyFiles_share_Admin_to_Group mb37;
+	MyFiles_Share_User_to_Group mb38;
 	
 	
 	ATUTestRecorder recorder;
@@ -1266,7 +1268,7 @@ public class BrowserHandlings{
 //				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Edit_Permission();
 //		     }	 
 //		 }
-		
+//		
 //		@Test(priority =86)
 //		  public void MyFiles_share_Admin_to_Group_Commenter_Permission() throws Exception   {
 //			  {
@@ -1274,8 +1276,8 @@ public class BrowserHandlings{
 //				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Commenter_Permission();
 //		     }	 
 //		 }
-		
-		
+//		
+//		
 //		@Test(priority =86)
 //		  public void MyFiles_share_Admin_to_Group_View_Permission() throws Exception   {
 //			  {
@@ -1283,8 +1285,8 @@ public class BrowserHandlings{
 //				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_View_Permission();
 //		     }	 
 //		 }
-		
-		
+//		
+//		
 //		@Test(priority =87)
 //		  public void MyFiles_share_Admin_to_Group_Preview_Permission() throws Exception   {
 //			  {
@@ -1292,8 +1294,8 @@ public class BrowserHandlings{
 //				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Preview_Permission();
 //		     }	 
 //		 }
-		
-		
+//		
+//		
 //		@Test(priority =88)
 //		  public void MyFiles_share_Admin_to_Group_Upload_Permission() throws Exception   {
 //			  {
@@ -1301,19 +1303,57 @@ public class BrowserHandlings{
 //				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Upload_Permission();
 //		     }	 
 //		 }
+//		
+//		
+//		@Test(priority =89)
+//		  public void MyFiles_share_Admin_to_Group_Remove_Files_And_Folders() throws Exception   {
+//			  {
+//				  mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Remove_Files_And_Folders();
+//		     }	 
+//		 }
 		
 		
-		@Test(priority =89)
-		  public void MyFiles_share_Admin_to_Group_Remove_Files_And_Folders() throws Exception   {
+		
+	
+		//--------------------------------MyFiles_Share_User_to_Group---------------------------
+		
+		
+		@Test(priority =90)
+		  public void MyFiles_share_User_to_Group_Edit_Permission() throws Exception   {
 			  {
-				  mb37 = new MyFiles_share_Admin_to_Group(driver);
-				  MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Remove_Files_And_Folders();
+				  mb38 = new MyFiles_Share_User_to_Group(driver);
+				  MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Edit_Permission();
+		     }	 
+		 }
+		
+		@Test(priority =91)
+		  public void MyFiles_share_User_to_Group_Commenter_Permission() throws Exception   {
+			  {
+				  mb38 = new MyFiles_Share_User_to_Group(driver);
+				  MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Commenter_Permission();
+		     }	 
+		 }
+		
+		@Test(priority =92)
+		  public void MyFiles_share_User_to_Group_View_Permission() throws Exception   {
+			  {
+				  mb38 = new MyFiles_Share_User_to_Group(driver);
+				  MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_View_Permission();
 		     }	 
 		 }
 		
 		
 		
-	
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

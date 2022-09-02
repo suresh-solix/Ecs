@@ -12,8 +12,8 @@
       <class name="arca.tests.BrowserHandlings">
         <methods>
           <include name="after"/>
-          <include name="MyFiles_share_Admin_to_Group_Remove_Files_And_Folders"/>
           <include name="beforetest"/>
+          <include name="MyFiles_share_Admin_to_Group_Upload_Permission"/>
         </methods>
       </class> <!-- arca.tests.BrowserHandlings -->
     </classes>
