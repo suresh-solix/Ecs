@@ -113,10 +113,13 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			Thread.sleep(4000);
 			act.doubleClick(drop).perform();
 			Thread.sleep(4000);
+			Actions at = new Actions(driver);
+			at.sendKeys(Keys.PAGE_DOWN).build().perform();
+			
 			List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int Aftermovedfilestofolder = Aftermovedfiles.size();
-			System.out.println("No of files Moved" + Aftermovedfilestofolder);
-			if(Aftermovedfilestofolder!=8)
+			System.out.println("No of files after Moved" + Aftermovedfilestofolder);
+			if(Aftermovedfilestofolder ==8)
 			{
 
 
@@ -138,7 +141,6 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 
 			catch (Exception e)
 		{
-
 			System.out.println("errror at: ");
 			e.printStackTrace();
 			log.error("Error in DragandDropMoveKeepSeparateVersions_multiple_Files",e);	
@@ -208,9 +210,9 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			Thread.sleep(4000);
 			List<WebElement> Aftermovedfolders =driver.findElements(By.xpath("//*[@class='folder-article']"));
 			int	Aftermovedfolderstofolder = Aftermovedfolders .size();
-			System.out.println("No of folders Moved" + Aftermovedfolderstofolder);
+			System.out.println("No of folders after Moved" + Aftermovedfolderstofolder);
 
-			if(Aftermovedfolderstofolder!=2)
+			if(Aftermovedfolderstofolder==8)
 			{
 
 
@@ -314,7 +316,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			int	AftermovedMulti_folderstofolder = AftermovedMulti_folders.size();
 			System.out.println("No of Multi_folders Moved" + AftermovedMulti_folderstofolder);
 
-			if(AftermovedMulti_folderstofolder!=8) 
+			if(AftermovedMulti_folderstofolder==10) 
 			{
 
 
@@ -336,7 +338,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			int	AftermovedMulti_filestofolder = AftermovedMulti_files.size();
 			System.out.println("No of Multi_files Moved" + AftermovedMulti_filestofolder);
 
-			if(nooffolders==AftermovedMulti_filestofolder) 
+			if(AftermovedMulti_filestofolder ==10) 
 			{
 
 

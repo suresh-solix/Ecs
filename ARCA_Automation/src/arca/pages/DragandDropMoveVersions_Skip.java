@@ -156,7 +156,7 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 
 			actions = new Actions(driver);
 
-			Navigation.login();
+	//		Navigation.login();
 
 			driver.get(Home_Page);
 			WebDriverWait wait5 = new WebDriverWait(driver, 120);

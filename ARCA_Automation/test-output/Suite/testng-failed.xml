@@ -13,7 +13,7 @@
         <methods>
           <include name="after"/>
           <include name="beforetest"/>
-          <include name="MyFiles_share_Admin_to_Group_Upload_Permission"/>
+          <include name="MyFiles_Reminders_Folders"/>
         </methods>
       </class> <!-- arca.tests.BrowserHandlings -->
     </classes>

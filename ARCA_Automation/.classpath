@@ -17,11 +17,11 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="G:/solix/ATUReporter_Selenium_testNG_5.1.1.jar"/>
-	<classpathentry kind="lib" path="G:/solix/ATUTestRecorder_2.1.jar"/>
-	<classpathentry kind="lib" path="G:/solix/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="G:/solix/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="G:/solix/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="G:/solix/testng-7.3.0.jar"/>
+	<classpathentry kind="lib" path="G:/solix/Atur Reports jars/ATUReporter_Selenium_testNG_5.1.1.jar"/>
+	<classpathentry kind="lib" path="G:/solix/Atur Reports jars/ATUTestRecorder_2.1.jar"/>
+	<classpathentry kind="lib" path="G:/solix/Atur Reports jars/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="G:/solix/Atur Reports jars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="G:/solix/Atur Reports jars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="G:/solix/Atur Reports jars/testng-7.3.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -64,199 +64,237 @@ public class MyFiles_Collection extends Navigation {
 
 
   //---------------------------------------MyFiles_Collection----------------------------
-public static void MyFiles_Collection()
-{
-
-	try
+	public static void MyFiles_Collection()
 	{
 
-		actions = new Actions(driver);
-
-		Navigation.login();
-
-		driver.get(Home_Page);
-		WebDriverWait wait5 = new WebDriverWait(driver, 120);
-		wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
-		
-		List<WebElement> Beforemovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
-		int nooffiles = Beforemovedfiles.size();
- 		System.out.println("No of files Before Moved" + nooffiles);
-		click("select_all_files");
-
-		for(int i=2; i<=nooffiles-1; i++)
+		try
 		{
-			driver.findElement(By.xpath("(//div[@class='files']//*[@type='checkbox'])["+i+"]")).click();
+
+			actions = new Actions(driver);
+
+			Navigation.login();
+
+			driver.get(Home_Page);
+			WebDriverWait wait5 = new WebDriverWait(driver, 120);
+			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+			
+			WebElement ele = getPageObject("My_Collections");
+			Actions act = new Actions(driver);
+			act.doubleClick(ele).perform();
+			Thread.sleep(1000);
+			
+			WebElement ele1 = getPageObject("Two_Files");
+			act.doubleClick(ele1).perform();
+
+
+			List<WebElement> Beforemovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
+			int nooffiles = Beforemovedfiles.size();
+//			System.out.println("No of files Before Moved" + nooffiles);
+			click("select_all_files");
+
+			for(int i=2; i<=nooffiles-1; i++)
+			{
+				driver.findElement(By.xpath("(//div[@class='files']//*[@type='checkbox'])["+i+"]")).click();
+			}
+
+			int j=nooffiles-1;
+			WebElement right=	driver.findElement(By.xpath("(//div[@class='files-info'])["+j+"]"));
+			actions.contextClick(right).perform();
+			WebElement Addtocollections =	driver.findElement(By.xpath("(//span[contains(text(),'Add to Collection')])["+j+"]"));
+			actions.moveToElement(Addtocollections).perform();
+			Thread.sleep(2000);
+
+			WebElement Create = driver.findElement(By.xpath("(//*[contains(text(),'Create New Collection')])"));
+			Create.click();
+			Thread.sleep(2000);
+			DateFormat dateFormat = new SimpleDateFormat("MMM-dd HH-mm");
+
+			//get current date time with Date()
+			Date date = new Date();
+
+			// Now format the date
+			String dateFormatted= dateFormat.format(date);
+
+			String collection_folder_name="collection "+dateFormatted;
+			sendKeys("collections_name_textarea",collection_folder_name);
+
+			click("Save");
+			Thread.sleep(2000);
+			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
+			close.click();
+			Thread.sleep(2000);
+			click("collections");
+			Thread.sleep(2000);
+	
+			WebElement ele11 = getPageObject("View");
+			act.doubleClick(ele11).perform();
+
+			Thread.sleep(2000);
+
+			List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
+			int Aftermovedfilestocollections = Aftermovedfiles.size();
+			System.out.println("No of files After Moved to Collections " + Aftermovedfilestocollections);
+			if(Aftermovedfilestocollections==2)
+			{
+
+
+				log.info("--------------------------------------------No of moved files is  equal to before--------------------------------------------");
+
+				captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_success.png");
+				Thread.sleep(2000);
+				ATUReports.add("MyFiles_Collection successfully","MyFiles_Collection",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				Thread.sleep(2000);
+			}
+			else
+			{
+
+				captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_failed.png");
+				Thread.sleep(2000);
+				ATUReports.add("MyFiles_Collection failed","MyFiles_Collection",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				Thread.sleep(2000);
+			}
+			Thread.sleep(1000);
+			click("Profile_Icon");
+			Thread.sleep(1000);
+			click("Sign_out");
+			Thread.sleep(1000);
+			click("Ok");
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
+
 		}
-		
-		int j=nooffiles-1;
-		WebElement right=	driver.findElement(By.xpath("(//div[@class='files-info'])["+j+"]"));
-		actions.contextClick(right).perform();
-		WebElement Addtocollections =	driver.findElement(By.xpath("(//span[contains(text(),'Add to Collection')])["+j+"]"));
-		actions.moveToElement(Addtocollections).perform();
-		Thread.sleep(2000);
-		
-		WebElement Create = driver.findElement(By.xpath("(//*[contains(text(),'Create New Collection')])"));
-		Create.click();
-		Thread.sleep(2000);
-		DateFormat dateFormat = new SimpleDateFormat("MMM-dd HH-mm");
+		catch (Exception e) {
 
-		//get current date time with Date()
-		Date date = new Date();
-
-		// Now format the date
-		String dateFormatted= dateFormat.format(date);
-		
-		String collection_folder_name="collection "+dateFormatted;
-		sendKeys("collections_name_textarea",collection_folder_name);
-		
-		click("Save");
-		Thread.sleep(2000);
-		WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
-		close.click();
-		Thread.sleep(2000);
-		click("collections");
-		Thread.sleep(2000);
-		click("views");
-		Thread.sleep(2000);
-		
-		List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
-		int Aftermovedfilestocollections = Aftermovedfiles.size();
-		System.out.println("No of files After Moved" + Aftermovedfilestocollections);
-		if(Aftermovedfilestocollections==2)
-		{
-			
-			
-			log.info("--------------------------------------------No of moved files is  equal to before--------------------------------------------");
-			
-			captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_success.png");
-			Thread.sleep(2000);
-			ATUReports.add("MyFiles_Collection successfully","MyFiles_Collection",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
-			Thread.sleep(2000);
-		}
-		else
-		{
-			
-			captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_failed.png");
-			Thread.sleep(2000);
+			System.out.println("errror at: ");
+			e.printStackTrace();
+			log.error("Error in MyFiles_Collection",e);	
+			//log.fatal(e.getMessage(),e);
+			captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_failed_Error.png");
 			ATUReports.add("MyFiles_Collection failed","MyFiles_Collection",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
-			Thread.sleep(2000);
 		}
-		
-	}
-	catch (Exception e) {
 
-		System.out.println("errror at: ");
-		e.printStackTrace();
-		log.error("Error in MyFiles_Collection",e);	
-		//log.fatal(e.getMessage(),e);
-		captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_failed_Error.png");
-		ATUReports.add("MyFiles_Collection failed","MyFiles_Collection",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 	}
 
-}
-
-		
 
 
-//----------------------------------MyFiles_Collections_Restriction-----------------------
+
+	//----------------------------------MyFiles_Collections_Restriction-----------------------
 
 
-public static void MyFiles_Collections_Restriction()
-{
-
-	try
+	public static void MyFiles_Collections_Restriction()
 	{
 
-		actions = new Actions(driver);
-
-		Navigation.login();
-
-		driver.get(Home_Page);
-		WebDriverWait wait5 = new WebDriverWait(driver, 120);
-		wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
-		WebElement ele = getPageObject("My_Collections");
-		actions.doubleClick(ele).perform();
-		
-		click("select_all_files");
-		Thread.sleep(2000);
-
-		WebElement right=	driver.findElement(By.xpath("//div[@class='files-footer']"));
-		actions.contextClick(right).perform();
-		WebElement Addtocollections =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
-		actions.moveToElement(Addtocollections).perform();
-		Thread.sleep(2000);
-		
-		WebElement Create = driver.findElement(By.xpath("(//*[contains(text(),'Create New Collection')])"));
-		Create.click();
-		Thread.sleep(2000);
-		DateFormat dateFormat = new SimpleDateFormat("MMM-dd HH-mm");
-
-		//get current date time with Date()
-		Date date = new Date();
-
-		// Now format the date
-		String dateFormatted= dateFormat.format(date);
-		
-		String collection_folder_name="collection "+dateFormatted;
-		sendKeys("collections_name_textarea",collection_folder_name);
-		
-		click("Save");
-		Thread.sleep(2000);
-		WebElement close = driver.findElement(By.xpath("//*[contains(text(),'Added file(s) to collection successfully')]"));
-		close.click();
-		Thread.sleep(2000);
-		click("collections");
-		Thread.sleep(2000);
-		click("Views");
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@class='list-unstyled explorer']//span[contains(text(),'My Files')]")).click();
-		
-		WebElement ele1 = getPageObject("My_Collections");
-		actions.doubleClick(ele1).perform();
-		Thread.sleep(3000);
-		WebElement ele2 = getPageObject("collection_files");
-		actions.doubleClick(ele2).perform();
-		Thread.sleep(2000);
-		
-		WebElement right1=	driver.findElement(By.xpath("//div[@class='files-footer']"));
-		actions.contextClick(right1).perform();
-		WebElement Addtocollections1 =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
-		actions.moveToElement(Addtocollections1).perform();
-		System.out.println(" Try to add files  "+"are Disable");
-		Thread.sleep(2000);
-		
-		int collection_files =25;
-		if(collection_files ==25)
+		try
 		{
-			
-			
-			log.info("--------------------------------------------No of moved files is  equal to before--------------------------------------------");
-			
-			captureScreenShot(ScreenShotsFilePath + "MyFiles_Collections_Restriction_success.png");
-			Thread.sleep(2000);
-			ATUReports.add("MyFiles_Collections_Restriction successfully","MyFiles_Collections_Restriction",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
-			Thread.sleep(2000);
-		}
-		else
-		{
-			
-			captureScreenShot(ScreenShotsFilePath + "MyFiles_Collections_Restriction_failed.png");
-			Thread.sleep(2000);
-			ATUReports.add("MyFiles_Collections_Restriction failed","MyFiles_Collections_Restriction",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
-			Thread.sleep(2000);
-		}
-		
-	}
-	catch (Exception e) {
 
-		System.out.println("errror at: ");
-		e.printStackTrace();
-		log.error("Error in MyFiles_Collection",e);	
-		//log.fatal(e.getMessage(),e);
-		captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_failed_Error.png");
-		ATUReports.add("MyFiles_Collection failed","MyFiles_Collection",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
-	}
+			actions = new Actions(driver);
 
+			Navigation.login();
+
+			driver.get(Home_Page);
+			WebDriverWait wait5 = new WebDriverWait(driver, 120);
+			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+			
+			WebElement ele = getPageObject("My_Collections");
+			Actions act = new Actions(driver);
+			act.doubleClick(ele).perform();
+			
+			WebElement ele1 = getPageObject("Collections_with_25_Files");
+			act.doubleClick(ele1).perform();
+
+			click("select_all_files");
+			Thread.sleep(2000);
+
+			WebElement right=	driver.findElement(By.xpath("//div[@class='files-footer']"));
+			actions.contextClick(right).perform();
+			WebElement Addtocollections =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
+			actions.moveToElement(Addtocollections).perform();
+			Thread.sleep(2000);
+
+			WebElement Create = driver.findElement(By.xpath("(//*[contains(text(),'Create New Collection')])"));
+			Create.click();
+			Thread.sleep(2000);
+			DateFormat dateFormat = new SimpleDateFormat("MMM-dd HH-mm-ss");
+
+			//get current date time with Date()
+			Date date = new Date();
+
+			// Now format the date
+			String dateFormatted= dateFormat.format(date);
+
+			String collection_folder_name="collection "+dateFormatted;
+			sendKeys("collections_name_textarea",collection_folder_name);
+
+			click("Save");
+			Thread.sleep(2000);
+			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
+			close.click();
+			Thread.sleep(2000);
+			click("collections");
+			Thread.sleep(2000);
+			click("Views");
+			Thread.sleep(3000);
+			
+			List<WebElement> Aftermovedfiles2 = driver.findElements(By.xpath("//*[@class='files-footer']"));
+			int Aftermovedfiles1 = Aftermovedfiles2.size();
+			System.out.println("No of files After Move to Collections " + Aftermovedfiles1);
+
+			int collection_files = 25;
+			if(collection_files == 25)
+			{
+
+
+				log.info("--------------------------------------------No of moved files is  equal to before--------------------------------------------");
+
+				captureScreenShot(ScreenShotsFilePath + "MyFiles_Collections_Restriction_success.png");
+				Thread.sleep(2000);
+				ATUReports.add("MyFiles_Collections_Restriction successfully","MyFiles_Collections_Restriction",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				Thread.sleep(2000);
+			}
+			else
+			{
+
+				captureScreenShot(ScreenShotsFilePath + "MyFiles_Collections_Restriction_failed.png");
+				Thread.sleep(2000);
+				ATUReports.add("MyFiles_Collections_Restriction failed","MyFiles_Collections_Restriction",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				Thread.sleep(2000);
+			}
+			
+			driver.findElement(By.xpath("//*[@class='list-unstyled explorer']//span[contains(text(),'My Files')]")).click();
+
+			WebElement ele11 = getPageObject("My_Collections");
+			actions.doubleClick(ele11).perform();
+			Thread.sleep(3000);
+			WebElement ele2 = getPageObject("Two_Files");
+			actions.doubleClick(ele2).perform();
+			Thread.sleep(2000);
+
+			WebElement right1=	driver.findElement(By.xpath("//div[@class='files-footer']"));
+			actions.contextClick(right1).perform();
+			
+			WebElement Addtocollections1 =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
+			actions.moveToElement(Addtocollections1).perform();
+			System.out.println(" Try to add files  "+"are Disable");
+			Thread.sleep(2000);
+
+		}
+		catch (Exception e) {
+
+			System.out.println("errror at: ");
+			e.printStackTrace();
+			log.error("Error in MyFiles_Collection",e);	
+			//log.fatal(e.getMessage(),e);
+			captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_failed_Error.png");
+			ATUReports.add("MyFiles_Collection failed","MyFiles_Collection",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+		}
+
+	}
 }
-}
+
+
+
+
+		//-----------------------------------extra------------------
 
