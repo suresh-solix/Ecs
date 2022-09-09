@@ -115,7 +115,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			Thread.sleep(4000);
 			Actions at = new Actions(driver);
 			at.sendKeys(Keys.PAGE_DOWN).build().perform();
-			
+
 			List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int Aftermovedfilestofolder = Aftermovedfiles.size();
 			System.out.println("No of files after Moved" + Aftermovedfilestofolder);
@@ -139,7 +139,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			}
 		}
 
-			catch (Exception e)
+		catch (Exception e)
 		{
 			System.out.println("errror at: ");
 			e.printStackTrace();
@@ -155,7 +155,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 
 
 
-//----------------------------------------DragandDropMoveKeepSeparateVersions_multiple_Folders------------------------
+	//----------------------------------------DragandDropMoveKeepSeparateVersions_multiple_Folders------------------------
 
 
 	public static void DragandDropMoveKeepSeparateVersions_multiple_Folders()
@@ -166,7 +166,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 
 			actions = new Actions(driver);
 
-	//		Navigation.login();
+			//		Navigation.login();
 
 			driver.get(Home_Page);
 			WebDriverWait wait5 = new WebDriverWait(driver, 120);
@@ -231,7 +231,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 				Thread.sleep(2000);
 			}
 		}
-			
+
 		catch (Exception e) {
 
 			System.out.println("errror at: ");
@@ -247,7 +247,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 
 
 
-     //---------------------------------------DragandDropMoveKeepSeparateVersions_multiple_Files_Folders--------------------
+	//---------------------------------------DragandDropMoveKeepSeparateVersions_multiple_Files_Folders--------------------
 
 
 	public static void DragandDropMoveKeepSeparateVersions_multiple_Files_Folders()
@@ -258,7 +258,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 
 			actions = new Actions(driver);
 
-	//		Navigation.login();
+			//		Navigation.login();
 
 			driver.get(Home_Page);
 			WebDriverWait wait5 = new WebDriverWait(driver, 120);
@@ -275,7 +275,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			System.out.println("No of folders Before Moved" + nooffolders);
 			driver.findElement(By.xpath("//a[@title='Sort Order']")).click();
 			click("select_all_folders");
-			
+
 			for(int i=2; i<=nooffolders-1; i++)
 			{
 				driver.findElement(By.xpath("(//div[@class='folder']//*[@type='checkbox'])["+i+"]")).click();
@@ -299,7 +299,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			Actions ac = new Actions(driver);
 			ac.dragAndDrop(drag,drop).build().perform();
 			Thread.sleep(3000); 
-			
+
 			click("Keep_Separate");
 			Thread.sleep(3000); 
 			click("Cancel");
@@ -307,11 +307,11 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully moved')]"))); 
 			Thread.sleep(2000);
 			click("toast_close");
-			
+
 			Thread.sleep(4000); 
 			act.doubleClick(drop).perform();
 			Thread.sleep(4000); 
-			
+
 			List<WebElement> AftermovedMulti_folders =driver.findElements(By.xpath("//*[@class='folder-article']"));
 			int	AftermovedMulti_folderstofolder = AftermovedMulti_folders.size();
 			System.out.println("No of Multi_folders Moved" + AftermovedMulti_folderstofolder);
@@ -320,12 +320,12 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			{
 
 
-			log.info("--------------------------No of moved Multi_files_folders is equal to before------------------------------");
+				log.info("--------------------------No of moved Multi_files_folders is equal to before------------------------------");
 
-			captureScreenShot(ScreenShotsFilePath +"DragandDropMoveKeepSeparateVersions_multiple_Files_Folders_success.png");
-			Thread.sleep(2000);
-			ATUReports.add("DragandDropMoveKeepSeparateVersions_multiple_Files_Folders successfully","DragandDropMoveKeepSeparateVersions_multiple_Files_Folders",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
-			Thread.sleep(2000);
+				captureScreenShot(ScreenShotsFilePath +"DragandDropMoveKeepSeparateVersions_multiple_Files_Folders_success.png");
+				Thread.sleep(2000);
+				ATUReports.add("DragandDropMoveKeepSeparateVersions_multiple_Files_Folders successfully","DragandDropMoveKeepSeparateVersions_multiple_Files_Folders",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				Thread.sleep(2000);
 			}
 			else
 			{
@@ -342,12 +342,12 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			{
 
 
-			log.info("--------------------------No of moved Multi_files is equal to before------------------------------");
+				log.info("--------------------------No of moved Multi_files is equal to before------------------------------");
 
-			captureScreenShot(ScreenShotsFilePath +"DragandDropMoveKeepSeparateVersions_multiple_Files_Folders_success.png");
-			Thread.sleep(2000);
-			ATUReports.add("DragandDropMoveKeepSeparateVersions_multiple_Files_Folders successfully","DragandDropMoveKeepSeparateVersions_multiple_Files_Folders",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
-			Thread.sleep(2000);
+				captureScreenShot(ScreenShotsFilePath +"DragandDropMoveKeepSeparateVersions_multiple_Files_Folders_success.png");
+				Thread.sleep(2000);
+				ATUReports.add("DragandDropMoveKeepSeparateVersions_multiple_Files_Folders successfully","DragandDropMoveKeepSeparateVersions_multiple_Files_Folders",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				Thread.sleep(2000);
 			}
 			else
 			{
@@ -356,6 +356,15 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 				ATUReports.add("DragandDropMoveKeepSeparateVersions_multiple_Files_Folders failed","DragandDropMoveKeepSeparateVersions_multiple_Files_Folders",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 				Thread.sleep(2000);
 			}
+
+			click("Profile_Icon");
+			Thread.sleep(1000);
+			click("Sign_out");
+			Thread.sleep(1000);
+			click("Ok");
+
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 
 		}

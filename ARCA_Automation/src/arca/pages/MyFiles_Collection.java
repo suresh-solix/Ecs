@@ -100,6 +100,7 @@ public class MyFiles_Collection extends Navigation {
 			int j=nooffiles-1;
 			WebElement right=	driver.findElement(By.xpath("(//div[@class='files-info'])["+j+"]"));
 			actions.contextClick(right).perform();
+			
 			WebElement Addtocollections =	driver.findElement(By.xpath("(//span[contains(text(),'Add to Collection')])["+j+"]"));
 			actions.moveToElement(Addtocollections).perform();
 			Thread.sleep(2000);
@@ -134,10 +135,9 @@ public class MyFiles_Collection extends Navigation {
 			List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int Aftermovedfilestocollections = Aftermovedfiles.size();
 			System.out.println("No of files After Moved to Collections " + Aftermovedfilestocollections);
+			
 			if(Aftermovedfilestocollections==2)
 			{
-
-
 				log.info("--------------------------------------------No of moved files is  equal to before--------------------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath + "MyFiles_Collection_success.png");
@@ -191,7 +191,7 @@ public class MyFiles_Collection extends Navigation {
 
 			actions = new Actions(driver);
 
-			Navigation.login();
+	//		Navigation.login();
 
 			driver.get(Home_Page);
 			WebDriverWait wait5 = new WebDriverWait(driver, 120);
@@ -277,7 +277,17 @@ public class MyFiles_Collection extends Navigation {
 			WebElement Addtocollections1 =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
 			actions.moveToElement(Addtocollections1).perform();
 			System.out.println(" Try to add files  "+"are Disable");
+			
 			Thread.sleep(2000);
+			click("Profile_Icon");
+			Thread.sleep(1000);
+			click("Sign_out");
+			Thread.sleep(1000);
+			click("Ok");
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 		}
 		catch (Exception e) {

@@ -1,14 +1,15 @@
 					        END USER
 						=========
-Drag and Drop Move-Update Existing = 3 TC    ---completed
-Drag and Drop Copy-Update Existing = 3 TC  ---Completed
-Drag and Drop Keep-separate = 3 TC ----completed
-Drag and Drog Skip  = 2 TC   ---completed
-Drag and Drop Move  = 5 TC  
+Drag and Drop Move-Update Existing = 3 TC    ---completed --------Yes
+Drag and Drop Copy-Update Existing = 3 TC  ---Completed  --------------No
+Drag and Drop Keep-separate = 3 TC ----completed  -------------Yes
+Drag and Drog Skip  = 2 TC   ---completed   ----------------Yes
+Drag and Drop Move  = 5 TC  ---complated    --------------Yes				16
 **************************************************
-MyFiles_share_Admin_to_Group = 23 TC  ---completed
+MyFiles_share_Admin_to_Group = 23 TC  ---completed 
 MyFiles_User_to_Group = 23 TC   ----completed
-MyFile_Share_User_Admin = 11 TC  --completed
+MyFile_Share_User_Admin = 11 TC  --completed						57
 **************************************************
-MyFiles_Collection = 2 TC  ---completed
-MyFile_Reminder =
+MyFiles_Collection = 2 TC  ---completed  ------------Yes
+MyFile_Reminder = 8 TC   ----complated   ----------Yes					10
+MyFiles_File_Preview = 

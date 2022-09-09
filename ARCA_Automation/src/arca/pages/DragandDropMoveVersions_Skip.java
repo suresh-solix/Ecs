@@ -106,9 +106,11 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 			Thread.sleep(2000);
 			act.doubleClick(drop).perform();
 			Thread.sleep(4000);
+			
 			List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int Aftermovedfilestofolder = Aftermovedfiles.size();
 			System.out.println("No of files Skip" + Aftermovedfilestofolder);
+			
 			if(Aftermovedfilestofolder!=0)
 			{
 
@@ -213,6 +215,15 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 				ATUReports.add("DragandDropMoveVersions_Skip_Folders failed","DragandDropMoveVersions_Skip_Folders",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 				Thread.sleep(2000);
 			}
+			click("Profile_Icon");
+			Thread.sleep(1000);
+			click("Sign_out");
+			Thread.sleep(1000);
+			click("Ok");
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e) {
 

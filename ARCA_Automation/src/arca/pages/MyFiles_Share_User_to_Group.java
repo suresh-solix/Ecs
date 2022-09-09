@@ -2019,9 +2019,13 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
-			click("Ok"); 
-			Thread.sleep(3000);
+			Thread.sleep(1000);
+			click("Ok");
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 		}
 		catch (Exception e)

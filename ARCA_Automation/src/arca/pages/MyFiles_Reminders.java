@@ -267,8 +267,9 @@ public class MyFiles_Reminders extends Navigation{
 			Actions act1 = new Actions(driver);
 			act1.doubleClick(ele1).perform();
 			Thread.sleep(1000);
-			System.out.println("Bell Icon is displayed");
-
+			
+			getPageObject("Remainder_file_icon").isDisplayed();
+	
 
 			{
 				log.info("--------------------------No of MyFiles_Reminders_Files_Bell_Icon------------------------------");
@@ -652,7 +653,12 @@ public class MyFiles_Reminders extends Navigation{
 				ATUReports.add("MyFiles_Reminders_Folder_Delete successfully","MyFiles_Reminders_Folder_Delete",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 				Thread.sleep(2000);
 			}
-
+			Thread.sleep(2000);
+			click("Profile_Icon");
+			Thread.sleep(1000);
+			click("Sign_Out");
+			click("Ok");
+			Thread.sleep(5000);
 		}
 		catch (Exception e)
 		{

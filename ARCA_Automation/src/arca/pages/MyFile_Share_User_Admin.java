@@ -1448,6 +1448,15 @@ public class MyFile_Share_User_Admin extends Navigation
 				ATUReports.add("MyFile_Share_User_Admin_Remove_Files_Folders failed","MyFile_Share_User_Admin_Remove_Files_Folders",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 				Thread.sleep(2000);
 			}
+			Thread.sleep(2000);
+			click("Profile_Icon");
+			Thread.sleep(1000);
+			click("Sign_out");
+			Thread.sleep(1000);
+			click("Ok");
+			
+			WebDriverWait wait351 = new WebDriverWait(driver, 60);
+			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 
 		}

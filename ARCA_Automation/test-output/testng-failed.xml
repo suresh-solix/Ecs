@@ -13,7 +13,7 @@
         <methods>
           <include name="after"/>
           <include name="beforetest"/>
-          <include name="MyFiles_Reminders_Folders"/>
+          <include name="DragandDropMoveVersionUpdateExisting_Multiple_files"/>
         </methods>
       </class> <!-- arca.tests.BrowserHandlings -->
     </classes>

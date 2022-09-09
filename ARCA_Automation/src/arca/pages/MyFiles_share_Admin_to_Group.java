@@ -137,7 +137,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Actions at = new Actions(driver);
 			at.sendKeys(Keys.PAGE_DOWN).build().perform();
 
-		//	Thread.sleep(1000);
+			Thread.sleep(1000);
 
 			String file2 =driver.findElement(By.xpath("//div[contains(text(),'New pdf 1.pdf')]")).getText();
 			System.out.println(file2);
@@ -148,9 +148,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 			if(file1.equals(file2))
 			{
-
-
-				log.info("--------------------------No of Shared Files Folders is  equal to before------------------------------");
+				log.info("--------------------------No of Shared Files name is  equal to before ------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath +"MyFiles_share_Admin_to_Group_Edit_Permission_success.png");
 				Thread.sleep(2000);
@@ -167,9 +165,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 			if(folder1.equals(folder2))
 			{
-
-
-				log.info("--------------------------No of Shared Files Folders is  equal to before------------------------------");
+				log.info("--------------------------No of Shared  Folders name is  equal to before ------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath + "MyFiles_share_Admin_to_Group_Edit_Permission_success.png");
 				Thread.sleep(2000);
@@ -200,7 +196,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			{
 
 
-				log.info("--------------------------No of Shared Files Folders is  equal to before------------------------------");
+				log.info("--------------------------No of Shared Files name is  equal to before------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath +"MyFiles_share_Admin_to_Group_Edit_Permission_success.png");
 				Thread.sleep(2000);
@@ -219,7 +215,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			{
 
 
-				log.info("--------------------------No of Shared Files Folders is  equal to before------------------------------");
+				log.info("--------------------------No of Shared Folders name is  equal to before------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath + "MyFiles_share_Admin_to_Group_Edit_Permission_success.png");
 				Thread.sleep(2000);
@@ -257,7 +253,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			{
 
 
-				log.info("--------------------------No of Shared Files Folders is  equal to before------------------------------");
+				log.info("--------------------------No of Shared Files is  equal to before name------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath +"MyFiles_share_Admin_to_Group_Edit_Permission_success.png");
 				Thread.sleep(2000);
@@ -275,7 +271,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			if(folder1.equals(folder4))
 			{
 
-				log.info("--------------------------No of Shared Files Folders is  equal to before------------------------------");
+				log.info("--------------------------No of Shared Folders is  equal to before name------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath + "MyFiles_share_Admin_to_Group_Edit_Permission_success.png");
 				Thread.sleep(2000);
@@ -437,9 +433,14 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			}
 			
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
+			Thread.sleep(1000);
 			click("Ok");
-			Thread.sleep(3000);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e)
 		{
@@ -633,9 +634,13 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(5000);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.other_user_in_same_tenant();
 
@@ -755,9 +760,13 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			}
 
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
+			WebDriverWait wait351 = new WebDriverWait(driver, 60);
+			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.login();
 
@@ -833,9 +842,13 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			}
 			
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(3000);
+			
+			WebDriverWait wait3 = new WebDriverWait(driver, 60);
+			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 		}
 		catch (Exception e)
@@ -1018,9 +1031,13 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(5000);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.other_user_in_same_tenant();
 
@@ -1142,7 +1159,10 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Profile_Icon");
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
+			WebDriverWait wait3 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.login();
 
@@ -1218,9 +1238,13 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			}
 			
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(3000);
+			
+			WebDriverWait wait351 = new WebDriverWait(driver, 60);
+			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 		}
 		catch (Exception e)
@@ -1406,7 +1430,9 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Sign_out");
 			click("Ok");
 			
-			Thread.sleep(5000);
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.other_user_in_same_tenant();
 
@@ -1528,7 +1554,10 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Profile_Icon");
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
+			WebDriverWait wait351 = new WebDriverWait(driver, 60);
+			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.login();
 
@@ -1603,7 +1632,10 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Profile_Icon");
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(3000);
+			
+			WebDriverWait wait45 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e)
 		{
@@ -1786,7 +1818,10 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Profile_Icon");
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.other_user_in_same_tenant();
 
@@ -1908,7 +1943,10 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Profile_Icon");
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
+			WebDriverWait wait351 = new WebDriverWait(driver, 60);
+			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 
 			Navigation.login();
 
@@ -1981,9 +2019,13 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			}
 			
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(3000);
+			
+			WebDriverWait wait11 = new WebDriverWait(driver, 60);
+			wait11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e)
 		{
@@ -2169,7 +2211,9 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Profile_Icon");
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(3000);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 		}
 		catch (Exception e)

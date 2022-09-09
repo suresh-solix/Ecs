@@ -71,6 +71,7 @@ import arca.pages.ShareDataWithExternalUser;
 import arca.pages.SourceManager;
 import arca.pages.MyFilesTags;
 import arca.pages.MyFiles_Collection;
+import arca.pages.MyFiles_File_Preview;
 import arca.pages.MyFiles_Reminders;
 import arca.pages.MyFiles_Share_User_to_Group;
 import arca.pages.MyFiles_share_Admin_to_Group;
@@ -89,12 +90,7 @@ import atu.testng.selenium.reports.CaptureScreen;
 import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
 import atu.testrecorder.ATUTestRecorder;
 
-
-
-
 @Listeners({ ATUReportsListener.class, ConfigurationListener.class,MethodListener.class })
-
-
 
 public class BrowserHandlings{
 	
@@ -142,6 +138,7 @@ public class BrowserHandlings{
 	MyFiles_share_Admin_to_Group mb37;
 	MyFiles_Share_User_to_Group mb38;
 	MyFiles_Reminders mb39;
+	MyFiles_File_Preview mb40;
 	
 	
 	ATUTestRecorder recorder;
@@ -1005,8 +1002,8 @@ public class BrowserHandlings{
 //			}
 //
 //		} 																				
-
-
+//
+//
 //		@Test(priority = 65) public void DragDropMove_Folder() throws Exception { 
 //			{
 //				mb30 = new DragDropMove(driver);
@@ -1024,7 +1021,7 @@ public class BrowserHandlings{
 //				DragDropMove.DragDropMove_multiple_files();
 //			}
 //		}
-
+//
 //		
 //		@Test(priority =67)
 //		public void DragDropMove_multiple_folders() throws Exception {
@@ -1032,8 +1029,7 @@ public class BrowserHandlings{
 //				mb30 = new DragDropMove(driver);
 //				DragDropMove.DragDropMove_multiple_Folders();
 //			}
-//
-//		}																					
+//		 }																					
 //
 //
 //		@Test(priority =63)
@@ -1044,6 +1040,36 @@ public class BrowserHandlings{
 //			}
 //																							
 //		}
+
+		
+		//-----------------------DragandDropCopyVersionUpdateExisting ------------------------------  3 TC
+		  
+		 @Test(priority =70)
+		  public void DragandDropCopyVersionUpdateExisting_multiple_files() throws Exception   {
+			  {
+				  mb32 = new DragandDropCopyVersionUpdateExisting(driver);
+				  DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files();
+		     }		  
+		
+		   }
+		 
+//		 @Test(priority =70)
+//		  public void DragandDropCopyVersionUpdateExisting_multiple_folders() throws Exception   {
+//			  {
+//				  mb32 = new DragandDropCopyVersionUpdateExisting(driver);
+//				  DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_folders();
+//		     }		  
+//		
+//		   }
+//		 
+//		 @Test(priority =71)
+//		  public void DragandDropCopyVersionUpdateExisting_multiple_files_folders() throws Exception   {
+//			  {
+//				  mb32 = new DragandDropCopyVersionUpdateExisting(driver);
+//				  DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files_folders();
+//		     }		  
+//		
+//		   }
 
 
 		//--------------------------DragandDropMoveVersionUpdateExisting ---------------------------3 TC
@@ -1077,39 +1103,9 @@ public class BrowserHandlings{
 //		   }		  
 		
 		  
+		    
 		  
-		//-----------------------DragandDropCopyVersionUpdateExisting ------------------------------  3 TC
-		  
-//		 @Test(priority =70)
-//		  public void DragandDropCopyVersionUpdateExisting_multiple_files() throws Exception   {
-//			  {
-//				  mb32 = new DragandDropCopyVersionUpdateExisting(driver);
-//				  DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files();
-//		     }		  
-//		
-//		   }
-//		 
-//		 @Test(priority =70)
-//		  public void DragandDropCopyVersionUpdateExisting_multiple_folders() throws Exception   {
-//			  {
-//				  mb32 = new DragandDropCopyVersionUpdateExisting(driver);
-//				  DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_folders();
-//		     }		  
-//		
-//		   }
-//		 
-//		 @Test(priority =71)
-//		  public void DragandDropCopyVersionUpdateExisting_multiple_files_folders() throws Exception   {
-//			  {
-//				  mb32 = new DragandDropCopyVersionUpdateExisting(driver);
-//				  DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files_folders();
-//		     }		  
-//		
-//		   }
-		  
-		  
-		  
-	//------------------------------ DragandDropMoveKeepSeparateVersions - ---------------------------- 3 TC
+		//------------------------------ DragandDropMoveKeepSeparateVersions - ---------------------------- 3 TC
 		
 //		 @Test(priority =71)
 //		  public void DragandDropMoveKeepSeparateVersions_Files() throws Exception   {
@@ -1369,33 +1365,41 @@ public class BrowserHandlings{
 		
 		//----------------------------------MyFiles_Reminders-----------------------------------------------
 		
-		@Test(priority =96)
-		  public void MyFiles_Reminders_Files() throws Exception   {
-			  {
-				  mb39 = new MyFiles_Reminders(driver);
-	         	  MyFiles_Reminders.MyFiles_Reminders_Files();
-				  MyFiles_Reminders.MyFiles_Reminders_Files_Edit();
-		     	  MyFiles_Reminders.MyFiles_Reminders_Files_Bell_Icon();
-				  MyFiles_Reminders.MyFiles_Reminders_Delete();
-			  }
-		 }
-		
-		@Test(priority =97)
-		  public void MyFiles_Reminders_Folders() throws Exception   {
-			  {
-				  mb39 = new MyFiles_Reminders(driver);
-	         	  MyFiles_Reminders.MyFiles_Reminders_Folders();
-				  MyFiles_Reminders.MyFiles_Reminders_Folders_Edit();
-		     	  MyFiles_Reminders.MyFiles_Reminders_Folder_Bell_Icon();
-				  MyFiles_Reminders.MyFiles_Reminders_Folder_Delete();
-			  }
-		 }
-		
-		
+//		@Test(priority =96)
+//		  public void MyFiles_Reminders_Files() throws Exception   {
+//			  {
+//				  mb39 = new MyFiles_Reminders(driver);
+//	         	  MyFiles_Reminders.MyFiles_Reminders_Files();
+//				  MyFiles_Reminders.MyFiles_Reminders_Files_Edit();
+//		     	  MyFiles_Reminders.MyFiles_Reminders_Files_Bell_Icon();
+//				  MyFiles_Reminders.MyFiles_Reminders_Delete();
+//			  }
+//		 }
+//		
+//		@Test(priority =97)
+//		  public void MyFiles_Reminders_Folders() throws Exception   {
+//			  {
+//				  mb39 = new MyFiles_Reminders(driver);
+//	         	  MyFiles_Reminders.MyFiles_Reminders_Folders();
+//				  MyFiles_Reminders.MyFiles_Reminders_Folders_Edit();
+//		     	  MyFiles_Reminders.MyFiles_Reminders_Folder_Bell_Icon();
+//				  MyFiles_Reminders.MyFiles_Reminders_Folder_Delete();
+//			  }
+//		 }
 		
 		
+		//--------------------------------------------------------------------------
 		
 		
+//		@Test(priority =98)
+//		  public void MyFiles_File_Preview() throws Exception   {
+//			  {
+//				  mb40 = new MyFiles_File_Preview(driver);
+////				  MyFiles_File_Preview.MyFiles_File_Preview();
+//				  MyFiles_File_Preview.MyFiles_File_Preview_Download();
+//				  
+//		     }	 
+//		 }
 		
 		
 		
