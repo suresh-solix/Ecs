@@ -1550,8 +1550,9 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			
@@ -1628,8 +1629,9 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 				}
 			}
-			
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			
@@ -1816,6 +1818,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			
@@ -1939,8 +1942,9 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			
@@ -2017,7 +2021,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 				}
 			}
-			
+			Thread.sleep(1000);
 			click("Profile_Icon");
 			Thread.sleep(1000);
 			click("Sign_out");
@@ -2209,6 +2213,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			

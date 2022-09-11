@@ -116,7 +116,7 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(2000);
 			click("pick_today_next_date");
 			Thread.sleep(2000);
-			//click("select_time_link");
+	//		click("select_time_link");
 			Thread.sleep(2000);
 			click("active_hours");
 			Thread.sleep(2000);
@@ -207,7 +207,7 @@ public class MyFiles_Reminders extends Navigation{
 			String s = l.getAttribute("title");
 			l.click();
 			Thread.sleep(1000);
-			//      click("select_time_link");
+		//	click("select_time_link");
 			Thread.sleep(2000);
 			click("Edit_active_hours");
 			Thread.sleep(2000);
@@ -325,12 +325,12 @@ public class MyFiles_Reminders extends Navigation{
 			WebElement ll = driver.findElement(By.xpath("(//*[@src='/static/img/context/trash2.svg'])[2]"));
 			String s = ll.getAttribute("title");
 			ll.click();
-			Thread.sleep(1000);
-			click("OK");
+	//		Thread.sleep(1000);
+			click("Ok");
 			Thread.sleep(1000);
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
 			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			click("toast_close");
 			Thread.sleep(1000);
 			click("toast_close");
@@ -349,7 +349,11 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(1000);
 			click("Sign_Out");
 			click("Ok");
-			Thread.sleep(5000);
+			Thread.sleep(4000);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 120);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e)
 		{
@@ -417,8 +421,7 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(2000);
 			click("pick_today_next_date");
 			Thread.sleep(2000);
-			//click("select_time_link");
-			Thread.sleep(2000);
+			
 			click("active_hours");
 			Thread.sleep(2000);
 			click("active_minutes");
@@ -517,7 +520,7 @@ public class MyFiles_Reminders extends Navigation{
 			String s = l.getAttribute("title");
 			l.click();
 			Thread.sleep(1000);
-	//      click("select_time_link");
+
 			Thread.sleep(2000);
 			click("Edit_active_fol_hours");
 			Thread.sleep(2000);
@@ -577,7 +580,9 @@ public class MyFiles_Reminders extends Navigation{
 			Actions act1 = new Actions(driver);
 			act1.doubleClick(ele1).perform();
 			Thread.sleep(1000);
-			System.out.println("Bell Icon is displayed");
+			
+			getPageObject("Remainder_file_icon").isDisplayed();
+			
 
 
 			{
@@ -635,7 +640,7 @@ public class MyFiles_Reminders extends Navigation{
 			String s = ll.getAttribute("title");
 			ll.click();
 			Thread.sleep(1000);
-			click("OK");
+			click("Ok");
 			Thread.sleep(1000);
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
 			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
@@ -658,7 +663,10 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(1000);
 			click("Sign_Out");
 			click("Ok");
-			Thread.sleep(5000);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e)
 		{

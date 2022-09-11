@@ -475,6 +475,7 @@ public class DragDropMove extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
+			Thread.sleep(3000);
 
 			WebDriverWait wait35 = new WebDriverWait(driver, 60);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));

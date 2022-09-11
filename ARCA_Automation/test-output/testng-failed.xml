@@ -11,9 +11,10 @@
     <classes>
       <class name="arca.tests.BrowserHandlings">
         <methods>
+          <include name="MyFiles_Reminders_Files"/>
           <include name="after"/>
           <include name="beforetest"/>
-          <include name="DragandDropMoveVersionUpdateExisting_Multiple_files"/>
+          <include name="MyFiles_Reminders_Folders"/>
         </methods>
       </class> <!-- arca.tests.BrowserHandlings -->
     </classes>

@@ -159,6 +159,7 @@ public class MyFiles_Collection extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
+			Thread.sleep(4000);
 			
 			WebDriverWait wait35 = new WebDriverWait(driver, 60);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -191,11 +192,11 @@ public class MyFiles_Collection extends Navigation {
 
 			actions = new Actions(driver);
 
-	//		Navigation.login();
+			Navigation.login();
 
 			driver.get(Home_Page);
 			WebDriverWait wait5 = new WebDriverWait(driver, 120);
-			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[contains(text(),'My Files')])[1]")));
 			
 			WebElement ele = getPageObject("My_Collections");
 			Actions act = new Actions(driver);
@@ -228,9 +229,9 @@ public class MyFiles_Collection extends Navigation {
 			sendKeys("collections_name_textarea",collection_folder_name);
 
 			click("Save");
-			Thread.sleep(2000);
-			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
-			close.click();
+			Thread.sleep(1000);
+			WebElement close1 = driver.findElement(By.xpath("//*[@class='Vue-Toastification__toast-body']"));
+			close1.click();
 			Thread.sleep(2000);
 			click("collections");
 			Thread.sleep(2000);
@@ -276,6 +277,10 @@ public class MyFiles_Collection extends Navigation {
 			
 			WebElement Addtocollections1 =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
 			actions.moveToElement(Addtocollections1).perform();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("(//*[@aria-label='chevron right'])[3]")).click();
+			Thread.sleep(1000);
+			
 			System.out.println(" Try to add files  "+"are Disable");
 			
 			Thread.sleep(2000);
@@ -284,6 +289,7 @@ public class MyFiles_Collection extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
+			Thread.sleep(4000);
 			
 			WebDriverWait wait35 = new WebDriverWait(driver, 60);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));

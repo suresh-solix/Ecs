@@ -63,7 +63,7 @@ public class DragandDropMoveVersionUpdateExisting extends Navigation {
 
 
 
-	//--------------------------------DragandDropCopy Multiple_files-------------------------------
+	//-------------------------------- DragandDropMoveVersionUpdateExisting_Multiple_files-------------------------------
 
 	public static void DragandDropMoveVersionUpdateExisting_Multiple_files()
 	{
@@ -72,7 +72,7 @@ public class DragandDropMoveVersionUpdateExisting extends Navigation {
 		{
 
 			actions = new Actions(driver);
-
+			
 			Navigation.login();
 
 			driver.get(Home_Page);
@@ -432,6 +432,7 @@ public class DragandDropMoveVersionUpdateExisting extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
+			Thread.sleep(4000);
 
 			WebDriverWait wait35 = new WebDriverWait(driver, 60);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
