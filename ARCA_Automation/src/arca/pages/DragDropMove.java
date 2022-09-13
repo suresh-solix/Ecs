@@ -72,7 +72,7 @@ public class DragDropMove extends Navigation {
 
 			actions = new Actions(driver);
 
-			//			Navigation.login();
+	//		Navigation.login();
 
 			driver.get(Home_Page);
 			WebDriverWait wait5 = new WebDriverWait(driver, 120);
@@ -110,7 +110,7 @@ public class DragDropMove extends Navigation {
 			int nooffiles = Beforemovedfiles.size();
 			System.out.println("No of files Before Moved" + nooffiles);
 
-			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
+			WebElement close = driver.findElement(By.xpath("//div[contains(text(),'Folder is created successfully')]"));
 			close.click();
 			Thread.sleep(2000);
 			WebElement drag = driver.findElement(By.xpath("(//div[@class='fileName'])[1]"));
@@ -214,7 +214,7 @@ public class DragDropMove extends Navigation {
 			int nooffolder = BeforemovedFolders.size();
 			System.out.println("No of Folders Before-Moved" + nooffolder);
 
-			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
+			WebElement close = driver.findElement(By.xpath("//div[contains(text(),'Folder is created successfully')]"));
 			close.click();
 			Thread.sleep(2000);
 			WebElement drag = driver.findElement(By.xpath("(//div[@class='folder-name'])[2]"));
@@ -316,7 +316,7 @@ public class DragDropMove extends Navigation {
 			int nooffiles = Beforemovedfiles.size();
 			System.out.println("No of files Before-Moved" + nooffiles);
 
-			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
+			WebElement close = driver.findElement(By.xpath("//div[contains(text(),'Folder is created successfully')]"));
 			close.click();
 			Thread.sleep(2000);
 			click("select_all_files");
@@ -423,7 +423,7 @@ public class DragDropMove extends Navigation {
 			System.out.println("No of Folders Before-Moved" + noofFolders);
 
 			Thread.sleep(3000);
-			WebElement close = driver.findElement(By.xpath("//button[@aria-label='close'][@class='Vue-Toastification__close-button']"));
+			WebElement close = driver.findElement(By.xpath("//div[contains(text(),'Folder is created successfully')]"));
 			close.click();
 			Thread.sleep(3000);
 			//click("select_all_folders");
@@ -540,7 +540,7 @@ public class DragDropMove extends Navigation {
 			int nooffiles = Beforemovedfiles.size();
 			System.out.println("No of files Before-Moved" + nooffiles);
 
-			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
+			WebElement close = driver.findElement(By.xpath("//div[contains(text(),'Folder is created successfully')]"));
 			close.click();
 			Thread.sleep(2000);
 			click("select_all_folders");

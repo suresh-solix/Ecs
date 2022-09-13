@@ -114,7 +114,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("share_button");
 					
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='Vue-Toastification__close-button']")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 			
@@ -219,9 +219,6 @@ public class MyFile_Share_User_Admin extends Navigation
 			WebElement elementLocator1 = getPageObject("first_folder_infolder");
 			actions.contextClick(elementLocator1).perform();
 
-//	     	WebDriverWait wait313 = new WebDriverWait(driver, 60);
-//	 		wait313.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Share +')]")));
-		
 			Thread.sleep(2000);
 
 			WebElement shared_folder_right_click_options = driver.findElement(By.xpath("//div[@class='folder']/div[@class='row'][1]/following-sibling::div/ul"));
@@ -305,7 +302,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-			
+			Thread.sleep(4000);
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 			
@@ -368,7 +365,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("share_button");
 			Thread.sleep(2000);
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -610,7 +607,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			//		click("share_button");
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -870,7 +867,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			Thread.sleep(1000);
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -878,7 +875,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("Profile_Icon");
 			click("Sign_out");
 			click("Ok");
-
+			Thread.sleep(4000);
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -1067,7 +1064,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-
+			Thread.sleep(4000);
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -1126,15 +1123,16 @@ public class MyFile_Share_User_Admin extends Navigation
 
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-
+			Thread.sleep(4000);
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -1324,7 +1322,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-
+			Thread.sleep(4000);
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 		}
@@ -1381,15 +1379,16 @@ public class MyFile_Share_User_Admin extends Navigation
 
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-
+			Thread.sleep(4000);
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 

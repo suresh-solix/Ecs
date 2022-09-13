@@ -102,7 +102,6 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 			Thread.sleep(5000);
 			click("Skip");
 			
-
 			Thread.sleep(2000);
 			act.doubleClick(drop).perform();
 			Thread.sleep(4000);
@@ -111,7 +110,7 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 			int Aftermovedfilestofolder = Aftermovedfiles.size();
 			System.out.println("No of files Skip" + Aftermovedfilestofolder);
 			
-			if(Aftermovedfilestofolder!=0)
+			if(Aftermovedfilestofolder==2)
 			{
 
 
@@ -197,10 +196,9 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 			int	Aftermovedfolderstofolder = Aftermovedfolders .size();
 			System.out.println("No of folders Skip" + Aftermovedfolderstofolder);
 
-			if(Aftermovedfolderstofolder!=0)
+			if(Aftermovedfolderstofolder==2)
 			{
-
-
+				
 			log.info("--------------------------No of moved folders is Not equal to before------------------------------");
 
 			captureScreenShot(ScreenShotsFilePath +"DragandDropMoveVersions_Skip_Folderss_success.png");

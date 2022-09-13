@@ -103,6 +103,7 @@ public class DragandDropMoveKeepSeparateVersions extends Navigation{
 			click("Keep_Separate");
 			Thread.sleep(3000);
 			click("Cancel");
+			
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
 			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully moved')]")));
 			Thread.sleep(2000);

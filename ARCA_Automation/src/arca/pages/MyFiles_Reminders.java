@@ -129,7 +129,7 @@ public class MyFiles_Reminders extends Navigation{
 			click("create_reminder_button");
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully!!!']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -222,7 +222,7 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(2000);
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Edited reminder successfully!!']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -328,8 +328,9 @@ public class MyFiles_Reminders extends Navigation{
 	//		Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(1000);
+			
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Deleted reminder successfully']")));
 			Thread.sleep(1000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -433,7 +434,7 @@ public class MyFiles_Reminders extends Navigation{
 			click("create_reminder_button");
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully!!!']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -535,7 +536,7 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(2000);
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Edited reminder successfully!!']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -643,7 +644,7 @@ public class MyFiles_Reminders extends Navigation{
 			click("Ok");
 			Thread.sleep(1000);
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='Vue-Toastification__close-button']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Deleted reminder successfully']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);

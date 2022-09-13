@@ -394,6 +394,7 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 			}
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
@@ -652,9 +653,11 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
+			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
 
@@ -730,9 +733,11 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
+			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
 
@@ -790,14 +795,7 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 			click("Share");
 			Thread.sleep(2000);
 
-			//		WebElement noUserOr = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-			//		noUserOr.sendKeys("T");
-			//
-			//
-			//		WebDriverWait wait31 = new WebDriverWait(driver, 60);
-			//		wait31.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
-
-
+	
 			select("shared_user_popup_dropdown","visibletext","View");
 			Thread.sleep(2000);
 			click("share_button");
@@ -1001,8 +999,9 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
@@ -1079,8 +1078,9 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
@@ -1139,14 +1139,6 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 			actions.contextClick(right).perform();
 			click("Share");
 			Thread.sleep(2000);
-
-			//		WebElement noUserOr = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-			//		noUserOr.sendKeys("T");
-			//
-			//
-			//		WebDriverWait wait31 = new WebDriverWait(driver, 60);
-			//		wait31.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
-
 
 			select("shared_user_popup_dropdown","visibletext","Preview");
 			Thread.sleep(2000);
@@ -1351,8 +1343,9 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
@@ -1429,8 +1422,9 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
@@ -1699,8 +1693,9 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 
 				}
 			}
-
+			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
@@ -1779,6 +1774,7 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 			}
 
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
@@ -2023,8 +2019,8 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-			
-			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			Thread.sleep(4000);
+			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 		}

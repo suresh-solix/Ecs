@@ -133,6 +133,7 @@ public class DragandDropCopyVersionUpdateExisting extends Navigation{
 			List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int Aftermovedfilestofolder = Aftermovedfiles.size();
 			System.out.println("No of files Moved" + Aftermovedfilestofolder);
+			
 			if(nooffiles==Aftermovedfilestofolder)
 			{
 				log.info("--------------------------No of moved files is equal to before------------------------------");

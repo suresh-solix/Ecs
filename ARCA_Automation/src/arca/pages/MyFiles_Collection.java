@@ -121,7 +121,7 @@ public class MyFiles_Collection extends Navigation {
 
 			click("Save");
 			Thread.sleep(2000);
-			WebElement close = driver.findElement(By.xpath("//*[@class='Vue-Toastification__close-button']"));
+			WebElement close = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully!!']"));
 			close.click();
 			Thread.sleep(2000);
 			click("collections");
@@ -210,6 +210,7 @@ public class MyFiles_Collection extends Navigation {
 
 			WebElement right=	driver.findElement(By.xpath("//div[@class='files-footer']"));
 			actions.contextClick(right).perform();
+			
 			WebElement Addtocollections =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
 			actions.moveToElement(Addtocollections).perform();
 			Thread.sleep(2000);
@@ -230,7 +231,7 @@ public class MyFiles_Collection extends Navigation {
 
 			click("Save");
 			Thread.sleep(1000);
-			WebElement close1 = driver.findElement(By.xpath("//*[@class='Vue-Toastification__toast-body']"));
+			WebElement close1 = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully!!']"));
 			close1.click();
 			Thread.sleep(2000);
 			click("collections");
@@ -272,7 +273,7 @@ public class MyFiles_Collection extends Navigation {
 			actions.doubleClick(ele2).perform();
 			Thread.sleep(2000);
 
-			WebElement right1=	driver.findElement(By.xpath("//div[@class='files-footer']"));
+			WebElement right1=	driver.findElement(By.xpath("(//div[@class='files-footer'])[1]"));
 			actions.contextClick(right1).perform();
 			
 			WebElement Addtocollections1 =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));

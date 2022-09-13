@@ -991,418 +991,432 @@ public class BrowserHandlings{
 //			}
 //		}
 		
+		
+		//======================================================================================
 		//--------------------------Drag and Drop Move ------------------------------------ 5 TC
 
+//
+//		@Test(priority = 64) 
+//		public void dDragDropMove_File() throws Exception{
+//			{
+//				mb30 = new DragDropMove(driver);
+//				DragDropMove.DragDropMove_File();
+//			}
+//
+//		} 																				
+//
+//
+//		@Test(priority = 65) public void DragDropMove_Folder() throws Exception { 
+//			{
+//				mb30 = new DragDropMove(driver);
+//				DragDropMove.DragDropMove_Folder();
+//			}
+//
+//		}
+//
+//
+//
+//		@Test(priority = 66) 
+//		public void DragDropMove_multiple_files() throws Exception {
+//			{
+//				mb30 = new DragDropMove(driver); 
+//				DragDropMove.DragDropMove_multiple_files();
+//			}
+//		}
+//
+//
+//		@Test(priority =67)
+//		public void DragDropMove_multiple_folders() throws Exception {
+//			{
+//				mb30 = new DragDropMove(driver);
+//				DragDropMove.DragDropMove_multiple_Folders();
+//			}
+//		}																					
+//
+//
+//		@Test(priority =63)
+//		public void DragDropMove_multiple_Data() throws Exception { 
+//			{ 
+//				mb30 = new DragDropMove(driver);
+//				DragDropMove.DragDropMove_multiple_Data();
+//			}
+//
+//		}
 
-		@Test(priority = 64) 
-		public void dDragDropMove_File() throws Exception{
-			{
-				mb30 = new DragDropMove(driver);
-				DragDropMove.DragDropMove_File();
-			}
+//
+//		//-----------------------DragandDropCopyVersionUpdateExisting ------------------------------  3 TC
+//
+//		@Test(priority =68)
+//		public void DragandDropCopyVersionUpdateExisting_multiple_files() throws Exception   {
+//			{
+//				mb32 = new DragandDropCopyVersionUpdateExisting(driver);
+//				DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files();
+//			}		  
+//
+//		}
+//
+//		@Test(priority =69)
+//		public void DragandDropCopyVersionUpdateExisting_multiple_folders() throws Exception   {
+//			{
+//				mb32 = new DragandDropCopyVersionUpdateExisting(driver);
+//				DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_folders();
+//			}		  
+//
+//		}
+//
+//		@Test(priority =70)
+//		public void DragandDropCopyVersionUpdateExisting_multiple_files_folders() throws Exception   {
+//			{
+//				mb32 = new DragandDropCopyVersionUpdateExisting(driver);
+//				DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files_folders();
+//			}		  
+//
+//		}
+//
+//
+//		//--------------------------DragandDropMoveVersionUpdateExisting ---------------------------3 TC
+//
+//
+//
+//		@Test(priority =71)
+//		public void DragandDropMoveVersionUpdateExisting_Multiple_files() throws Exception   {
+//			{
+//				mb31 = new DragandDropMoveVersionUpdateExisting(driver);
+//				DragandDropMoveVersionUpdateExisting.DragandDropMoveVersionUpdateExisting_Multiple_files();
+//			}
+//		}
+//
+//
+//		@Test(priority =72)
+//		public void DragandDropMoveVersionUpdateExisting_Multiple_folders() throws Exception   {
+//			{
+//				mb31 = new DragandDropMoveVersionUpdateExisting(driver);
+//				DragandDropMoveVersionUpdateExisting.DragandDropMoveVersionUpdateExisting_Multiple_folders();
+//			}
+//		}
+//
+//
+//		@Test(priority =73)
+//		public void DragandDropMoveVersionUpdateExisting_Multi_files_folders() throws Exception   {
+//			{
+//				mb31 = new DragandDropMoveVersionUpdateExisting(driver);
+//				DragandDropMoveVersionUpdateExisting.DragandDropMoveVersionUpdateExisting_Multi_files_folders();
+//			}
+//		}		  
+//
+//
+//
+//
+//		//------------------------------ DragandDropMoveKeepSeparateVersions - ---------------------------- 3 TC
+//
+//		@Test(priority =74)
+//		public void DragandDropMoveKeepSeparateVersions_Files() throws Exception   {
+//			{
+//				mb33 = new DragandDropMoveKeepSeparateVersions(driver);
+//				DragandDropMoveKeepSeparateVersions.DragandDropMoveKeepSeparateVersions_multiple_Files();
+//			}		  
+//
+//		}
+//
+//		@Test(priority =75)
+//		public void DragandDropMoveKeepSeparateVersions_multiple_Folders() throws Exception   {
+//			{
+//				mb33 = new DragandDropMoveKeepSeparateVersions(driver);
+//				DragandDropMoveKeepSeparateVersions.DragandDropMoveKeepSeparateVersions_multiple_Folders();
+//			}		  
+//
+//		}
+//
+//		@Test(priority =76)
+//		public void DragandDropMoveKeepSeparateVersions_multiple_Files_Folders() throws Exception   {
+//			{
+//				mb33 = new DragandDropMoveKeepSeparateVersions(driver);
+//				DragandDropMoveKeepSeparateVersions.DragandDropMoveKeepSeparateVersions_multiple_Files_Folders();
+//			}		  
+//
+//		}
+//
+//
+//
+//		//--------------------------------- DragandDropMoveVersions_Skip --------------------------------------
+//
+//
+//		@Test(priority =77)
+//		public void DragandDropMoveVersions_Skip_Files() throws Exception   {
+//			{
+//				mb34 = new DragandDropMoveVersions_Skip(driver);
+//				DragandDropMoveVersions_Skip.DragandDropMoveVersions_Skip_Files();
+//			}		  
+//		}
+//
+//
+//
+//		@Test(priority =78)
+//		public void DragandDropMoveVersions_Skip_Folders() throws Exception   {
+//			{
+//				mb34 = new DragandDropMoveVersions_Skip(driver);
+//				DragandDropMoveVersions_Skip.DragandDropMoveVersions_Skip_Folders();
+//			}		  
+//		}
+//
+//
+//
+//
+//		//-------------------------MyFiles_Collection----------------------
+//
+//
+//		@Test(priority =79)
+//		public void MyFiles_Collection() throws Exception   {
+//			{
+//				mb35 = new MyFiles_Collection(driver);
+//				MyFiles_Collection.MyFiles_Collection();
+//			}		  
+//		}
+//
+//
+//		@Test(priority =80)
+//		public void MyFiles_Collections_Restriction() throws Exception   {
+//			{
+//				mb35 = new MyFiles_Collection(driver);
+//				MyFiles_Collection.MyFiles_Collections_Restriction();
+//			}		  
+//
+//		}
+//
+//
+//
+//		//--------------------------MyFile_Share_User_Admin-------------------------------
+//
+//
+//		@Test(priority =81)
+//		public void MyFile_Share_User_Admin_Muti_data_Edit_Permission() throws Exception   {
+//			{
+//				mb36 = new MyFile_Share_User_Admin(driver);
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_data_Edit_Permission();
+//				MyFile_Share_User_Admin. MyFile_Share_User_Admin_Muti_data_Edit_Permission_confirmation();
+//			}		  
+//		}
+//
+//
+//		@Test(priority =82)
+//		public void MyFile_Share_User_Admin_Muti__commenter_permission() throws Exception   {
+//			{
+//				mb36 = new MyFile_Share_User_Admin(driver);
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__commenter_permission();
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__commenter_permission_Confirmation();
+//			}		  
+//		}
+//
+//
+//
+//		@Test(priority =83)
+//		public void MyFile_Share_User_Admin_Muti__View_permission() throws Exception   {
+//			{
+//				mb36 = new MyFile_Share_User_Admin(driver);
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__View_permission();
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__View_permission_Confirmation();
+//			}
+//		}
+//
+//		@Test(priority =84)
+//		public void MyFile_Share_User_Admin_Muti_Preview_Permission() throws Exception   {
+//			{
+//				mb36 = new MyFile_Share_User_Admin(driver);
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Preview_Permission();
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Preview_Permission_Confirmation();	  
+//			}
+//		}
+//
+//
+//		@Test(priority =85)
+//		public void MyFile_Share_User_Admin_Muti_Upload_Permission() throws Exception   {
+//			{
+//				mb36 = new MyFile_Share_User_Admin(driver);
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Upload_Permission();
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Upload_Permission_Confirmation();
+//			}
+//		}
+//
+//
+//		@Test(priority =86)
+//		public void MyFile_Share_User_Admin_Remove_Files_Folders() throws Exception   {
+//			{
+//				mb36 = new MyFile_Share_User_Admin(driver);
+//				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Remove_Files_Folders();
+//			}	 
+//		}
+//
+//
+//
+//
+//
+//		//----------------------------MyFiles_share_Admin_to_Group-------------------------------
+//
+//		@Test(priority =87)
+//		public void MyFiles_share_Admin_to_Group_Edit_Permission() throws Exception   {
+//			{
+//				mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Edit_Permission();
+//			}	 
+//		}
+//
+//		@Test(priority =88)
+//		public void MyFiles_share_Admin_to_Group_Commenter_Permission() throws Exception   {
+//			{
+//				mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Commenter_Permission();
+//			}	 
+//		}
+//
+//
+//		@Test(priority =89)
+//		public void MyFiles_share_Admin_to_Group_View_Permission() throws Exception   {
+//			{
+//				mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_View_Permission();
+//			}	 
+//		}
+//
+//
+//		@Test(priority =90)
+//		public void MyFiles_share_Admin_to_Group_Preview_Permission() throws Exception   {
+//			{
+//				mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Preview_Permission();
+//			}	 
+//		}
+//
+//
+//		@Test(priority =91)
+//		public void MyFiles_share_Admin_to_Group_Upload_Permission() throws Exception   {
+//			{
+//				mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Upload_Permission();
+//			}	 
+//		}
+//
+//
+//		@Test(priority =92)
+//		public void MyFiles_share_Admin_to_Group_Remove_Files_And_Folders() throws Exception   {
+//			{
+//				mb37 = new MyFiles_share_Admin_to_Group(driver);
+//				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Remove_Files_And_Folders();
+//			}	 
+//		}
+//
+//
+//
+//
+//		//--------------------------------MyFiles_Share_User_to_Group---------------------------
+//
+//
+//		@Test(priority =93)
+//		public void MyFiles_share_User_to_Group_Edit_Permission() throws Exception   {
+//			{
+//				mb38 = new MyFiles_Share_User_to_Group(driver);
+//				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Edit_Permission();
+//			}	 
+//		}
+//
+//		@Test(priority =94)
+//		public void MyFiles_share_User_to_Group_Commenter_Permission() throws Exception   {
+//			{
+//				mb38 = new MyFiles_Share_User_to_Group(driver);
+//				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Commenter_Permission();
+//			}	 
+//		}
+//
+//		@Test(priority =95)
+//		public void MyFiles_share_User_to_Group_View_Permission() throws Exception   {
+//			{
+//				mb38 = new MyFiles_Share_User_to_Group(driver);
+//				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_View_Permission();
+//			}	 
+//		}
+//
+//
+//		@Test(priority =96)
+//		public void MyFiles_share_User_to_Group_Preview_Permission() throws Exception   {
+//			{
+//				mb38 = new MyFiles_Share_User_to_Group(driver);
+//				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Preview_Permission();
+//			}	 
+//		}
+//
+//
+//		@Test(priority =97)
+//		public void MyFiles_share_User_to_Group_Upload_Permission() throws Exception   {
+//			{
+//				mb38 = new MyFiles_Share_User_to_Group(driver);
+//				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Upload_Permission();
+//			}	 
+//		}
+//
+//
+//		@Test(priority =98)
+//		public void MyFiles_share_User_to_Group_Remove_Files_And_Folders() throws Exception   {
+//			{
+//				mb38 = new MyFiles_Share_User_to_Group(driver);
+//				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Remove_Files_And_Folders();
+//			}	 
+//		}
+//
+//
+//
+//		//----------------------------------MyFiles_Reminders-----------------------------------------------
+//
+//		@Test(priority =99)
+//		public void MyFiles_Reminders_Files() throws Exception   {
+//			{
+//				mb39 = new MyFiles_Reminders(driver);
+//				MyFiles_Reminders.MyFiles_Reminders_Files();
+//				MyFiles_Reminders.MyFiles_Reminders_Files_Edit();
+//				MyFiles_Reminders.MyFiles_Reminders_Files_Bell_Icon();
+//				MyFiles_Reminders.MyFiles_Reminders_Delete();
+//			}
+//		}
+//
+//		@Test(priority =100)
+//		public void MyFiles_Reminders_Folders() throws Exception   {
+//			{
+//				mb39 = new MyFiles_Reminders(driver);
+//				MyFiles_Reminders.MyFiles_Reminders_Folders();
+//				MyFiles_Reminders.MyFiles_Reminders_Folders_Edit();
+//				MyFiles_Reminders.MyFiles_Reminders_Folder_Bell_Icon();
+//				MyFiles_Reminders.MyFiles_Reminders_Folder_Delete();
+//			}
+//		}
+//
+//
+//		//----------------------------------------MyFiles_File_Preview----------------------------------
+//
+//
+//				@Test(priority =101)
+//				  public void MyFiles_File_Preview() throws Exception   {
+//					  {
+//						  mb40 = new MyFiles_File_Preview(driver);
+//						  MyFiles_File_Preview.MyFiles_File_Preview();
+//						  MyFiles_File_Preview.MyFiles_File_Preview_Download();
+//	         			  MyFiles_File_Preview.MyFiles_File_Preview_Share_to_Internal_User();
+//				     	  MyFiles_File_Preview.File_Preview_Share_to_group();
+//				          MyFiles_File_Preview.File_Preview_Share_with_link_to_Internal_User();
+//				          MyFiles_File_Preview.File_Preview_Copy();
+//   			         
 
-		} 																				
-
-
-		@Test(priority = 65) public void DragDropMove_Folder() throws Exception { 
-			{
-				mb30 = new DragDropMove(driver);
-				DragDropMove.DragDropMove_Folder();
-			}
-
+			   @Test(priority =102)
+				 public void MyFiles_File_Preview() throws Exception   {
+				   {
+					   mb40 = new MyFiles_File_Preview(driver);
+//					   MyFiles_File_Preview.File_Preview_Move();
+//					   MyFiles_File_Preview.File_Preview_Check_Versions();
+//      --	           MyFiles_File_Preview.File_Preview_Add_Comment();
+//		--			   MyFiles_File_Preview.File_Preview_Add_Tag();	
+//		--			   MyFiles_File_Preview.File_Preview_Rename();					
+				}
 		}
 
 
 
-		@Test(priority = 66) 
-		public void DragDropMove_multiple_files() throws Exception {
-			{
-				mb30 = new DragDropMove(driver); 
-				DragDropMove.DragDropMove_multiple_files();
-			}
-		}
-
-
-		@Test(priority =67)
-		public void DragDropMove_multiple_folders() throws Exception {
-			{
-				mb30 = new DragDropMove(driver);
-				DragDropMove.DragDropMove_multiple_Folders();
-			}
-		}																					
-
-
-		@Test(priority =63)
-		public void DragDropMove_multiple_Data() throws Exception { 
-			{ 
-				mb30 = new DragDropMove(driver);
-				DragDropMove.DragDropMove_multiple_Data();
-			}
-
-		}
-
-
-		//-----------------------DragandDropCopyVersionUpdateExisting ------------------------------  3 TC
-
-		@Test(priority =68)
-		public void DragandDropCopyVersionUpdateExisting_multiple_files() throws Exception   {
-			{
-				mb32 = new DragandDropCopyVersionUpdateExisting(driver);
-				DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files();
-			}		  
-
-		}
-
-		@Test(priority =69)
-		public void DragandDropCopyVersionUpdateExisting_multiple_folders() throws Exception   {
-			{
-				mb32 = new DragandDropCopyVersionUpdateExisting(driver);
-				DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_folders();
-			}		  
-
-		}
-
-		@Test(priority =70)
-		public void DragandDropCopyVersionUpdateExisting_multiple_files_folders() throws Exception   {
-			{
-				mb32 = new DragandDropCopyVersionUpdateExisting(driver);
-				DragandDropCopyVersionUpdateExisting.DragandDropCopyVersionUpdateExisting_multiple_files_folders();
-			}		  
-
-		}
-
-
-		//--------------------------DragandDropMoveVersionUpdateExisting ---------------------------3 TC
-
-
-
-		@Test(priority =71)
-		public void DragandDropMoveVersionUpdateExisting_Multiple_files() throws Exception   {
-			{
-				mb31 = new DragandDropMoveVersionUpdateExisting(driver);
-				DragandDropMoveVersionUpdateExisting.DragandDropMoveVersionUpdateExisting_Multiple_files();
-			}
-		}
-
-
-		@Test(priority =72)
-		public void DragandDropMoveVersionUpdateExisting_Multiple_folders() throws Exception   {
-			{
-				mb31 = new DragandDropMoveVersionUpdateExisting(driver);
-				DragandDropMoveVersionUpdateExisting.DragandDropMoveVersionUpdateExisting_Multiple_folders();
-			}
-		}
-
-
-		@Test(priority =73)
-		public void DragandDropMoveVersionUpdateExisting_Multi_files_folders() throws Exception   {
-			{
-				mb31 = new DragandDropMoveVersionUpdateExisting(driver);
-				DragandDropMoveVersionUpdateExisting.DragandDropMoveVersionUpdateExisting_Multi_files_folders();
-			}
-		}		  
-
-
-
-
-		//------------------------------ DragandDropMoveKeepSeparateVersions - ---------------------------- 3 TC
-
-		@Test(priority =74)
-		public void DragandDropMoveKeepSeparateVersions_Files() throws Exception   {
-			{
-				mb33 = new DragandDropMoveKeepSeparateVersions(driver);
-				DragandDropMoveKeepSeparateVersions.DragandDropMoveKeepSeparateVersions_multiple_Files();
-			}		  
-
-		}
-
-		@Test(priority =75)
-		public void DragandDropMoveKeepSeparateVersions_multiple_Folders() throws Exception   {
-			{
-				mb33 = new DragandDropMoveKeepSeparateVersions(driver);
-				DragandDropMoveKeepSeparateVersions.DragandDropMoveKeepSeparateVersions_multiple_Folders();
-			}		  
-
-		}
-
-		@Test(priority =76)
-		public void DragandDropMoveKeepSeparateVersions_multiple_Files_Folders() throws Exception   {
-			{
-				mb33 = new DragandDropMoveKeepSeparateVersions(driver);
-				DragandDropMoveKeepSeparateVersions.DragandDropMoveKeepSeparateVersions_multiple_Files_Folders();
-			}		  
-
-		}
-
-
-
-		//--------------------------------- DragandDropMoveVersions_Skip --------------------------------------
-
-
-		@Test(priority =77)
-		public void DragandDropMoveVersions_Skip_Files() throws Exception   {
-			{
-				mb34 = new DragandDropMoveVersions_Skip(driver);
-				DragandDropMoveVersions_Skip.DragandDropMoveVersions_Skip_Files();
-			}		  
-		}
-
-
-
-		@Test(priority =78)
-		public void DragandDropMoveVersions_Skip_Folders() throws Exception   {
-			{
-				mb34 = new DragandDropMoveVersions_Skip(driver);
-				DragandDropMoveVersions_Skip.DragandDropMoveVersions_Skip_Folders();
-			}		  
-		}
-
-
-
-
-		//-------------------------MyFiles_Collection----------------------
-
-
-		@Test(priority =79)
-		public void MyFiles_Collection() throws Exception   {
-			{
-				mb35 = new MyFiles_Collection(driver);
-				MyFiles_Collection.MyFiles_Collection();
-			}		  
-		}
-
-
-		@Test(priority =80)
-		public void MyFiles_Collections_Restriction() throws Exception   {
-			{
-				mb35 = new MyFiles_Collection(driver);
-				MyFiles_Collection.MyFiles_Collections_Restriction();
-			}		  
-
-		}
-
-
-
-		//--------------------------MyFile_Share_User_Admin-------------------------------
-
-
-		@Test(priority =81)
-		public void MyFile_Share_User_Admin_Muti_data_Edit_Permission() throws Exception   {
-			{
-				mb36 = new MyFile_Share_User_Admin(driver);
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_data_Edit_Permission();
-				MyFile_Share_User_Admin. MyFile_Share_User_Admin_Muti_data_Edit_Permission_confirmation();
-			}		  
-		}
-
-
-		@Test(priority =82)
-		public void MyFile_Share_User_Admin_Muti__commenter_permission() throws Exception   {
-			{
-				mb36 = new MyFile_Share_User_Admin(driver);
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__commenter_permission();
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__commenter_permission_Confirmation();
-			}		  
-		}
-
-
-
-		@Test(priority =83)
-		public void MyFile_Share_User_Admin_Muti__View_permission() throws Exception   {
-			{
-				mb36 = new MyFile_Share_User_Admin(driver);
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__View_permission();
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti__View_permission_Confirmation();
-			}
-		}
-
-		@Test(priority =84)
-		public void MyFile_Share_User_Admin_Muti_Preview_Permission() throws Exception   {
-			{
-				mb36 = new MyFile_Share_User_Admin(driver);
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Preview_Permission();
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Preview_Permission_Confirmation();	  
-			}
-		}
-
-
-		@Test(priority =85)
-		public void MyFile_Share_User_Admin_Muti_Upload_Permission() throws Exception   {
-			{
-				mb36 = new MyFile_Share_User_Admin(driver);
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Upload_Permission();
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Muti_Upload_Permission_Confirmation();
-			}
-		}
-
-
-		@Test(priority =86)
-		public void MyFile_Share_User_Admin_Remove_Files_Folders() throws Exception   {
-			{
-				mb36 = new MyFile_Share_User_Admin(driver);
-				MyFile_Share_User_Admin.MyFile_Share_User_Admin_Remove_Files_Folders();
-			}	 
-		}
-
-
-
-
-
-		//----------------------------MyFiles_share_Admin_to_Group-------------------------------
-
-		@Test(priority =87)
-		public void MyFiles_share_Admin_to_Group_Edit_Permission() throws Exception   {
-			{
-				mb37 = new MyFiles_share_Admin_to_Group(driver);
-				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Edit_Permission();
-			}	 
-		}
-
-		@Test(priority =88)
-		public void MyFiles_share_Admin_to_Group_Commenter_Permission() throws Exception   {
-			{
-				mb37 = new MyFiles_share_Admin_to_Group(driver);
-				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Commenter_Permission();
-			}	 
-		}
-
-
-		@Test(priority =89)
-		public void MyFiles_share_Admin_to_Group_View_Permission() throws Exception   {
-			{
-				mb37 = new MyFiles_share_Admin_to_Group(driver);
-				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_View_Permission();
-			}	 
-		}
-
-
-		@Test(priority =90)
-		public void MyFiles_share_Admin_to_Group_Preview_Permission() throws Exception   {
-			{
-				mb37 = new MyFiles_share_Admin_to_Group(driver);
-				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Preview_Permission();
-			}	 
-		}
-
-
-		@Test(priority =91)
-		public void MyFiles_share_Admin_to_Group_Upload_Permission() throws Exception   {
-			{
-				mb37 = new MyFiles_share_Admin_to_Group(driver);
-				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Upload_Permission();
-			}	 
-		}
-
-
-		@Test(priority =92)
-		public void MyFiles_share_Admin_to_Group_Remove_Files_And_Folders() throws Exception   {
-			{
-				mb37 = new MyFiles_share_Admin_to_Group(driver);
-				MyFiles_share_Admin_to_Group.MyFiles_share_Admin_to_Group_Remove_Files_And_Folders();
-			}	 
-		}
-
-
-
-
-		//--------------------------------MyFiles_Share_User_to_Group---------------------------
-
-
-		@Test(priority =93)
-		public void MyFiles_share_User_to_Group_Edit_Permission() throws Exception   {
-			{
-				mb38 = new MyFiles_Share_User_to_Group(driver);
-				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Edit_Permission();
-			}	 
-		}
-
-		@Test(priority =94)
-		public void MyFiles_share_User_to_Group_Commenter_Permission() throws Exception   {
-			{
-				mb38 = new MyFiles_Share_User_to_Group(driver);
-				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Commenter_Permission();
-			}	 
-		}
-
-		@Test(priority =95)
-		public void MyFiles_share_User_to_Group_View_Permission() throws Exception   {
-			{
-				mb38 = new MyFiles_Share_User_to_Group(driver);
-				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_View_Permission();
-			}	 
-		}
-
-
-		@Test(priority =96)
-		public void MyFiles_share_User_to_Group_Preview_Permission() throws Exception   {
-			{
-				mb38 = new MyFiles_Share_User_to_Group(driver);
-				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Preview_Permission();
-			}	 
-		}
-
-
-		@Test(priority =97)
-		public void MyFiles_share_User_to_Group_Upload_Permission() throws Exception   {
-			{
-				mb38 = new MyFiles_Share_User_to_Group(driver);
-				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Upload_Permission();
-			}	 
-		}
-
-
-		@Test(priority =98)
-		public void MyFiles_share_User_to_Group_Remove_Files_And_Folders() throws Exception   {
-			{
-				mb38 = new MyFiles_Share_User_to_Group(driver);
-				MyFiles_Share_User_to_Group.MyFiles_share_User_to_Group_Remove_Files_And_Folders();
-			}	 
-		}
-
-
-
-		//----------------------------------MyFiles_Reminders-----------------------------------------------
-
-		@Test(priority =99)
-		public void MyFiles_Reminders_Files() throws Exception   {
-			{
-				mb39 = new MyFiles_Reminders(driver);
-				MyFiles_Reminders.MyFiles_Reminders_Files();
-				MyFiles_Reminders.MyFiles_Reminders_Files_Edit();
-				MyFiles_Reminders.MyFiles_Reminders_Files_Bell_Icon();
-				MyFiles_Reminders.MyFiles_Reminders_Delete();
-			}
-		}
-
-		@Test(priority =100)
-		public void MyFiles_Reminders_Folders() throws Exception   {
-			{
-				mb39 = new MyFiles_Reminders(driver);
-				MyFiles_Reminders.MyFiles_Reminders_Folders();
-				MyFiles_Reminders.MyFiles_Reminders_Folders_Edit();
-				MyFiles_Reminders.MyFiles_Reminders_Folder_Bell_Icon();
-				MyFiles_Reminders.MyFiles_Reminders_Folder_Delete();
-			}
-		}
-
-
-		//----------------------------------------MyFiles_File_Preview----------------------------------
-
-
-		//		@Test(priority =101)
-		//		  public void MyFiles_File_Preview() throws Exception   {
-		//			  {
-		//				  mb40 = new MyFiles_File_Preview(driver);
-		////				  MyFiles_File_Preview.MyFiles_File_Preview();
-		//				  MyFiles_File_Preview.MyFiles_File_Preview_Download();
-		//				  
-		//		     }	 
-		//		 }
-
-
-
-		
-		
 		
 		
 		
