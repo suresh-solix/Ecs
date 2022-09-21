@@ -219,7 +219,8 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
-			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			
+			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 		}

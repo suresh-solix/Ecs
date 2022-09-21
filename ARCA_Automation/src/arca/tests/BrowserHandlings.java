@@ -72,8 +72,11 @@ import arca.pages.SourceManager;
 import arca.pages.MyFilesTags;
 import arca.pages.MyFiles_Collection;
 import arca.pages.MyFiles_File_Preview;
+import arca.pages.MyFiles_List_view;
+import arca.pages.MyFiles_Recent_page;
 import arca.pages.MyFiles_Reminders;
 import arca.pages.MyFiles_Share_User_to_Group;
+import arca.pages.MyFiles__PST__Extraction;
 import arca.pages.MyFiles_share_Admin_to_Group;
 import arca.pages.LegalHold;
 import arca.pages.MyFile_Share_User_Admin;
@@ -139,6 +142,9 @@ public class BrowserHandlings{
 	MyFiles_Share_User_to_Group mb38;
 	MyFiles_Reminders mb39;
 	MyFiles_File_Preview mb40;
+	MyFiles_Recent_page mb41;
+	MyFiles__PST__Extraction mb42;
+	MyFiles_List_view mb43;
 	
 	
 	ATUTestRecorder recorder;
@@ -995,7 +1001,7 @@ public class BrowserHandlings{
 		//======================================================================================
 		//--------------------------Drag and Drop Move ------------------------------------ 5 TC
 
-//
+
 //		@Test(priority = 64) 
 //		public void dDragDropMove_File() throws Exception{
 //			{
@@ -1042,7 +1048,7 @@ public class BrowserHandlings{
 //			}
 //
 //		}
-
+//
 //
 //		//-----------------------DragandDropCopyVersionUpdateExisting ------------------------------  3 TC
 //
@@ -1395,39 +1401,144 @@ public class BrowserHandlings{
 //				  public void MyFiles_File_Preview() throws Exception   {
 //					  {
 //						  mb40 = new MyFiles_File_Preview(driver);
-//						  MyFiles_File_Preview.MyFiles_File_Preview();
-//						  MyFiles_File_Preview.MyFiles_File_Preview_Download();
-//	         			  MyFiles_File_Preview.MyFiles_File_Preview_Share_to_Internal_User();
+//    					  MyFiles_File_Preview.MyFiles_File_Preview_Right_and_Left_Naviation();
+//             			  MyFiles_File_Preview.MyFiles_File_Preview_Download();						// Not completed
+// 	         			  MyFiles_File_Preview.MyFiles_File_Preview_Share_to_Internal_User();           
 //				     	  MyFiles_File_Preview.File_Preview_Share_to_group();
-//				          MyFiles_File_Preview.File_Preview_Share_with_link_to_Internal_User();
+//             		      MyFiles_File_Preview.File_Preview_Share_with_link_to_Internal_User();    //  Not completed
 //				          MyFiles_File_Preview.File_Preview_Copy();
-//   			         
+//					  }
+//				}
 
-			   @Test(priority =102)
-				 public void MyFiles_File_Preview() throws Exception   {
-				   {
-					   mb40 = new MyFiles_File_Preview(driver);
-//					   MyFiles_File_Preview.File_Preview_Move();
-//					   MyFiles_File_Preview.File_Preview_Check_Versions();
+//			   @Test(priority =102)
+//				 public void MyFiles_File_Preview() throws Exception   {
+//				   {
+//					   mb40 = new MyFiles_File_Preview(driver);
+//		--			   MyFiles_File_Preview.File_Preview_Move();
+// 		     		   MyFiles_File_Preview.File_Preview_Check_Versions();			// Not completed
 //      --	           MyFiles_File_Preview.File_Preview_Add_Comment();
 //		--			   MyFiles_File_Preview.File_Preview_Add_Tag();	
 //		--			   MyFiles_File_Preview.File_Preview_Rename();					
-				}
-		}
+//				}
+//		}
 
 
 
+		//-----------------------------MyFiles_Recent_page----------------------------------
+		
+//		 @Test(priority =103)
+//		 public void MyFiles_Recent_page_Share_multiple_files_to_user() throws Exception   {
+//		   {
+//		     mb41 = new MyFiles_Recent_page (driver);
+//		     MyFiles_Recent_page.MyFiles_Recent_page_Share_multiple_files_to_user();
+//		     MyFiles_Recent_page.MyFiles_Recent_page_Share_multiple_files_to_Group();
+//		     MyFiles_Recent_page.MyFiles_Recent_Share_file_with_internal_user_with_permissions();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Add_comment_to_file(); 	 						
+//		   }
+//		}
+		 
+//		 @Test(priority =104)
+//		 public void MyFiles_Recent_Page_Add_tags_to_multiple_files() throws Exception   {
+//		   {
+//		     mb41 = new MyFiles_Recent_page (driver);
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Add_tags_to_multiple_files();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Add_multiple_files_to_collection();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Multiple_files_copy();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Multiple_files_Download();
+//		   }
+//		   }
+	
+//		 @Test(priority =105)
+//		 public void MyFiles_Recent_Page_Add_comment_to_file() throws Exception   {
+//		   {
+//		     mb41 = new MyFiles_Recent_page (driver);
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Add_comment_to_file();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Add_reminder_to_file();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_File_rename();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_File_view_versions();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Multiple_Files_trash();
+//		   }
+//		   }
+		
+//		 @Test(priority =106)
+//		 public void MyFiles_Recent_Page_File_Preview() throws Exception   {
+//		   {
+//		     mb41 = new MyFiles_Recent_page (driver);
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_File_Preview();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Right_and_Left_Naviation();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_File_Preview_Download();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Share_to_Internal_User();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Share_to_Group();
+//		      }
+//		   }
 		
 		
+//		 @Test(priority =106)
+//		 public void MyFiles_Recent_Page_Share_with_link_to_Internal_User() throws Exception   {
+//		   {
+//		     mb41 = new MyFiles_Recent_page (driver);
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Share_with_link_to_Internal_User();		//not completed
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Copy();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Copy_Check_Versions();						//not completed
+//			 MyFiles_Recent_page.MyFiles_Recent_Page_Add_Edit_Delete_Comments();
+//		   }}
 		
+//		 @Test(priority =107)
+//		 public void MyFiles_Recent_Page_Tag_Add_Edit_Delete() throws Exception   {
+//		   {
+//		     mb41 = new MyFiles_Recent_page (driver);
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Tag_Add_Edit_Delete();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Rename();
+//		     MyFiles_Recent_page.MyFiles_Recent_Page_Add_File_to_Collection();
+//		   }
+//		 }
+		 
+		 
+		 
+		 //------------------------MyFiles__PST__Extraction-------------------------------
+		 
+//		 @Test(priority =108)
+//		 public void MyFiles__PST__Extraction_Admin_Account() throws Exception   {
+//		   {
+//		     mb42 = new MyFiles__PST__Extraction (driver);
+//		     MyFiles__PST__Extraction.MyFiles__PST__Extraction_Admin_Account();
+//		     MyFiles__PST__Extraction.MyFiles__PST__Extraction_Admin_Account_Console();
+//		   }
+//		 }
+		 
+//		 @Test(priority =108)
+//		 public void MyFiles__PST__Extraction_User_Account() throws Exception   {
+//		   {
+//		     mb42 = new MyFiles__PST__Extraction (driver);
+//		     MyFiles__PST__Extraction.MyFiles__PST__Extraction_User_Account();
+//		     MyFiles__PST__Extraction.MyFiles__PST__Extraction_Guest_User_Account();
+//		   
+//		   }
+//		 }
+		 
+		 
+		//------------------------MyFiles_List_view-----------------------
+		 
+//		 @Test(priority =109)
+//		 public void MyFiles_List_view() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//			 MyFiles_List_view.MyFiles_List_view();	   
+//			 MyFiles_List_view.MyFiles_List_view_Share_User();
+//		     MyFiles_List_view.MyFiles_List_view_Add_comment_to_file();			//  not completed
+//		     MyFiles_List_view.MyFiles_List_view_Add_comment_to_folder();
+//		   }
+//		 }
 		
-		
-		
-		
-		
-		
-		
-		
+		 @Test(priority =110)
+		 public void MyFiles_List_view_Add_Tags_to_multiple_files_folders() throws Exception   {
+		   {
+		     mb43 = new MyFiles_List_view (driver);
+//			 MyFiles_List_view.MyFiles_List_view_Add_Tags_to_multiple_files_folders();
+//			 MyFiles_List_view.MyFiles_List_view_Add_multiple_files_to_collection();		//not completed
+			
+		   }
+		 }
 		
 		
 		

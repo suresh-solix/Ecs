@@ -346,7 +346,7 @@ public class DragDropMove extends Navigation {
 			{
 				log.info("--------------------------------------------No of moved multiple_files is equal to before--------------------------------------------");
 
-				captureScreenShot(ScreenShotsFilePath + "mDragDropMove_multiple_files_success.png");
+				captureScreenShot(ScreenShotsFilePath + "DragDropMove_multiple_files_success.png");
 				Thread.sleep(2000);
 				ATUReports.add("DragDropMove_multiple_files successfully","DragDropMove_multiple_files",LogAs.PASSED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 				Thread.sleep(2000);

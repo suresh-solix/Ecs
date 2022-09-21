@@ -11,8 +11,8 @@
     <classes>
       <class name="arca.tests.BrowserHandlings">
         <methods>
+          <include name="MyFiles_List_view_Add_Tags_to_multiple_files_folders"/>
           <include name="after"/>
-          <include name="MyFiles_File_Preview"/>
           <include name="beforetest"/>
         </methods>
       </class> <!-- arca.tests.BrowserHandlings -->

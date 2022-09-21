@@ -303,6 +303,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
+			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 			
@@ -371,9 +372,10 @@ public class MyFile_Share_User_Admin extends Navigation
 
 			Thread.sleep(3000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+	//		Thread.sleep(4000);
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -548,8 +550,8 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-			Thread.sleep(4000);
-			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+	//		Thread.sleep(4000);
+			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 			
@@ -808,6 +810,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
+			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -873,9 +876,11 @@ public class MyFile_Share_User_Admin extends Navigation
 
 			Thread.sleep(2000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
+			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -1065,6 +1070,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
+			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -1323,6 +1329,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
+			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 		}
@@ -1389,6 +1396,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			click("Sign_out");
 			click("Ok");
 			Thread.sleep(4000);
+			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
@@ -1455,6 +1463,7 @@ public class MyFile_Share_User_Admin extends Navigation
 			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
+			
 			WebDriverWait wait351 = new WebDriverWait(driver, 120);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 

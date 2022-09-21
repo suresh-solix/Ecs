@@ -279,7 +279,7 @@ public class MyFiles_Collection extends Navigation {
 			WebElement Addtocollections1 =	driver.findElement(By.xpath("//span[contains(text(),'Add to Collection')]"));
 			actions.moveToElement(Addtocollections1).perform();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("(//*[@aria-label='chevron right'])[3]")).click();
+//			driver.findElement(By.xpath("(//*[@aria-label='chevron right'])[3]")).click();
 			Thread.sleep(1000);
 			
 			System.out.println(" Try to add files  "+"are Disable");
@@ -292,7 +292,7 @@ public class MyFiles_Collection extends Navigation {
 			click("Ok");
 			Thread.sleep(4000);
 			
-			WebDriverWait wait35 = new WebDriverWait(driver, 60);
+			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 

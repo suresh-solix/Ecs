@@ -2020,6 +2020,7 @@ public class MyFiles_Share_User_to_Group extends Navigation {
 			Thread.sleep(1000);
 			click("Ok");
 			Thread.sleep(4000);
+			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 

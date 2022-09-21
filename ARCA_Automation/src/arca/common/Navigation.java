@@ -39,6 +39,7 @@ public class Navigation {
 private static WebDriver driver;
 private static Logger log=Logger.getLogger(Navigation.class.getName());
 public static String Home_Page = "https://app.solixecsdev.com/login";
+public static String Guest_Home_Page = "https://tebyy.solixecsdev.com";
 public static final String DataFilePath =  System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator");
 public static final String ScreenShotsFilePath =  System.getProperty("user.dir") + System.getProperty("file.separator") + "screenshots" + System.getProperty("file.separator");
 public static String pagePath = "arca.pages.";
@@ -47,6 +48,9 @@ public static Properties objRepPage = new Properties();
 //public static String arca_login_button = "arca_login_button";
 public static String select_language;
 public static String URL="https://arcaqa.solix.com/";
+
+
+
 
 
 static FluentWait<WebDriver> wait=null;
@@ -260,9 +264,9 @@ public static void external_guest_user()
 
 	try {
 		
-		driver.get("https://ravovov.solixecsdev.com");
+		driver.get(Guest_Home_Page);
 		
-		sendKeys("login_username", "pejodo6388@peykesabz.com");
+		sendKeys("login_username", "rabapa8764@orlydns.com");
 		Thread.sleep(1000);
 	
 		sendKeys("login_password", "Test@123");
@@ -280,10 +284,10 @@ public static void external_guest_user()
 
 		System.out.println("errror at: ");
 		e.printStackTrace();
-		log.error("Error in Login",e);	
+		log.error("Error in external_guest_user",e);	
 		//log.fatal(e.getMessage(),e);
-		captureScreenShot(ScreenShotsFilePath + "login_failed.png");
-		ATUReports.add("Login failed","Login failed",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+		captureScreenShot(ScreenShotsFilePath + "external_guest_user_failed.png");
+		ATUReports.add("external_guest_user failed","external_guest_user failed",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 	
 	}
 
@@ -319,7 +323,7 @@ public static void select_two_files()
 
 		System.out.println("errror at: ");
 		e.printStackTrace();
-		log.error("Error in Two Files selected successfully",e);	
+		log.error("Error in Two_Files_selected_failed",e);	
 		//log.fatal(e.getMessage(),e);
 		captureScreenShot(ScreenShotsFilePath + "Two_Files_selected_failed.png");
 		ATUReports.add("Two Files selected  failed","Two Files selected  failed",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
