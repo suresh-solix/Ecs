@@ -153,14 +153,7 @@ public class MyFiles__PST__Extraction extends Navigation{
 			WebDriverWait wait51 = new WebDriverWait(driver, 120);
 			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
 			Thread.sleep(1000);
-			
-//			WebElement el11 =getPageObject("PST_fol");
-//			act.doubleClick(el11).perform();
-//			
-//			WebDriverWait wait511 = new WebDriverWait(driver, 120);
-//			wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='folder-name'])[1]")));
-//			Thread.sleep(1000);
-			
+				
 			Thread.sleep(1000);
 			click("Profile_Icon");
 			Thread.sleep(2000);

@@ -1025,7 +1025,11 @@ return getDriver();
 		}
 	}
 	
-	
+	protected static void sendKeys(Keys backSpace, Keys backSpace2) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 	public static void captureScreenShot(String filePath) {
 		  File scrFile = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);

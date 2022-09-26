@@ -589,24 +589,39 @@ public class MyFiles_File_Preview extends Navigation{
 			click("Share_Icon");
 			Thread.sleep(1000);
 
-			WebElement noUserOr1 = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-			noUserOr1.sendKeys("li");
-
-			WebDriverWait wait311 = new WebDriverWait(driver, 60);
-			wait311.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
-
-			getPageObject("search_result_first_element").click(); 
-			Thread.sleep(2000);
-			click("share_button");
+//			WebElement noUserOr1 = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
+//			noUserOr1.sendKeys("li");
+//
+//			WebDriverWait wait311 = new WebDriverWait(driver, 60);
+//			wait311.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
+//
+//			getPageObject("search_result_first_element").click(); 
+//			Thread.sleep(2000);
+//			click("share_button");
+			
 			Thread.sleep(1000);
 			click("Copy");
+			
+			WebElement showLinkIn = driver.findElement(By.className("form-control"));
+			String link_text = showLinkIn.getText();
+			log.info("Copied link is : "+link_text);
+			
+			WebDriverWait wait53453 = new WebDriverWait(driver, 60);
+			wait53453.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='Vue-Toastification__toast-body']")));
 
+			if(getPageObject("starred_toast").getText().contains("Copied Successfully"));
+			
+			String copied_link_text = driver.findElement(By.xpath("//input[@class='form-control']")).getAttribute("value").toString();
+
+			System.out.println("---------------------Copied link is : "+copied_link_text);
+			click("File_share_close");
+			
 			WebDriverWait wait351 = new WebDriverWait(driver, 60);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Copied Successfully')]")));
 			Thread.sleep(1000);
 			click("toast_close");
 			Thread.sleep(1000);
-			click("toast_close");
+			
 			Thread.sleep(1000);
 			click("Left_Back");
 			Thread.sleep(1000);
@@ -619,26 +634,16 @@ public class MyFiles_File_Preview extends Navigation{
 			WebDriverWait wait3511 = new WebDriverWait(driver, 120);
 			wait3511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 			
-			driver.getWindowHandle();
+			
 
-//			Navigation.other_user_in_same_tenant();
-//
-//			driver.get(Home_Page);
-//			WebDriverWait wait51 = new WebDriverWait(driver, 120);
-//			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
-//
-//			Thread.sleep(2000);
-//			click("shared_with_me");
-//			Thread.sleep(2000);
-//
-//			click("Profile_Icon");
-//			Thread.sleep(2000);
-//			click("Sign_out");
-//			Thread.sleep(1000);
-//			click("Ok");
+			Navigation.other_user_in_same_tenant();
 
-			WebDriverWait wait35 = new WebDriverWait(driver, 120);
-			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+			driver.get(Home_Page);
+			WebDriverWait wait51 = new WebDriverWait(driver, 120);
+			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+
+			Thread.sleep(2000);
+			driver.navigate().to(copied_link_text);
 
 		}
 		catch (Exception e) {

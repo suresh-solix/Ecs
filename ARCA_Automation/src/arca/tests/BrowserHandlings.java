@@ -71,6 +71,7 @@ import arca.pages.ShareDataWithExternalUser;
 import arca.pages.SourceManager;
 import arca.pages.MyFilesTags;
 import arca.pages.MyFiles_Collection;
+import arca.pages.MyFiles_Collections_Page;
 import arca.pages.MyFiles_File_Preview;
 import arca.pages.MyFiles_List_view;
 import arca.pages.MyFiles_Recent_page;
@@ -145,6 +146,7 @@ public class BrowserHandlings{
 	MyFiles_Recent_page mb41;
 	MyFiles__PST__Extraction mb42;
 	MyFiles_List_view mb43;
+	MyFiles_Collections_Page mb44;
 	
 	
 	ATUTestRecorder recorder;
@@ -1524,31 +1526,275 @@ public class BrowserHandlings{
 //		   {
 //		     mb43 = new MyFiles_List_view (driver);
 //			 MyFiles_List_view.MyFiles_List_view();	   
+//			
+//		   }
+//		 }
+		
+//		 @Test(priority =109)
+//		 public void MyFiles_List_view_Share_User() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
 //			 MyFiles_List_view.MyFiles_List_view_Share_User();
+//		   }
+//		 }
+		
+//		 @Test(priority =109)
+//		 public void MyFiles_List_view_Add_comment_to_file() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);			 
 //		     MyFiles_List_view.MyFiles_List_view_Add_comment_to_file();			//  not completed
+//		   }
+//		 }
+		
+//		 @Test(priority =109)
+//		 public void MyFiles_List_view_Add_comment_to_folder() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
 //		     MyFiles_List_view.MyFiles_List_view_Add_comment_to_folder();
 //		   }
 //		 }
 		
-		 @Test(priority =110)
-		 public void MyFiles_List_view_Add_Tags_to_multiple_files_folders() throws Exception   {
-		   {
-		     mb43 = new MyFiles_List_view (driver);
+//		 @Test(priority =110)
+//		 public void MyFiles_List_view_Add_Tags_to_multiple_files_folders() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
 //			 MyFiles_List_view.MyFiles_List_view_Add_Tags_to_multiple_files_folders();
-//			 MyFiles_List_view.MyFiles_List_view_Add_multiple_files_to_collection();		//not completed
-			
-		   }
-		 }
+//		   }
+//		 }
+		 
+//		 @Test(priority =111)
+//		 public void MyFiles_List_view_Add_multiple_files_to_collection() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Add_multiple_files_to_collection();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =112)
+//		 public void MyFiles_List_view_Multiple_files_and_folders_copy() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Multiple_files_and_folders_copy();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =113)
+//		 public void MyFiles_List_view_Multiple_files_and_folders_Move() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Multiple_files_and_folders_Move();			  
+//		     }
+//		 }
+		
+		
+//		 @Test(priority =114)
+//		 public void MyFiles_List_view_Multipe_Files_Download() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Multipe_Files_Download();			  
+//		     }
+//		 }
+//		
+//		 @Test(priority =115)
+//		 public void MyFiles_List_view_Multipe_Folders_Download() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Multipe_Folders_Download();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =116)
+//		 public void MyFiles_List_view_Add_Remainder_File() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Add_Remainder_File();			  
+//		     }
+//		 }
+//		
+//		 @Test(priority =117)
+//		 public void MyFiles_List_view_Add_Remainder_Folder() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Add_Remainder_Folder();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =118)
+//		 public void MyFiles_List_view_File_view_versions() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_File_view_versions();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =119)
+//		 public void MyFiles_List_view_Multiple_Trash_Files() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Multiple_Trash_Files();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =120)
+//		 public void MyFiles_List_view_Multiple_Trash_Folders() throws Exception   {
+//		   {
+//		     mb43 = new MyFiles_List_view (driver);
+//		     MyFiles_List_view.MyFiles_List_view_Multiple_Trash_Folders();			  
+//		     }
+//		 }
+		
+		
+		//---------------------MyFiles_Collections_Page-------------------------------------
+		
+		
+//		 @Test(priority =121)
+//		 public void MyFiles_Collections_Page_Create_collections() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Create_collections();			  
+//		     }
+//		 }
+		
+		
+//		 @Test(priority =122)
+//		 public void MyFiles_Collections_Page_Add_Files_To_Collections() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Add_Files_To_Collections();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =123)
+//		 public void MyFiles_Collections_Page_Edit_Rename_collections() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Edit_Rename_collections();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =124)
+//		 public void MyFiles_Collections_Page_Add_Files_And_View_Collections() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Add_Files_And_View_Collections();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =125)
+//		 public void MyFiles_Collections_Page_Download_collections() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Download_collections();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =126)
+//		 public void MyFiles_Collections_Page_Export_Metedata_in_list_view() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Export_Metedata_in_list_view();			  
+//		     }
+//		 }
+		
+		
+//		 @Test(priority =127)
+//		 public void MyFiles_Collections_Page_Export_Metedata_in_View_collections() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Export_Metedata_in_View_collections();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =128)
+//		 public void MyFiles_Collections_Page_Share_Multiple_files_To_User() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Share_Multiple_files_To_User();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =129)
+//		 public void MyFiles_Collections_Page_Share_Add_comment_to_file() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Share_Add_comment_to_file();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =130)
+//		 public void MyFiles_Collections_Page_Share_Add_Tags_to_multiple_files() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Share_Add_Tags_to_multiple_files();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =131)
+//		 public void MyFiles_Collections_Page_Share_Add_Tags_to_multiple_files() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Share_Add_Tags_to_multiple_files();			  
+//		     }
+//		 }
+		 
+//		 @Test(priority =132)
+//		 public void MyFiles_Collections_Page_Multiple_files_Download() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Multiple_files_Download();			  
+//		     }
+//		 }
+		 
+//		 @Test(priority =133)
+//		 public void MyFiles_Collections_Page_Add_Remainder_To_File() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Add_Remainder_To_File();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =134)
+//		 public void MyFiles_Collections_Page_File_Rename() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_File_Rename();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =135)
+//		 public void MyFiles_Collections_Page_File_View_Versions() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_File_View_Versions();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =136)
+//		 public void MyFiles_Collections_Page_Multipl_Files_Trash() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Multipl_Files_Trash();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =137)
+//		 public void MyFiles_Collections_Page_Remove_Collections() throws Exception   {
+//		   {
+//		     mb44 = new MyFiles_Collections_Page (driver);
+//		     MyFiles_Collections_Page.MyFiles_Collections_Page_Remove_Collections();			  
+//		     }
+//		 }
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 		//----------------------Recent----------------		
 //		@Test(priority = 32)
 //				public void recent_page_comment_add() throws Exception {
