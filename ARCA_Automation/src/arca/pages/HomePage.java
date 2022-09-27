@@ -45,7 +45,7 @@ public class HomePage extends Navigation {
 		ATUReports.setTestCaseReqCoverage("ARCA Home Page");
 		setIndexPageDescription();
 		setAuthorInfoForReports();
-		log.info("--------------------Entered home Page--------------------");
+		log.info("--------------------Entered home Page here--------------------");
 		captureScreenShot(ScreenShotsFilePath + "HomePage_success.png");
 	}
 	
