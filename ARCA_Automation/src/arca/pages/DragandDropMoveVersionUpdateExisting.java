@@ -317,10 +317,13 @@ public class DragandDropMoveVersionUpdateExisting extends Navigation {
 			{
 				driver.findElement(By.xpath("(//div[@class='folder']//*[@type='checkbox'])["+i+"]")).click();
 			}
-
+			
+			Thread.sleep(1000);
+			
 			List<WebElement> Beforemovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int nooffiles = Beforemovedfiles.size();
 			System.out.println("No of Multi_files Before Moved" + nooffiles);
+			
 			click("select_all_files");
 
 			for(int i=2; i<=nooffiles-1; i++)

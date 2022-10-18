@@ -96,7 +96,7 @@ public class MyFiles_Recent_page extends Navigation {
 			Thread.sleep(2000);
 			click("Share");
 			WebElement noUserOr = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-			noUserOr.sendKeys("li");
+			noUserOr.sendKeys("fa");
 
 			WebDriverWait wait31 = new WebDriverWait(driver, 60);
 			wait31.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
@@ -108,7 +108,7 @@ public class MyFiles_Recent_page extends Navigation {
 			click("share_button");
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(2000);
@@ -125,7 +125,7 @@ public class MyFiles_Recent_page extends Navigation {
 			WebDriverWait wait51 = new WebDriverWait(driver, 120);
 			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
 			click("shared_with_me");
-
+			
 			List<WebElement> Aftermovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int Aftermovedfilestofolder = Aftermovedfiles.size();
 			System.out.println("No of files After Moved" + Aftermovedfilestofolder);
@@ -166,6 +166,8 @@ public class MyFiles_Recent_page extends Navigation {
 			Thread.sleep(1000);
 
 			click("recent_page");
+			Thread.sleep(1000);
+			click("select_all_files");
 			
 			WebElement right1=	driver.findElement(By.xpath("(//div[@class='files-info'])[1]"));
 			actions.contextClick(right1).perform();
@@ -178,7 +180,7 @@ public class MyFiles_Recent_page extends Navigation {
 			Thread.sleep(1000);
 			
 			WebDriverWait wait2221 = new WebDriverWait(driver, 60);
-			wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared Successfully')]")));
+			wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 			
@@ -246,7 +248,7 @@ public class MyFiles_Recent_page extends Navigation {
 			click("share_button");
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(2000);
@@ -296,7 +298,7 @@ public class MyFiles_Recent_page extends Navigation {
 			WebDriverWait wait351 = new WebDriverWait(driver, 120);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 			
-Navigation.login();
+			Navigation.login();
 
 			
 			WebDriverWait wait511 = new WebDriverWait(driver, 120);
@@ -304,19 +306,20 @@ Navigation.login();
 			Thread.sleep(1000);
 
 			click("recent_page");
+			click("select_all_files");
 			
 			WebElement right1=	driver.findElement(By.xpath("(//div[@class='files-info'])[1]"));
 			actions.contextClick(right1).perform();
 			Thread.sleep(2000);
 			click("Share");
-			
+						
 			select("shared_user_popup_dropdown","visibletext","Remove");
 			Thread.sleep(2000);
 			click("share_button");
 			Thread.sleep(1000);
 			
 			WebDriverWait wait2221 = new WebDriverWait(driver, 60);
-			wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared Successfully')]")));
+			wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 			
@@ -370,7 +373,7 @@ Navigation.login();
 			Thread.sleep(2000);
 			click("Share");
 			WebElement noUserOr = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-			noUserOr.sendKeys("li");
+			noUserOr.sendKeys("fa");
 
 			WebDriverWait wait31 = new WebDriverWait(driver, 60);
 			wait31.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
@@ -382,7 +385,7 @@ Navigation.login();
 			click("share_button");
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(2000);
@@ -432,6 +435,39 @@ Navigation.login();
 
 			WebDriverWait wait351 = new WebDriverWait(driver, 120);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+			
+			Navigation.login();
+
+			WebDriverWait wait511 = new WebDriverWait(driver, 120);
+			wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+			Thread.sleep(1000);
+
+			click("recent_page");
+			
+			WebElement right1=	driver.findElement(By.xpath("(//div[@class='files-info'])[1]"));
+			actions.contextClick(right1).perform();
+			Thread.sleep(2000);
+			click("Share");
+						
+			select("shared_user_popup_dropdown","visibletext","Remove");
+			Thread.sleep(2000);
+			click("share_button");
+			Thread.sleep(1000);
+			
+			WebDriverWait wait2221 = new WebDriverWait(driver, 60);
+			wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
+			Thread.sleep(2000);
+			click("toast_close");
+			
+			Thread.sleep(2000);
+			click("Profile_Icon");
+			Thread.sleep(1000);
+			click("Sign_out");
+			click("Ok");
+
+			WebDriverWait wait3511 = new WebDriverWait(driver, 120);
+			wait3511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+			
 
 
 		}
@@ -476,7 +512,7 @@ Navigation.login();
 
 			//Here Toast message is a confirmation Verification
 			WebDriverWait wait51 = new WebDriverWait(driver, 120);
-			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Successfully saved the comment']")));
+			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Successfully saved the comment.']")));
 			Thread.sleep(1000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -531,13 +567,14 @@ Navigation.login();
 
 			//Here Toast message is a confirmation Verification
 			WebDriverWait wait51 = new WebDriverWait(driver, 120);
-			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Updated the tags successfully']")));
+			wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Updated the tags successfully.']")));
 			Thread.sleep(1000);
 			click("toast_close");
 			Thread.sleep(1000);
+			click("sorting_view_details");
+			Thread.sleep(2000);
 			getPageObject("Single_File").click(); 
-			click("Details_circle");
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			getPageObject("Second_File").click(); 
 
 			Thread.sleep(2000);
@@ -615,7 +652,7 @@ Navigation.login();
 
 			click("Save");
 			Thread.sleep(2000);
-			WebElement close = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully!!']"));
+			WebElement close = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully.']"));
 			close.click();
 			Thread.sleep(2000);
 			click("collections");
@@ -632,9 +669,7 @@ Navigation.login();
 
 			if(Aftermovedfilestofolder==25)
 			{
-
-
-				log.info("--------------------------No of moved files is equal to before------------------------------");
+				log.info("--------------------------No of  files is not equal to before------------------------------");
 
 				captureScreenShot(ScreenShotsFilePath + "MyFiles_Recent_Page_Add_multiple_files_to_collection_success.png");
 				Thread.sleep(2000);
@@ -691,7 +726,8 @@ Navigation.login();
 			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
 			Thread.sleep(1000);
 			click("recent_page");
-
+			Thread.sleep(1000);
+			
 			List<WebElement> Beforemovedfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
 			int nooffiles = Beforemovedfiles.size();
 			System.out.println("No of files Before " + nooffiles);
@@ -704,19 +740,22 @@ Navigation.login();
 
 			WebElement el =driver.findElement(By.xpath("//*[@class='cp-list-item']//span[contains(text(),'My Files')]"));
 			act.doubleClick(el).perform();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			getPageObject("Folder_Create").click();
 			Thread.sleep(1000);
 			sendKeys("Create_Folder_name","Multi Files Copy");
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			click("Create_button");
-			Thread.sleep(1000);
+			Thread.sleep(4000);
 			getPageObject("Recent_Copy").click();
 			Thread.sleep(2000);
 			click("Close_Pop");
+//			WebDriverWait wait222 = new WebDriverWait(driver, 120);
+//			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='bi-x colse-i-mdl b-icon bi']")));
+
 			
-			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied')]")));
+			WebDriverWait wait2221 = new WebDriverWait(driver, 60);
+			wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied.')]")));
 			Thread.sleep(1000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -886,7 +925,7 @@ Navigation.login();
 			click("create_reminder_button");
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully!!!']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully.']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -932,21 +971,20 @@ Navigation.login();
 			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
 			Thread.sleep(1000);
 			click("recent_page");
-
-			WebElement right=	driver.findElement(By.xpath("(//div[contains(text(),'New Text 1.txt')])[2]"));
+			Thread.sleep(1000);
+			WebElement right=	driver.findElement(By.xpath("(//div[contains(text(),'New Word.docx')])[2]"));
 			actions.contextClick(right).perform();
 			click("File_Rename");
 			getPageObject("rename_file_textarea").clear();
-			sendKeys("Rename_input","Test");
+			sendKeys("Rename_input","Test3");
 			click("Save");
 			Thread.sleep(1000);
 			
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'New Text 1 Renamed to Test')]")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'New Word Renamed to Test3.')]")));
 			Thread.sleep(1000);
 			click("toast_close");
-	//		Thread.sleep(1000);
-	//		click("toast_close");
+	
 			//Here click Profile and Sign out
 			Thread.sleep(1000);
 			click("Profile_Icon");
@@ -993,7 +1031,11 @@ Navigation.login();
 			actions.contextClick(right).perform();
 			click("View_version");
 			Thread.sleep(1000);
+			click("sorting_view_details");
+			
 			getPageObject("Current_version").isDisplayed();
+			Thread.sleep(1000);
+			click("view_Version_close");
 			
 			{
 				log.info("--------------------------No of MyFiles_Reminders_Files_Bell_Icon------------------------------");
@@ -1238,10 +1280,10 @@ try
 	Thread.sleep(2000);
 	click("Arrow_Right");
 
-	String file3 =driver.findElement(By.xpath("(//div[contains(text(),'New Word 1.docx')])[2]")).getText();
+	String file3 =driver.findElement(By.xpath("(//div[contains(text(),'sample 2.docx')])[1]")).getText();
 	System.out.println(file3);
 
-	if(file1.equals(file3))
+	if(!file1.equals(file3))
 	{
 
 
@@ -1260,7 +1302,7 @@ try
 		ATUReports.add("MyFiles_Recent_Page_Right_and_Left_Naviation failed","MyFiles_Recent_Page_Right_and_Left_Naviation",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 		Thread.sleep(2000);
 	}
-	
+	Thread.sleep(1000);
 	click("Arrow_Left");
 	
 	Thread.sleep(1000);
@@ -1305,20 +1347,24 @@ try
 	wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
 	Thread.sleep(1000);
 	click("recent_page");
-	
+	Thread.sleep(1000);
 	WebElement right=	driver.findElement(By.xpath("(//div[contains(text(),'New Word 1.docx')])[1]"));
 	actions.contextClick(right).perform();
 	Thread.sleep(1000);
-	click("Downloads");
-	Thread.sleep(1000);
-	WebDriverWait wait221 = new WebDriverWait(driver, 60);
-	wait221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Depending on the file/folder size, download might take some time.')]")));
-	Thread.sleep(1000);
-	click("toast_close");
-	Thread.sleep(1000);
-		
-	Thread.sleep(1000);
+	click("click_preview");
+	Thread.sleep(3000);
+	click("Download_Icon");
+	Thread.sleep(3000);
+//	click("Recent_file_preview_downoad");
+//	Thread.sleep(2000);
+//	click("Download_save");
+//	WebDriverWait wait221 = new WebDriverWait(driver, 60);
+//	wait221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Depending on the file/folder size, download might take some time.')]")));
+//	Thread.sleep(1000);
+//	click("toast_close");
 	
+	
+	click("Left_Back");
 	Thread.sleep(1000);
 	click("Profile_Icon");
 	Thread.sleep(1000);
@@ -1367,7 +1413,7 @@ public static void MyFiles_Recent_Page_Share_to_Internal_User()
 		Thread.sleep(2000);
 
 		WebElement noUserOr = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-		noUserOr.sendKeys("li");
+		noUserOr.sendKeys("fa");
 
 
 		WebDriverWait wait31 = new WebDriverWait(driver, 60);
@@ -1380,7 +1426,7 @@ public static void MyFiles_Recent_Page_Share_to_Internal_User()
 		click("share_button");
 
 		WebDriverWait wait222 = new WebDriverWait(driver, 60);
-		wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+		wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared successfully.')]")));
 		Thread.sleep(2000);
 		click("toast_close");
 		click("Profile_Icon");
@@ -1444,7 +1490,9 @@ public static void MyFiles_Recent_Page_Share_to_Internal_User()
 
 			}
 		}
-
+		
+		
+		
 		click("Profile_Icon");
 		Thread.sleep(1000);
 		click("Sign_out");
@@ -1453,7 +1501,46 @@ public static void MyFiles_Recent_Page_Share_to_Internal_User()
 		WebDriverWait wait351 = new WebDriverWait(driver, 120);
 		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 		
+		Navigation.login();
+
 		
+		WebDriverWait wait511 = new WebDriverWait(driver, 120);
+		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+		Thread.sleep(1000);
+
+		click("recent_page");
+
+		WebElement right1=	driver.findElement(By.xpath("(//div[contains(text(),'New Word 1.docx')])[1]"));
+		actions.contextClick(right1).perform();
+		Thread.sleep(2000);
+		click("click_preview");
+		Thread.sleep(1000);
+		click("Share_Icon");
+		Thread.sleep(1000);
+
+		select("shared_user_popup_dropdown","visibletext","Remove");
+		Thread.sleep(2000);
+		click("share_button");
+		Thread.sleep(1000);
+		
+
+		WebDriverWait wait2221 = new WebDriverWait(driver, 60);
+		wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared successfully.')]")));
+		Thread.sleep(2000);
+		click("toast_close");
+		Thread.sleep(1000);
+		click("Left_Back");
+		
+		Thread.sleep(3000);
+		click("Profile_Icon");
+		Thread.sleep(2000);
+		click("Sign_out");
+		Thread.sleep(1000);
+		click("Ok");
+
+		WebDriverWait wait3511 = new WebDriverWait(driver, 120);
+		wait3511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 	}
 	catch (Exception e) {
 
@@ -1489,7 +1576,7 @@ public static void MyFiles_Recent_Page_Share_to_Group()
 		String file1 =driver.findElement(By.xpath("(//div[contains(text(),'New Word 1.docx')])[1]")).getText();
 		System.out.println(file1);
 		
-		WebElement right=	driver.findElement(By.xpath("//div[@class='files-info']"));
+		WebElement right=	driver.findElement(By.xpath("(//div[contains(text(),'New Word 1.docx')])[1]"));
 		actions.contextClick(right).perform();
 		click("Share");
 
@@ -1508,7 +1595,7 @@ public static void MyFiles_Recent_Page_Share_to_Group()
 		click("share_button");
 
 		WebDriverWait wait222 = new WebDriverWait(driver, 60);
-		wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+		wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared successfully.')]")));
 		Thread.sleep(2000);
 		click("toast_close");
 
@@ -1598,7 +1685,47 @@ public static void MyFiles_Recent_Page_Share_to_Group()
 		
 		WebDriverWait wait351 = new WebDriverWait(driver, 120);
 		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+	
+		Navigation.other_user_in_same_tenant();
+
 		
+		WebDriverWait wait511 = new WebDriverWait(driver, 120);
+		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+		Thread.sleep(1000);
+
+		click("recent_page");
+
+		WebElement right1=	driver.findElement(By.xpath("(//div[contains(text(),'New Word 1.docx')])[1]"));
+		actions.contextClick(right1).perform();
+		Thread.sleep(2000);
+		click("click_preview");
+		Thread.sleep(1000);
+		click("Share_Icon");
+		Thread.sleep(1000);
+
+		select("shared_user_popup_dropdown","visibletext","Remove");
+		Thread.sleep(2000);
+		click("share_button");
+		Thread.sleep(1000);
+		
+
+		WebDriverWait wait2221 = new WebDriverWait(driver, 60);
+		wait2221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared successfully.')]")));
+		Thread.sleep(2000);
+		click("toast_close");
+		Thread.sleep(1000);
+		click("Left_Back");
+		
+		Thread.sleep(3000);
+		click("Profile_Icon");
+		Thread.sleep(2000);
+		click("Sign_out");
+		Thread.sleep(1000);
+		click("Ok");
+
+		WebDriverWait wait3511 = new WebDriverWait(driver, 120);
+		wait3511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 	}
 
 	catch (Exception e) {
@@ -1640,58 +1767,63 @@ public static void MyFiles_Recent_Page_Share_with_link_to_Internal_User()
 		click("Share_Icon");
 		Thread.sleep(1000);
 
-		WebElement noUserOr1 = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-		noUserOr1.sendKeys("li");
-
-//		WebDriverWait wait311 = new WebDriverWait(driver, 60);
-//		wait311.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='multiselect__content']/li[1]")));
-		getPageObject("search_result_first_element").click(); 
-
-		select("shared_user_popup_sharelink_dropdown","visibletext","Edit"); 
-		click("share_button");
-		Thread.sleep(2000);
-		click("share_button");
+		click("Copy");
 		
-		Thread.sleep(1000);
+		WebElement showLinkIn = driver.findElement(By.className("form-control"));
+		String link_text = showLinkIn.getText();
+		log.info("Copied link is : "+link_text);
 		
+		WebDriverWait wait53453 = new WebDriverWait(driver, 60);
+		wait53453.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='Vue-Toastification__toast-body']")));
+		
+		
+		if(getPageObject("starred_toast").getText().contains("Copied successfully."));
+		
+		String copied_link_text = driver.findElement(By.xpath("//input[@class='form-control']")).getAttribute("value").toString();
 
+		System.out.println("---------------------Copied link is : "+copied_link_text);
+		click("File_share_close");
+		
 		WebDriverWait wait351 = new WebDriverWait(driver, 60);
-		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Copied Successfully')]")));
+		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Copied successfully.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		Thread.sleep(1000);
-		click("toast_close");
 		
-		
+		Thread.sleep(1000);
+		click("Left_Back");
 		Thread.sleep(1000);
 		click("Profile_Icon");
 		Thread.sleep(2000);
 		click("Sign_out");
 		Thread.sleep(1000);
-	//	click("Ok");
+		click("Ok");
 
 		WebDriverWait wait3511 = new WebDriverWait(driver, 120);
 		wait3511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 		
 		
 
-//		Navigation.other_user_in_same_tenant();
-//
-//		driver.get(Home_Page);
-//		WebDriverWait wait51 = new WebDriverWait(driver, 120);
-//		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
-//
-//		Thread.sleep(2000);
-//		click("shared_with_me");
-//		Thread.sleep(2000);
-//
-//		click("Profile_Icon");
-//		Thread.sleep(2000);
-//		click("Sign_out");
-//		Thread.sleep(1000);
-//		click("Ok");
+		Navigation.other_user_in_same_tenant();
 
-		WebDriverWait wait35 = new WebDriverWait(driver, 120);
+		driver.get(Home_Page);
+		WebDriverWait wait51 = new WebDriverWait(driver, 120);
+		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
+
+		Thread.sleep(4000);
+		driver.navigate().to(copied_link_text);
+		Thread.sleep(3000);
+		
+		driver.navigate().back();
+		
+		Thread.sleep(1000);
+		click("Profile_Icon");
+		Thread.sleep(2000);
+		click("Sign_out");
+		Thread.sleep(1000);
+		click("Ok");
+	
+		WebDriverWait wait35 = new WebDriverWait(driver, 30);
 		wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 	}
@@ -1753,26 +1885,28 @@ public static void MyFiles_Recent_Page_Copy()
 		// Now format the date
 		String dateFormatted= dateFormat.format(date);
 
-		String name= "Files Copy"+dateFormatted;
+		String name= "RFiles Copy"+dateFormatted;
 
 		log.info("Creating  name: "+name);
 
 		sendKeys("Create_Folder_name",name);
 		Thread.sleep(1000);
 		click("Create_button");
-		Thread.sleep(1000);
-		getPageObject("Recent_Copy").click();
 		Thread.sleep(2000);
+		getPageObject("Recent_Copy").click();
+		Thread.sleep(3000);
 		click("Close_Pop");
+		Thread.sleep(1000);
 		WebDriverWait wait351 = new WebDriverWait(driver, 60);
-		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied')]")));
+		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
+		Thread.sleep(1000);
 		click("Left_Back");
 		Thread.sleep(1000);
 		click("copy_mydrive");
 		
-		WebElement el11 =driver.findElement(By.xpath("//div[contains(text(),'Files Copy')]"));
+		WebElement el11 =driver.findElement(By.xpath("//div[contains(text(),'RFiles Copy')]"));
 		act.doubleClick(el11).perform();
 
 		List<WebElement> Aftercopyfiles = driver.findElements(By.xpath("//*[@class='files-footer']"));
@@ -1852,11 +1986,11 @@ public static void MyFiles_Recent_Page_Copy_Check_Versions()
 		actions.contextClick(right1).perform();
 		Thread.sleep(2000);
 		click("click_preview");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		click("Details_circle");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	//	click("Saved_versions");
-		getPageObject("Remainder_file_icon").isDisplayed();
+	//	getPageObject("Remainder_file_icon").isDisplayed();
 		
 		click("Left_Back");
 		Thread.sleep(1000);
@@ -1902,7 +2036,7 @@ public static void MyFiles_Recent_Page_Add_Edit_Delete_Comments()
 		Actions act = new Actions(driver);
 		click("recent_page");
 
-		WebElement right1=	driver.findElement(By.xpath("(//*[@class='fileName'])[1]"));
+		WebElement right1=	driver.findElement(By.xpath("(//*[@class='fileName'])[2]"));
 		actions.contextClick(right1).perform();
 		Thread.sleep(2000);
 		click("click_preview");
@@ -1912,16 +2046,16 @@ public static void MyFiles_Recent_Page_Add_Edit_Delete_Comments()
 		click("Add_comments");
 		sendKeys("Text_area","ECS");
 		Thread.sleep(1000);
-		click("Save");
+		click("Add_comment_save");
 		WebDriverWait wait51 = new WebDriverWait(driver, 60);
-		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully saved the comment')]")));
+		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully saved the comment.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		click("Left_Back");
 
 		//--Comments are Edited--
 
-		WebElement right11=	driver.findElement(By.xpath("(//*[@class='fileName'])[1]"));
+		WebElement right11=	driver.findElement(By.xpath("(//*[@class='fileName'])[2]"));
 		actions.contextClick(right11).perform();
 		Thread.sleep(1000);
 		click("click_preview");
@@ -1935,10 +2069,10 @@ public static void MyFiles_Recent_Page_Add_Edit_Delete_Comments()
 		getPageObject("Edit").click();
 		Thread.sleep(1000);
 		getPageObject("Text_area_edit").clear();
-		getPageObject("Text_area_edit").sendKeys("Test");
-		click("Save");							
+		getPageObject("Text_area_edit").sendKeys("Test1");
+		click("Add_comment_save");							
 		WebDriverWait wait511 = new WebDriverWait(driver, 60);
-		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully edited the comment')]")));
+		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully edited the comment.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		Thread.sleep(1000);
@@ -1946,7 +2080,7 @@ public static void MyFiles_Recent_Page_Add_Edit_Delete_Comments()
 
 		//--Comments are Deleted--
 
-		WebElement right21=	driver.findElement(By.xpath("(//*[@class='fileName'])[1]"));
+		WebElement right21=	driver.findElement(By.xpath("(//*[@class='fileName'])[2]"));
 		actions.contextClick(right21).perform();
 		Thread.sleep(1000);
 		click("click_preview");
@@ -1958,7 +2092,7 @@ public static void MyFiles_Recent_Page_Add_Edit_Delete_Comments()
 		getPageObject("Edit_3dots").click();
 		Thread.sleep(1000);
 		click("Delete");
-		click("Ok");	
+		click("Preview_Delete_ok");	
 		WebDriverWait wait41 = new WebDriverWait(driver, 60);
 		wait41.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully deleted the comments.')]")));
 		Thread.sleep(1000);
@@ -2011,7 +2145,7 @@ public static void MyFiles_Recent_Page_Tag_Add_Edit_Delete()
 	//	Actions act = new Actions(driver);
 		click("recent_page");
 		
-		WebElement right1=	driver.findElement(By.xpath("(//*[@class='fileName'])[1]"));
+		WebElement right1=	driver.findElement(By.xpath("(//*[@class='fileName'])[2]"));
 		actions.contextClick(right1).perform();
 		Thread.sleep(2000);
 		click("click_preview");
@@ -2020,16 +2154,16 @@ public static void MyFiles_Recent_Page_Tag_Add_Edit_Delete()
 		click("Add_View_Tags");
 		Thread.sleep(1000);
 		sendKeys("Add_Tag","Testing-1");
-		click("Save");
+		click("Tag_save_button");
 		WebDriverWait wait511 = new WebDriverWait(driver, 60);
-		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully')]")));
+		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		Thread.sleep(1000);
 		click("Left_Back");
 		
 		// Editing Tag
-		WebElement right11=	driver.findElement(By.xpath("(//*[@class='fileName'])[1]"));
+		WebElement right11=	driver.findElement(By.xpath("(//*[@class='fileName'])[2]"));
 		actions.contextClick(right11).perform();
 		Thread.sleep(2000);
 		click("click_preview");
@@ -2038,17 +2172,17 @@ public static void MyFiles_Recent_Page_Tag_Add_Edit_Delete()
 //		sendKeys("Add_Tag","",Keys.BACK_SPACE);
 		Thread.sleep(1000);
 		sendKeys("Add_Tag","Testing-2");
-		click("Save");
+		click("Tag_save_button");
 		Thread.sleep(1000);
 		WebDriverWait wait5111 = new WebDriverWait(driver, 60);
-		wait5111.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully')]")));
+		wait5111.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		click("Left_Back");
 		Thread.sleep(1000);
 		
 		//  Deleting Tag
-		WebElement right111=	driver.findElement(By.xpath("(//*[@class='fileName'])[1]"));
+		WebElement right111=	driver.findElement(By.xpath("(//*[@class='fileName'])[2]"));
 		actions.contextClick(right111).perform();
 		Thread.sleep(2000);
 		click("click_preview");
@@ -2056,10 +2190,10 @@ public static void MyFiles_Recent_Page_Tag_Add_Edit_Delete()
 		click("Add_View_Tags");
 		Thread.sleep(1000);
 		getPageObject("add_tag_input_field").sendKeys(Keys.BACK_SPACE,Keys.BACK_SPACE);
-		click("Save");
+		click("Tag_save_button");
 		Thread.sleep(1000);
 		WebDriverWait wait1 = new WebDriverWait(driver, 60);
-		wait5111.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully')]")));
+		wait5111.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		click("Left_Back");
@@ -2108,7 +2242,7 @@ public static void MyFiles_Recent_Page_Rename()
 		Thread.sleep(1000);
 		click("recent_page");
 		
-		WebElement right1=	driver.findElement(By.xpath("(//div[contains(text(),'New Word 1.docx')])[1]"));
+		WebElement right1=	driver.findElement(By.xpath("(//div[@title='New Word 1.docx'])[2]"));
 		actions.contextClick(right1).perform();
 		Thread.sleep(2000);
 		click("click_preview");
@@ -2118,12 +2252,12 @@ public static void MyFiles_Recent_Page_Rename()
 		click("Rename");
 		Thread.sleep(1000);
 		getPageObject("rename_file_textarea").clear();
-		sendKeys("Rename_input","Test 1");
+		sendKeys("Rename_input","Test 4");
 		Thread.sleep(1000);
-		click("Save"); 	
+		click("Rename_save_Button"); 	
 
 		WebDriverWait wait51 = new WebDriverWait(driver, 120);
-		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'New Word 1 Renamed to Test 1')]")));
+		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'New Word 1 Renamed to Test 4.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		click("Left_Back");
@@ -2207,7 +2341,7 @@ public static void MyFiles_Recent_Page_Add_File_to_Collection()
 
 		click("Save");
 		Thread.sleep(2000);
-		WebElement close = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully!!']"));
+		WebElement close = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully.']"));
 		close.click();
 		Thread.sleep(2000);
 		click("collections");

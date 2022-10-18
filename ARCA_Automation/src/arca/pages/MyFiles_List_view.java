@@ -142,7 +142,7 @@ public class MyFiles_List_view extends Navigation {
 			Thread.sleep(2000);
 			
 			WebElement noUserOr = driver.findElement(By.xpath("//input[@placeholder='Search Users or Groups']"));
-			noUserOr.sendKeys("li");
+			noUserOr.sendKeys("fa");
 			
 			
 			WebDriverWait wait31 = new WebDriverWait(driver, 60);

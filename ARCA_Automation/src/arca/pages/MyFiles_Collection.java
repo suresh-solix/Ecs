@@ -121,7 +121,7 @@ public class MyFiles_Collection extends Navigation {
 
 			click("Save");
 			Thread.sleep(2000);
-			WebElement close = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully!!']"));
+			WebElement close = driver.findElement(By.xpath("//div[contains(text(),'Added file(s) to the collection successfully.')]"));
 			close.click();
 			Thread.sleep(2000);
 			click("collections");
@@ -159,7 +159,7 @@ public class MyFiles_Collection extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait35 = new WebDriverWait(driver, 60);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -231,7 +231,7 @@ public class MyFiles_Collection extends Navigation {
 
 			click("Save");
 			Thread.sleep(1000);
-			WebElement close1 = driver.findElement(By.xpath("//div[text()='Added file(s) to the collection successfully!!']"));
+			WebElement close1 = driver.findElement(By.xpath("//div[contains(text(),'Added file(s) to the collection successfully.')]"));
 			close1.click();
 			Thread.sleep(2000);
 			click("collections");
@@ -290,7 +290,7 @@ public class MyFiles_Collection extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));

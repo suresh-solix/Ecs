@@ -129,7 +129,7 @@ public class MyFiles_Reminders extends Navigation{
 			click("create_reminder_button");
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully!!!']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully.']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -222,7 +222,7 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(2000);
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Edited reminder successfully!!']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Edited reminder successfully.']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -330,7 +330,7 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(1000);
 			
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Deleted reminder successfully']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Deleted reminder successfully.')]")));
 			Thread.sleep(1000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -412,11 +412,6 @@ public class MyFiles_Reminders extends Navigation{
 
 			sendKeys("reminder_name",reminder_name);
 
-//			 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");  
-//    		 LocalDateTime now = LocalDateTime.now();  
-//			 click("Icon_Calender");
-//			 click("Date");
-// 			 click("Stopwatch");
  			 
 			click("date_picker");
 			Thread.sleep(2000);
@@ -434,7 +429,7 @@ public class MyFiles_Reminders extends Navigation{
 			click("create_reminder_button");
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully!!!']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Reminder added successfully.']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -536,7 +531,7 @@ public class MyFiles_Reminders extends Navigation{
 			Thread.sleep(2000);
 
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Edited reminder successfully!!']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Edited reminder successfully.']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);
@@ -644,7 +639,7 @@ public class MyFiles_Reminders extends Navigation{
 			click("Ok");
 			Thread.sleep(1000);
 			WebDriverWait wait22 = new WebDriverWait(driver, 60);
-			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Deleted reminder successfully']")));
+			wait22.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Deleted reminder successfully.']")));
 			Thread.sleep(2000);
 			click("toast_close");
 			Thread.sleep(1000);

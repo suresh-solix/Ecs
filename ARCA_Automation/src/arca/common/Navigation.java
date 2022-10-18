@@ -39,7 +39,7 @@ public class Navigation {
 private static WebDriver driver;
 private static Logger log=Logger.getLogger(Navigation.class.getName());
 public static String Home_Page = "https://app.solixecsdev.com/login";
-public static String Guest_Home_Page = "https://tebyy.solixecsdev.com";
+public static String Guest_Home_Page = "https://migonom.solixecsdev.com";
 public static final String DataFilePath =  System.getProperty("user.dir") + System.getProperty("file.separator") + "data" + System.getProperty("file.separator");
 public static final String ScreenShotsFilePath =  System.getProperty("user.dir") + System.getProperty("file.separator") + "screenshots" + System.getProperty("file.separator");
 public static String pagePath = "arca.pages.";
@@ -140,7 +140,8 @@ public static void login()
 		
 		driver.get(Home_Page);
 		
-		sendKeys("login_username", "voyesi9637@vpsrec.com");
+		sendKeys("login_username", "cevicab277@lutota.com");
+;
 		
 		click("login_next");
 
@@ -180,7 +181,7 @@ public static void other_user_in_same_tenant()
 		
 		driver.get(Home_Page);
 		
-		sendKeys("login_username", "lidole9988@vpsrec.com");
+		sendKeys("login_username", "fadapo8587@lutota.com");
 		
 		click("login_next");
 
@@ -221,7 +222,7 @@ public static void other_tenant()
 		
 		driver.get(Home_Page);
 		
-		sendKeys("login_username", "tadinaj424@mainctu.com");
+		sendKeys("login_username", "badey10576@lutota.com");
 		
 		click("login_next");
 
@@ -266,7 +267,7 @@ public static void external_guest_user()
 		
 		driver.get(Guest_Home_Page);
 		
-		sendKeys("login_username", "rabapa8764@orlydns.com");
+		sendKeys("login_username", "kesahi4908@migonom.com");
 		Thread.sleep(1000);
 	
 		sendKeys("login_password", "Test@123");

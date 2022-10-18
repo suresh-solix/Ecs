@@ -116,7 +116,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("share_button");
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -332,7 +332,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator9).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag=shared_file_right_click_options.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag.size();i++)
@@ -411,7 +411,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator91).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag1=shared_file_right_click_options1.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag1.size();i++)
@@ -509,7 +509,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 			
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -734,7 +734,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator9).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag=shared_file_right_click_options.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag.size();i++)
@@ -810,14 +810,11 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			robot1.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(2000);	
 
-			//		WebDriverWait wait31221 = new WebDriverWait(driver, 60);
-			//		wait31221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h5[contains(text(),'Folders')]")));
-
 			WebElement elementLocator91 = getPageObject("share_first_file");
 			actions.contextClick(elementLocator91).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag1=shared_file_right_click_options1.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag1.size();i++)
@@ -840,12 +837,12 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 				}
 			}
-			
+			Thread.sleep(1000);
 			click("Profile_Icon");
 			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait3 = new WebDriverWait(driver, 120);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -911,7 +908,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 			
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -1133,7 +1130,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator9).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag=shared_file_right_click_options.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag.size();i++)
@@ -1158,9 +1155,11 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			}
 			Thread.sleep(1000);
 			click("Profile_Icon");
+			Thread.sleep(1000);
 			click("Sign_out");
+			Thread.sleep(1000);
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait3 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -1208,14 +1207,11 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			robot1.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(2000);	
 
-			//		WebDriverWait wait31221 = new WebDriverWait(driver, 60);
-			//		wait31221.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h5[contains(text(),'Folders')]")));
-
 			WebElement elementLocator91 = getPageObject("share_first_file");
 			actions.contextClick(elementLocator91).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag1=shared_file_right_click_options1.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag1.size();i++)
@@ -1238,12 +1234,12 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 
 				}
 			}
-			
+			Thread.sleep(1000);
 			click("Profile_Icon");
 			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait351 = new WebDriverWait(driver, 120);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -1309,7 +1305,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -1433,7 +1429,6 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
 			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -1532,7 +1527,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator9).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag=shared_file_right_click_options.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag.size();i++)
@@ -1561,7 +1556,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait351 = new WebDriverWait(driver, 60);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -1613,7 +1608,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator91).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag1=shared_file_right_click_options1.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag1.size();i++)
@@ -1642,7 +1637,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			click("Sign_out");
 			Thread.sleep(1000);
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait45 = new WebDriverWait(driver, 60);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
@@ -1706,7 +1701,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -1928,7 +1923,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator9).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag=shared_file_right_click_options.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag.size();i++)
@@ -1956,8 +1951,8 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
-			WebDriverWait wait351 = new WebDriverWait(driver, 60);
+			
+			WebDriverWait wait351 = new WebDriverWait(driver, 120);
 			wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 
@@ -2007,7 +2002,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			actions.contextClick(elementLocator91).perform();
 			Thread.sleep(2000);
 
-			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']/div[2][@class='context-list']/ul"));
+			WebElement shared_file_right_click_options1 = driver.findElement(By.xpath("//div[@class='files']//div[@class='context-list'][1]/ul"));
 			List<WebElement> each_file_li_tag1=shared_file_right_click_options1.findElements(By.tagName("li"));
 
 			for(int i=0;i<each_file_li_tag1.size();i++)
@@ -2035,8 +2030,9 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
-			WebDriverWait wait11 = new WebDriverWait(driver, 60);
+			
+			
+			WebDriverWait wait11 = new WebDriverWait(driver, 120);
 			wait11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 		}
@@ -2099,7 +2095,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 
@@ -2225,7 +2221,7 @@ public class MyFiles_share_Admin_to_Group  extends Navigation {
 			Thread.sleep(1000);
 			click("Sign_out");
 			click("Ok");
-			Thread.sleep(4000);
+			
 			
 			WebDriverWait wait35 = new WebDriverWait(driver, 120);
 			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));

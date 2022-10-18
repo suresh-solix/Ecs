@@ -76,7 +76,7 @@ public class DragandDropMoveVersions_Skip extends Navigation {
 			driver.get(Home_Page);
 			WebDriverWait wait5 = new WebDriverWait(driver, 120);
 			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'My Files')]")));
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			//Double click on element
 			WebElement ele = getPageObject("Move_Skip_Test");
 
