@@ -1410,13 +1410,13 @@ public class BrowserHandlings{
 //			}
 //		}
 //
-		@Test(priority =102)
-		public void MyFiles_File_Preview_Download() throws Exception   {
-			{
-				mb40 = new MyFiles_File_Preview(driver);
-				MyFiles_File_Preview.MyFiles_File_Preview_Download();		
-			}
-		}
+//		@Test(priority =102)
+//		public void MyFiles_File_Preview_Download() throws Exception   {
+//			{
+//				mb40 = new MyFiles_File_Preview(driver);
+//				MyFiles_File_Preview.MyFiles_File_Preview_Download();		
+//			}
+//		}
 //
 //		@Test(priority =103)
 //		public void MyFiles_File_Preview_Share_to_Internal_User() throws Exception   {
