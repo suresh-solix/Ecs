@@ -30,6 +30,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import arca.common.Navigation;
+import arca.pages.Account_Settings;
 import arca.pages.BusinessPremiumSignup;
 import arca.pages.BusinessStandardSignup;
 import arca.pages.CollectionsPage;
@@ -41,6 +42,7 @@ import arca.pages.DragandDropMoveVersionUpdateExisting;
 import arca.pages.DragandDropMoveVersions_Skip;
 import arca.pages.ExportMetaData;
 import arca.pages.FilePreview;
+import arca.pages.Forgot_Password;
 import arca.pages.MyFilesComments;
 import arca.pages.MyFilesCopy;
 import arca.pages.MyFilesDelete;
@@ -50,6 +52,7 @@ import arca.pages.MyFilesReminders;
 import arca.pages.MyFilesStarred;
 import arca.pages.HomePage;
 import arca.pages.Signup;
+import arca.pages.Signup_Form;
 import arca.pages.PermanentDelete;
 import arca.pages.PersonalPremiumSignup;
 import arca.pages.PersonalSignUp;
@@ -72,6 +75,8 @@ import arca.pages.SourceManager;
 import arca.pages.MyFilesTags;
 import arca.pages.MyFiles_Collection;
 import arca.pages.MyFiles_Collections_Page;
+import arca.pages.MyFiles_Details;
+import arca.pages.MyFiles_Email_Integration;
 import arca.pages.MyFiles_File_Preview;
 import arca.pages.MyFiles_List_view;
 import arca.pages.MyFiles_Recent_page;
@@ -79,6 +84,7 @@ import arca.pages.MyFiles_Reminders;
 import arca.pages.MyFiles_Share_User_to_Group;
 import arca.pages.MyFiles_Share_with_me_Page;
 import arca.pages.MyFiles_Sorting_Files_Folders;
+import arca.pages.MyFiles_Upload_Forms;
 import arca.pages.MyFiles__PST__Extraction;
 import arca.pages.MyFiles_share_Admin_to_Group;
 import arca.pages.LegalHold;
@@ -151,6 +157,14 @@ public class BrowserHandlings{
 	MyFiles_Collections_Page mb44;
 	MyFiles_Share_with_me_Page mb45;
 	MyFiles_Sorting_Files_Folders mb46;
+	MyFiles_Details mb47;
+	MyFiles_Upload_Forms mb48;
+	MyFiles_Email_Integration mb49;
+	Signup_Form mb50;
+	Forgot_Password mb51;
+	Account_Settings mb52;
+	
+	
 	
 	ATUTestRecorder recorder;
 	
@@ -1741,7 +1755,7 @@ public class BrowserHandlings{
 //		     MyFiles_List_view.MyFiles_List_view_Add_comment_to_file();			
 //		   }
 //		 }
-		
+//		
 //		 @Test(priority =142)
 //		 public void MyFiles_List_view_Add_comment_to_folder() throws Exception   {
 //		   {
@@ -2254,7 +2268,7 @@ public class BrowserHandlings{
 				// ------------------------MyFiles_Sorting_Files_Folders---------------
 		 
 		 
-//		 @Test(priority =202)
+//		 @Test(priority =203)
 //		 public void MyFiles_Sorting_Files_Folders_AZ_Grid_view() throws Exception   {
 //		   {
 //		     mb46 = new MyFiles_Sorting_Files_Folders (driver);
@@ -2263,7 +2277,7 @@ public class BrowserHandlings{
 //		 }
 //		 
 //		 
-//		 @Test(priority =203)
+//		 @Test(priority =204)
 //		 public void MyFiles_Sorting_Files_Folders_ZA_Grid_view() throws Exception   {
 //		   {
 //		     mb46 = new MyFiles_Sorting_Files_Folders (driver);
@@ -2271,7 +2285,7 @@ public class BrowserHandlings{
 //		     }
 //		 }
 		
-//		 @Test(priority =204)
+//		 @Test(priority =205)
 //		 public void MyFiles_Sorting_Files_Folders_AZ_List_view() throws Exception   {
 //		   {
 //		     mb46 = new MyFiles_Sorting_Files_Folders (driver);
@@ -2279,7 +2293,7 @@ public class BrowserHandlings{
 //		     }
 //		 }
 		
-//		 @Test(priority =205)
+//		 @Test(priority =206)
 //		 public void MyFiles_Sorting_Files_Folders_ZA_List_view() throws Exception   {
 //		   {
 //		     mb46 = new MyFiles_Sorting_Files_Folders (driver);
@@ -2287,7 +2301,7 @@ public class BrowserHandlings{
 //		     }
 //		 }
 		
-//		 @Test(priority =206)
+//		 @Test(priority =207)
 //		 public void MyFiles_Sort_Files_Folders_Recent_Old_NewData_Grid_view() throws Exception   {
 //		   {
 //		     mb46 = new MyFiles_Sorting_Files_Folders (driver);
@@ -2295,13 +2309,299 @@ public class BrowserHandlings{
 //		     }
 //		 }
 		
-//		 @Test(priority =207)
+//		 @Test(priority =208)
 //		 public void MyFiles_Sort_Files_Folders_Recent_Old_NewData_List_view() throws Exception   {
 //		   {
 //		     mb46 = new MyFiles_Sorting_Files_Folders (driver);
 //		     MyFiles_Sorting_Files_Folders.MyFiles_Sort_Files_Folders_Recent_Old_NewData_List_view();			  
 //		     }
 //		 }
+		
+		
+		//------------------------------------MyFiles_Details---------------------------------------
+		
+		
+//		 @Test(priority =209)
+//		 public void MyFiles_Details_List_view_File() throws Exception   {
+//		   {
+//		     mb47 = new MyFiles_Details (driver);
+//		     MyFiles_Details.MyFiles_Details_List_view_File();			  
+//		     }
+//		 }
+		
+		
+//		 @Test(priority =210)
+//		 public void MyFiles_Details_List_Grid_File() throws Exception   {
+//		   {
+//		     mb47 = new MyFiles_Details (driver);
+//		     MyFiles_Details.MyFiles_Details_List_Grid_File();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =211)
+//		 public void MyFiles_Details_List_view_Folder() throws Exception   {
+//		   {
+//		     mb47 = new MyFiles_Details (driver);
+//		     MyFiles_Details.MyFiles_Details_List_view_Folder();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =212)
+//		 public void MyFiles_Details_List_Grid_Folder() throws Exception   {
+//		   {
+//		     mb47 = new MyFiles_Details (driver);
+//		     MyFiles_Details.MyFiles_Details_List_Grid_Folder();			  
+//		     }
+//		 }
+		
+		
+		//----------------------------MyFiles_Upload_Forms----------------------------------------------
+		
+//		 @Test(priority =213)
+//		 public void MyFiles_Upload_Forms_Verify_Form_Enabling() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Verify_Form_Enabling();			  
+//		     }
+//		 }
+//		
+//		
+//		 @Test(priority =214)
+//		 public void MyFiles_Upload_Forms_Verify_Form_Disabling() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Verify_Form_Disabling();			  
+//		     }
+//		 }
+//		
+//		
+//		 @Test(priority =215)
+//		 public void MyFiles_Upload_Forms_Create_Form_By_Deactiving_Link() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Create_Form_By_Deactiving_Link();			  
+//		     }
+//		 }
+//		
+//		
+//		 @Test(priority =216)
+//		 public void MyFiles_Upload_Forms_Create_Form_By_Giving_Password() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Create_Form_By_Giving_Password();			  // final is pending
+//		     }
+//		 }
+//		
+//		 @Test(priority =217)
+//		 public void MyFiles_Upload_Forms_Create_Form_By_Giving_Expiry_Date() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Create_Form_By_Giving_Expiry_Date();			  
+//		     }
+//		 }
+//		 
+//		 @Test(priority =218)
+//		 public void MyFiles_Upload_Forms_Deactivating_Link_From_Existing_Forms_Page() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Deactivating_Link_From_Existing_Forms_Page();			  
+//		     }
+//		 }
+//		 		 
+//		 @Test(priority =219)
+//		 public void MyFiles_Upload_Forms_Activating_Link_From_Existing_Forms_Page() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Activating_Link_From_Existing_Forms_Page();			  
+//		     }
+//		 }
+//		 		 
+//		 @Test(priority =220)
+//		 public void MyFiles_Upload_Forms_Edit_Form_And_Change_The_Name() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Edit_Form_And_Change_The_Name();			  
+//		     }
+//		 }
+//		 		 
+//		 @Test(priority =221)
+//		 public void MyFiles_Upload_Forms_Deleted_The_Form_From_Active_List() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Deleted_The_Form_From_Active_List();			  
+//		     }
+//		 }
+//		 
+//		 
+//		 @Test(priority =222)
+//		 public void MyFiles_Upload_Forms_Verify_Active_And_Inactive() throws Exception   {
+//		   {
+//		     mb48 = new MyFiles_Upload_Forms (driver);
+//		     MyFiles_Upload_Forms.MyFiles_Upload_Forms_Verify_Active_And_Inactive();			  
+//		     }
+//		 }
+		 
+		 
+		 
+				//---------------------------MyFiles_Email_Integration--------------------------------    Pending
+		 
+		 
+
+//		 @Test(priority =223)
+//		 public void MyFiles_Email_Integration_Admin_account_Add_Email_Integration() throws Exception   {
+//		   {
+//		     mb49 = new MyFiles_Email_Integration (driver);
+//		     MyFiles_Email_Integration.MyFiles_Email_Integration_Admin_account_Add_Email_Integration();			  
+//		     }
+//		 }
+//		 
+//		 
+//		 @Test(priority =224)
+//		 public void MyFiles_Email_Integration_Admin_account_Edit_Email_Integration() throws Exception   {
+//		   {
+//		     mb49 = new MyFiles_Email_Integration (driver);
+//		     MyFiles_Email_Integration.MyFiles_Email_Integration_Admin_account_Edit_Email_Integration();			  
+//		     }
+//		 }
+//		 
+//		 
+//		 @Test(priority =225)
+//		 public void MyFiles_Email_Integration_Admin_account_Delete_Email_Integration() throws Exception   {
+//		   {
+//		     mb49 = new MyFiles_Email_Integration (driver);
+//		     MyFiles_Email_Integration.MyFiles_Email_Integration_Admin_account_Delete_Email_Integration();			  
+//		     }
+//		 }
+//		 
+//		@Test(priority =226)
+//		 public void MyFiles_Email_Integration_User_account_Add_Email_Integration() throws Exception   {
+//		   {
+//		     mb49 = new MyFiles_Email_Integration (driver);
+//		     MyFiles_Email_Integration.MyFiles_Email_Integration_User_account_Delete_Email_Integration();			  
+//		     }
+//		 }
+//		
+//		 @Test(priority =227)
+//		 public void MyFiles_Email_Integration_User_account_Edit_Email_Integration() throws Exception   {
+//		   {
+//		     mb49 = new MyFiles_Email_Integration (driver);
+//		     MyFiles_Email_Integration.MyFiles_Email_Integration_User_account_Add_Email_Integration();			  
+//		     }
+//		 }
+//		 
+//		 
+//		 @Test(priority =228)
+//		 public void MyFiles_Email_Integration_User_account_Delete_Email_Integration() throws Exception   {
+//		   {
+//		     mb49 = new MyFiles_Email_Integration (driver);
+//		     MyFiles_Email_Integration.MyFiles_Email_Integration_User_account_Delete_Email_Integration();			  
+//		     }
+//		 }
+		 
+		 
+		
+				//---------------------------------Signup_Form--------------------------------
+		
+//		 @Test(priority =229)
+//		 public void Signup_Form_Delete_Old_Email() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Form_Delete_Old_Email();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =230)
+//		 public void Signup_Form_Copy_New_Mail() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Form_Copy_New_Mail();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =231)
+//		 public void Signup_Form_Fill_Signup_Form() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Form_Fill_Signup_Form();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =232)
+//		 public void Signup_Default_Storage_Monthly_billing_free_trial() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Monthly_billing_free_trial();			  
+//		     }
+//		 }
+		 
+		 
+//		 @Test(priority =233)
+//		 public void Signup_Default_Storage_Yearly_billing_free_trial() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Yearly_billing_free_trial();			  
+//		     }
+//		 }
+		 
+		 @Test(priority =234)
+		 public void Signup_Default_Storage_Monthly_billing_Credit_card_payment() throws Exception   {
+		   {
+		     mb50 = new Signup_Form (driver);
+		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
+		     }
+		 }
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		
+		//------------------------------Forgot_Password------------------------------
+		 
+		 
+//		 @Test(priority =231)
+//		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
+//		   {
+//		     mb51 = new Forgot_Password (driver);
+//		     Forgot_Password.Forgot_Password_Signup_and_Forgot_Password();			  
+//		     }
+//		 }
+		 
+		 
+//		 @Test(priority =232)
+//		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
+//		   {
+//		     mb51 = new Forgot_Password (driver);
+//		     Forgot_Password.Forgot_Password_Signup_and_Forgot_Password();			  
+//		     }
+//		 }
+		 
+		 
+//		 @Test(priority =233)
+//		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
+//		   {
+//		     mb51 = new Forgot_Password (driver);
+//		     Forgot_Password.Forgot_Password_Signup_and_Forgot_Password();			  
+//		     }
+//		 }
+		 
+		 
+		 //----------------------------------Account_Settings------------------------------------
+		 
+		
+//		 @Test(priority =234)
+//		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
+//		   {
+//		     mb51 = new Forgot_Password (driver);
+//		     Forgot_Password.Forgot_Password_Signup_and_Forgot_Password();			  
+//		     }
+//		 }
+		
+		
+		
 		
 		
 		

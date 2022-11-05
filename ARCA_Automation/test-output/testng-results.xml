@@ -4,16 +4,13 @@
     <line>
       <![CDATA[STEP1]]>
     </line>
-    <line>
-      <![CDATA[STEP2]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-10-18T15:18:29 IST" name="Suite" finished-at="2022-10-18T15:22:00 IST" duration-ms="210912">
+  <suite started-at="2022-11-05T08:49:41 IST" name="Suite" finished-at="2022-11-05T08:51:21 IST" duration-ms="99316">
     <groups>
     </groups>
-    <test started-at="2022-10-18T15:18:29 IST" name="Test" finished-at="2022-10-18T15:22:00 IST" duration-ms="210912">
+    <test started-at="2022-11-05T08:49:41 IST" name="Test" finished-at="2022-11-05T08:51:21 IST" duration-ms="99316">
       <class name="arca.tests.BrowserHandlings">
-        <test-method is-config="true" signature="beforetest(java.lang.String)[pri:0, instance:arca.tests.BrowserHandlings@77b14724]" started-at="2022-10-18T15:18:29 IST" name="beforetest" finished-at="2022-10-18T15:18:36 IST" duration-ms="6586" status="PASS">
+        <test-method is-config="true" signature="beforetest(java.lang.String)[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-11-05T08:49:41 IST" name="beforetest" finished-at="2022-11-05T08:49:48 IST" duration-ms="6828" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,14 +21,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="MyFiles_File_Preview_Download()[pri:102, instance:arca.tests.BrowserHandlings@77b14724]" started-at="2022-10-18T15:18:36 IST" name="MyFiles_File_Preview_Download" finished-at="2022-10-18T15:22:00 IST" duration-ms="203632" status="FAIL">
+        <test-method signature="Signup_Default_Storage_Monthly_billing_Credit_card_payment()[pri:234, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-11-05T08:49:48 IST" name="Signup_Default_Storage_Monthly_billing_Credit_card_payment" finished-at="2022-11-05T08:51:10 IST" duration-ms="81609" status="FAIL">
           <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
             <full-stacktrace>
               <![CDATA[[ATU Custom Reporter Step Failed Exception]
 at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
 at atu.testng.reports.ATUReports.add(Unknown Source)
-at arca.pages.MyFiles_File_Preview.MyFiles_File_Preview_Download(MyFiles_File_Preview.java:242)
-at arca.tests.BrowserHandlings.MyFiles_File_Preview_Download(BrowserHandlings.java:1417)
+at arca.pages.Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment(Signup_Form.java:430)
+at arca.tests.BrowserHandlings.Signup_Default_Storage_Monthly_billing_Credit_card_payment(BrowserHandlings.java:2550)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,12 +64,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <line>
               <![CDATA[STEP1]]>
             </line>
-            <line>
-              <![CDATA[STEP2]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- MyFiles_File_Preview_Download -->
-        <test-method is-config="true" signature="after()[pri:0, instance:arca.tests.BrowserHandlings@77b14724]" started-at="2022-10-18T15:22:00 IST" name="after" finished-at="2022-10-18T15:22:00 IST" duration-ms="588" status="PASS">
+        </test-method> <!-- Signup_Default_Storage_Monthly_billing_Credit_card_payment -->
+        <test-method is-config="true" signature="after()[pri:0, instance:arca.tests.BrowserHandlings@5d8bafa9]" started-at="2022-11-05T08:51:10 IST" name="after" finished-at="2022-11-05T08:51:21 IST" duration-ms="10785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

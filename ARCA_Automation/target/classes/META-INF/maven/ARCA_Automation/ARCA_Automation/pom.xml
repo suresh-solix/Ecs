@@ -187,12 +187,7 @@
 </dependency>
 
 
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-chrome-driver</artifactId>
-    <version>4.4.0</version>
-</dependency>
+
 
     
 		

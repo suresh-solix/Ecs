@@ -82,6 +82,7 @@ public class MyFiles_List_view extends Navigation {
 			click("List_View");
 			
 			getPageObject("List_view_Name").isDisplayed();
+			
 			getPageObject("List_view_folder").isDisplayed();
 			String folder_name = getPageObject("List_view_folder").getText();
 			if(folder_name==null || folder_name=="-")
@@ -91,14 +92,41 @@ public class MyFiles_List_view extends Navigation {
 			}
 			
 			// //tbody/tr[1]/td[3]
+			
 			getPageObject("List_View_Owner").isDisplayed();
-			getPageObject("List_View_Owner_name").isDisplayed();
+			String Owner_name = getPageObject("List_View_Owner_name").getText();
+			if(Owner_name==null )
+			{
+				ATUReports.add("List_View_Owner_name failed","List_View_Owner_name",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				
+			}
 			
 			getPageObject("List_View_Create").isDisplayed();
-			getPageObject("List_View_Create_DayTime").isDisplayed();
+			String Owner_Createtime = getPageObject("List_View_Create_DayTime").getText();
+			if(Owner_Createtime==null )
+			{
+				ATUReports.add("List_View_Create_DayTime failed","List_View_Create_DayTime",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				
+			}
 			
 			getPageObject("List_View_Size").isDisplayed();
-			getPageObject("List_View_Size_Foder").isDisplayed();
+			String Owner_Folder_size = getPageObject("List_View_Size_Foder").getText();
+			if(Owner_Folder_size==null )
+			{
+				ATUReports.add("List_View_Size_Foder failed","List_View_Size_Foder",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				
+			}
+			
+			Thread.sleep(1000);
+			click("Profile_Icon");
+			Thread.sleep(2000);
+			click("Sign_out");
+			Thread.sleep(1000);
+			click("Ok");
+
+			WebDriverWait wait35 = new WebDriverWait(driver, 120);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e)
 		{
@@ -114,6 +142,7 @@ public class MyFiles_List_view extends Navigation {
 
 
 		//-----------------------------MyFiles_List_view_Share_User-----------------------------------------
+	
 	public static void MyFiles_List_view_Share_User()
 	{
 
@@ -130,6 +159,7 @@ public class MyFiles_List_view extends Navigation {
 			wait5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[contains(text(),'My Files')])[1]")));
 			
 			click("List_View");
+			Thread.sleep(1000);
 			click("Sorting_order");
 			Thread.sleep(1000);
 			WebElement ele = getPageObject("Folder_List_view");
@@ -155,10 +185,20 @@ public class MyFiles_List_view extends Navigation {
 			click("share_button");
 					
 			WebDriverWait wait222 = new WebDriverWait(driver, 60);
-			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared Successfully')]")));
+			wait222.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Shared successfully.')]")));
 			Thread.sleep(2000);
 			click("toast_close");
 			
+			Thread.sleep(1000);
+			click("Profile_Icon");
+			Thread.sleep(2000);
+			click("Sign_out");
+			Thread.sleep(1000);
+			click("Ok");
+
+			WebDriverWait wait35 = new WebDriverWait(driver, 120);
+			wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		}
 		catch (Exception e)
 		{
@@ -201,6 +241,16 @@ public class MyFiles_List_view extends Navigation {
 		actions.contextClick(right).perform();
 		Thread.sleep(3000);
 		
+		Thread.sleep(1000);
+		click("Profile_Icon");
+		Thread.sleep(2000);
+		click("Sign_out");
+		Thread.sleep(1000);
+		click("Ok");
+
+		WebDriverWait wait35 = new WebDriverWait(driver, 120);
+		wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 	}
 	catch (Exception e)
 	{
@@ -246,9 +296,20 @@ public class MyFiles_List_view extends Navigation {
 		click("Save"); 	
 		
 		WebDriverWait wait51 = new WebDriverWait(driver, 60);
-		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully saved the comment')]")));
+		wait51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully saved the comment.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
+		
+		Thread.sleep(1000);
+		click("Profile_Icon");
+		Thread.sleep(2000);
+		click("Sign_out");
+		Thread.sleep(1000);
+		click("Ok");
+
+		WebDriverWait wait35 = new WebDriverWait(driver, 120);
+		wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 		
 	}
 	catch (Exception e)
@@ -296,10 +357,20 @@ public class MyFiles_List_view extends Navigation {
 		click("Save"); 	
 		
 		WebDriverWait wait511 = new WebDriverWait(driver, 60);
-		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully')]")));
+		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Updated the tags successfully.')]")));
 		Thread.sleep(1000);
 		click("toast_close");
 		
+		Thread.sleep(1000);
+		click("Profile_Icon");
+		Thread.sleep(2000);
+		click("Sign_out");
+		Thread.sleep(1000);
+		click("Ok");
+
+		WebDriverWait wait35 = new WebDriverWait(driver, 120);
+		wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
+
 	}
 	catch (Exception e)
 	{
@@ -368,7 +439,7 @@ public static void MyFiles_List_view_Add_multiple_files_to_collection()
 		click("Save");
 		Thread.sleep(2000);
 		WebDriverWait wait511 = new WebDriverWait(driver, 60);
-		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Added file(s) to the collection successfully!!']")));
+		wait511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Added file(s) to the collection successfully.']")));
 		Thread.sleep(1000);
 		click("toast_close");
 		
@@ -402,6 +473,16 @@ public static void MyFiles_List_view_Add_multiple_files_to_collection()
 			ATUReports.add("MyFiles_List_view_Add_multiple_files_to_collection failed","MyFiles_List_view_Add_multiple_files_to_collection",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 			Thread.sleep(2000);
 		}
+		
+		Thread.sleep(1000);
+		click("Profile_Icon");
+		Thread.sleep(2000);
+		click("Sign_out");
+		Thread.sleep(1000);
+		click("Ok");
+
+		WebDriverWait wait35 = new WebDriverWait(driver, 120);
+		wait35.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Next')]")));
 
 		
 		
@@ -469,7 +550,7 @@ public static void MyFiles_List_view_Multiple_files_and_folders_copy()
 		Thread.sleep(2000);
 		click("Close_Pop");
 		WebDriverWait wait351 = new WebDriverWait(driver, 60);
-		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied')]")));
+		wait351.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied.')]")));
 		Thread.sleep(1000);
 		click("toast_close");  
 		Thread.sleep(2000);
@@ -486,7 +567,7 @@ public static void MyFiles_List_view_Multiple_files_and_folders_copy()
 		click("Trash_Button");
 		Thread.sleep(1000);
 		WebDriverWait wait3511 = new WebDriverWait(driver, 60);
-		wait3511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully moved to trash')]")));
+		wait3511.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully moved to trash.')]")));
 		Thread.sleep(1000);
 		click("toast_close"); 
 		Thread.sleep(2000);
@@ -533,7 +614,7 @@ public static void MyFiles_List_view_Multiple_files_and_folders_copy()
 		Thread.sleep(3000);
 		click("Close_Pop");
 		WebDriverWait wait35111 = new WebDriverWait(driver, 60);
-		wait35111.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied')]")));
+		wait35111.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Successfully copied.')]")));
 		Thread.sleep(1000);
 		click("toast_close");  
 		Thread.sleep(2000);

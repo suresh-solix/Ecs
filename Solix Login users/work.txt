@@ -38,4 +38,9 @@ Data Migration : FTP Details - Working Deatils - June 1
 
 newftpuser / Un_Files / All_files / 100GB_Small_files / small_files
 
+Admin_		outlook.office365.com
+		azamahmed2021@outlook.com
+		Password: system@123!
+		"Port":993, "AuthType":"TLS", -
+
 

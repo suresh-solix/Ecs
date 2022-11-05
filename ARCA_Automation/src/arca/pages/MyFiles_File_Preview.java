@@ -212,11 +212,12 @@ public class MyFiles_File_Preview extends Navigation{
 			click("click_preview");
 			Thread.sleep(2000);
 			click("Download_Icon");
+			Thread.sleep(3000);
+	//		click("Download_view");
+			click("Download_Icon");
+			click("File_Preview_Download");
 			Thread.sleep(2000);
-//			click("Download_Icon");
-//			click("File_Preview_Download");
-//			Thread.sleep(2000);
-//			click("File_preview_download_save");
+			click("File_preview_download_save");
 //			Thread.sleep(3000);
 			click("Left_Back");
 

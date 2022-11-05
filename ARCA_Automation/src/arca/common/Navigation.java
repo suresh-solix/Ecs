@@ -53,6 +53,7 @@ public static String URL="https://arcaqa.solix.com/";
 
 
 
+
 static FluentWait<WebDriver> wait=null;
 
 private static String status;
@@ -290,11 +291,11 @@ public static void external_guest_user()
 		captureScreenShot(ScreenShotsFilePath + "external_guest_user_failed.png");
 		ATUReports.add("external_guest_user failed","external_guest_user failed",LogAs.FAILED,new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 	
-	}
+	}}
 
 	
 	
-}
+
 
 public static void select_two_files()
 {
