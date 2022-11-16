@@ -1,0 +1,5 @@
+﻿tid,uid,notificationid,foldername,folderpath,filename,filepath,filesize,errors,status,name,size,location,reasons
+1000279,1001312,12735,,,f(1) - Copy.txt,,17764,File size error,false,f(1) - Copy.txt,17764,-,File size error
+1000279,1001312,12735,,,jquery.dataTables.js - Copy.download,,449307,File size error,false,jquery.dataTables.js - Copy.download,449307,-,File size error
+1000279,1001312,12735,,,f - Copy.txt,,1426,File extention error,false,f - Copy.txt,1426,-,File extention error
+1000279,1001312,12735,,,saved_resource - Copy.html,,1648,,true,saved_resource - Copy.html,1648,-,Success

@@ -13,3 +13,14 @@ MyFile_Share_User_Admin = 11 TC  --completed						57
 MyFiles_Collection = 2 TC  ---completed  ------------Yes
 MyFile_Reminder = 8 TC   ----complated   ----------Yes					10
 MyFiles_File_Preview = 
+
+
+
+
+
+
+Partial Pending
+
+Signup
+Forgot
+Acount

@@ -395,7 +395,9 @@ public static void Signup_Default_Storage_Monthly_billing_Credit_card_payment()
 				Actions at = new Actions(driver);
 				at.sendKeys(Keys.PAGE_DOWN).build().perform();
 				//storage Range
-				click("Storage_Range_Month_25TB");
+			
+				click("range_max");
+		//		click("Storage_Range_Month_25TB");
 				getPageObject("Set_Payment").isDisplayed();
 				sendKeys("Credit_Card_name","Solix");
 				sendKeys("Credit_card_Num","4242 4242 4242 4242");

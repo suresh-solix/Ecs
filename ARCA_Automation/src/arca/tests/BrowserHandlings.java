@@ -67,6 +67,7 @@ import arca.pages.Rename;
 import arca.pages.Retention;
 import arca.pages.RightClickUpload;
 import arca.pages.Search;
+import arca.pages.Search_User;
 import arca.pages.ShareDataWithInternalUser;
 import arca.pages.ShareLinkWithExternalUser;
 import arca.pages.ShareLinkWithInternalUser;
@@ -163,7 +164,7 @@ public class BrowserHandlings{
 	Signup_Form mb50;
 	Forgot_Password mb51;
 	Account_Settings mb52;
-	
+	Search_User mb53;
 	
 	
 	ATUTestRecorder recorder;
@@ -2543,18 +2544,30 @@ public class BrowserHandlings{
 //		     }
 //		 }
 		 
-		 @Test(priority =234)
-		 public void Signup_Default_Storage_Monthly_billing_Credit_card_payment() throws Exception   {
-		   {
-		     mb50 = new Signup_Form (driver);
-		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
-		     }
-		 }
-		 
-		 
-		 
-		 
-		 
+//		 @Test(priority =234)
+//		 public void Signup_Default_Storage_Monthly_billing_Credit_card_payment() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
+//		     }
+//		 }
+//		 
+//		 @Test(priority =235)
+//		 public void Signup_Default_Storage_Yearly_billing_Credit_card_payment() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
+//		     }
+//		 }
+//		 
+//		 
+//		 @Test(priority =236)
+//		 public void Signup_Default_Storage_Monthly_billing_Credit_() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
+//		     }
+//		 }
 		 
 		 
 		 
@@ -2562,7 +2575,7 @@ public class BrowserHandlings{
 		//------------------------------Forgot_Password------------------------------
 		 
 		 
-//		 @Test(priority =231)
+//		 @Test(priority =237)
 //		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
 //		   {
 //		     mb51 = new Forgot_Password (driver);
@@ -2571,7 +2584,7 @@ public class BrowserHandlings{
 //		 }
 		 
 		 
-//		 @Test(priority =232)
+//		 @Test(priority =238)
 //		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
 //		   {
 //		     mb51 = new Forgot_Password (driver);
@@ -2580,7 +2593,7 @@ public class BrowserHandlings{
 //		 }
 		 
 		 
-//		 @Test(priority =233)
+//		 @Test(priority =239)
 //		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
 //		   {
 //		     mb51 = new Forgot_Password (driver);
@@ -2592,13 +2605,178 @@ public class BrowserHandlings{
 		 //----------------------------------Account_Settings------------------------------------
 		 
 		
-//		 @Test(priority =234)
+//		 @Test(priority =240)
 //		 public void Forgot_Password_Signup_and_Forgot_Password() throws Exception   {
 //		   {
 //		     mb51 = new Forgot_Password (driver);
 //		     Forgot_Password.Forgot_Password_Signup_and_Forgot_Password();			  
 //		     }
 //		 }
+		
+		
+//		 @Test(priority =241)
+//		 public void Signup_Default_Storage_Monthly_billing_Credit_card_payment() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
+//		     }
+//		 }
+//		
+//		
+//		 @Test(priority =242)
+//		 public void Signup_Default_Storage_Monthly_billing_Credit_card_payment() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
+//		     }
+//		 }
+//		
+//		 @Test(priority =243)
+//		 public void Signup_Default_Storage_Monthly_billing_Credit_card_payment() throws Exception   {
+//		   {
+//		     mb50 = new Signup_Form (driver);
+//		     Signup_Form.Signup_Default_Storage_Monthly_billing_Credit_card_payment();			  
+//		     }
+//		 }
+		
+		
+		
+			//-----------------------------SEARCH---------------------------------------------
+		
+		
+//		 @Test(priority =244)
+//		 public void Search_with_Keyword() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Search_with_Keyword();			  
+//		     }
+//		 }
+		
+		
+//		 @Test(priority =245)
+//		 public void Search_with_content_Search() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Search_with_content_Search();			  
+//		     }
+//		 }
+		
+		
+//		 @Test(priority =246)
+//		 public void Advanced_Search_in_Name_Field() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_in_Name_Field();			  
+//		     }
+//		 }
+		
+		
+//		 @Test(priority =247)
+//		 public void Advanced_Search_in_Word_search() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_in_Word_search();			  
+//		     }
+//		 }
+				
+//		 @Test(priority =248)
+//		 public void Advanced_Search_Tags_Files_and_Folders() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_Tags_Files_and_Folders();			  
+//		     }
+//		 }
+		
+//		 @Test(priority =249)
+//		 public void Advanced_Search_Photos_and_Images() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_Photos_and_Images();			  
+//		     }
+//		 }
+//		 
+//		 
+//		 @Test(priority =250)
+//		 public void Advanced_Search_Pdf_files() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_Pdf_files();			  
+//		     }
+//		 }
+//		 
+//		 
+//		 @Test(priority =251)
+//		 public void Advanced_Search_Dockments_Files() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_Dockments_Files();			  
+//		     }
+//		 }
+//		
+//		
+//		 @Test(priority =252)
+//		 public void Advanced_Search_Spreadsheets_Files() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_Spreadsheets_Files();			  
+//		     }
+//		 }
+//		
+//		
+//		 @Test(priority =253)
+//		 public void Advanced_Search_Presentation_Files() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_Presentation_Files();			  
+//		     }
+//		 }
+//		
+//		 @Test(priority =254)
+//		 public void Advanced_Search_Audio_Files() throws Exception   {
+//		   {
+//		     mb53 = new Search_User (driver);
+//		     Search_User.Advanced_Search_Audio_Files();			  
+//		     }
+//		 }
+		
+		 @Test(priority =255)
+		 public void Advanced_Search_video_Files() throws Exception   {
+		   {
+		     mb53 = new Search_User (driver);
+		     Search_User.Advanced_Search_video_Files();			  
+		     }
+		 }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		
+		
+		
+		
+		
 		
 		
 		

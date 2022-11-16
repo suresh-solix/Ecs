@@ -11,9 +11,9 @@
     <classes>
       <class name="arca.tests.BrowserHandlings">
         <methods>
-          <include name="Signup_Default_Storage_Monthly_billing_Credit_card_payment"/>
           <include name="after"/>
           <include name="beforetest"/>
+          <include name="Advanced_Search_Audio_Files"/>
         </methods>
       </class> <!-- arca.tests.BrowserHandlings -->
     </classes>
